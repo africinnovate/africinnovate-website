@@ -32,20 +32,17 @@ const Aboutcomponent= () => {
 </div>
 
 <div className="grid-container">
-             <div className="grid">
-                <img src='/img1.png' className="g-img1" data-aos="fade-down-right" alt="" />
-                <img src='/img2.png' className="g-img2" data-aos="fade-right"  alt="" />
-              </div>
+  <div className="grid">
+    <img className='img1' src='/img1.png'  data-aos="fade-down-right" alt="" />
+    <img className='img2' src='/img2.png'  data-aos="fade-right"  alt="" />
+  </div>
 
-              
-              <div className="grid" style={{marginTop:"3rem"}}> 
-                <img src='/img3.png' className="g-img3" data-aos="fade-down" alt="" />
-                <img src='/img4.png' className="g-img4" data-aos="fade-up" alt="" />
-              </div>
-
-              
-            
-             </div>
+  
+  <div className="grid" > 
+    <img  className='img3' src='/img3.png'  data-aos="fade-down" alt="" />
+    <img className='img4' src='/img4.png'  data-aos="fade-up" alt="" />
+  </div>
+  </div>
 
  </div>
  <div className='flex justify-center items-center' >

@@ -22,7 +22,7 @@ export  default function ContactUs() {
 <>
 <div>
     <div  className="flex items-center justify-center flex-col">
-    <div className='flex w-full items-center justify-center flex-col  mt-[72px]'>
+    <div className='flex w-full items-center justify-center flex-col  mt-[72px]' data-aos='fade-up'>
   <div className="w-full text-center text-white text-7xl font-semibold font-sans  max-md:text-[2rem] max-md:leading-normal">Get in touch with</div>
   <div className="flex-shrink-0 w-[701px] h-[4.625rem] flex text-center items-center justify-center text-[4rem] max-md:text-[32px]">
     <div className="inline-flex items-start    text-white text-center  font-bold  font-sans    ">
@@ -34,9 +34,9 @@ export  default function ContactUs() {
     </div>
   </div>
   <div className="Ellipse1 w-96 h-96 opacity-80 z-10 bg-blue-600 rounded-full blur-[190px] absolute right-[70%] top-[120%]  max-md:hidden" />
-<div className="Sans'] w-[645px] text-[#b0b0d0] text-center font-['DM text-lg font-medium leading-6 max-md:w-auto">We would love to know your concerns, leave a detailed message and our sales team will get in touch with you.</div>
+<div className="Sans'] w-[645px] text-[#b0b0d0] text-center font-['DM text-lg font-medium leading-6 max-md:w-auto" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500">We would love to know your concerns, leave a detailed message and our sales team will get in touch with you.</div>
 {/* contact-us card  */}
-<form className="Frame25624 flex  gap-[26px] items-start pl-[40px] max-md:pl-[25px] justify-center flex-col mt-9 w-[39rem] h-[38rem]  bg-blue-800 rounded-2xl shadow max-md:w-[25rem]" onSubmit={handleSubmit}>
+<form className="Frame25624 flex  gap-[26px] items-start pl-[40px] max-md:pl-[25px] justify-center flex-col mt-9 w-[39rem] h-[38rem]  bg-blue-800 rounded-2xl shadow max-md:w-[25rem]"  data-aos="fade-up" data-aos-duration="1200" data-aos-delay="700"  onSubmit={handleSubmit}>
       <label htmlFor="fullName" className="left-[77px] top-[48px]  text-slate-400 text-base font-medium font-['DM Sans'] leading-normal"></label>
       <input
         type="text"
