@@ -34,6 +34,7 @@ overflow-x: hidden;
   grid-gap: 4rem;
 }
 @media (max-width:768px) {
+  
   #card2{
     width: 350px;
     display: flex;
@@ -103,16 +104,16 @@ body{
 
 }
 
-/* #animationbutton{
+#animationbutton{
   animation: bounce .4s ease  alternate;
-  animation-iteration-count:5;
+  animation-iteration-count:1;
 }
 @keyframes bounce {
  
   100% {
     transform:translateY(-20px);
    }
-} */
+}
 .grid img{
   width: 100%;
   height: 25rem;
@@ -122,36 +123,31 @@ body{
  }
 
 
- .grid-container{
- display: grid;
- grid-template-columns: 1fr 1fr 1fr;
- justify-content: space-between;
-align-items: center;
-gap: 1rem !important;
-  height: auto; 
-  margin-left: 20%;
- }
+.grid-container{
+  display: flex;
+  width: 40vw;
+  height: 30vh;
+  gap: 1rem;
+}
 
- .grid{
-  display: grid !important;
-  grid-template-rows: 1fr 1fr !important;
-  gap: 1rem !important;
- }
+.grid{
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 50%;
+  gap: 1rem;
+}
 
- .g-img1, .g-img2{
-  height: auto!important;
-   }
-  
-   .g-img2{
-    height: auto !important;
-   }
-  
-   .g-img3{
-  height: auto!important;
-  margin-top: -10rem;
-   }
-  
-   .g-img4{
-    height: auto !important;
-    margin-top: -8.5rem;
-   }
+.grid img{
+object-fit: cover;
+}
+
+.img1, .img4{
+  height: 60%;
+  object-fit: cover;
+}
+
+.img3, .img2{
+  height: 20%;
+  object-fit: cover;
+}

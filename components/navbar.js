@@ -10,7 +10,7 @@ const Navbar = () => {
     setMenuOpen(!menuOpen);
   };
   return (
-    <nav className="bg-gray-800 flex justify-around  md:shrink-0  max-md:contents">
+    <nav className="bg-[#000024] flex justify-around  md:shrink-0  max-md:contents">
      
 <div className="w-[100vw] h-20 border-b-[0.5px] border-b-[#9a8888] bg-[#000024] flex items-center justify-around">
  <div className='flex '>

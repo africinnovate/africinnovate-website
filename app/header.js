@@ -6,19 +6,22 @@ import Head from 'next/head';
 import { useState,useEffect } from 'react';
 
 const Headercomponent= () => {
-  const [developerText, setDeveloperText] = useState('Developers');
-  const textOptions = ['Developers', 'Designers', 'Dreamers', 'Doers'];
+  const texts = ['Developers', 'Designers', 'Dreamers', 'Doers'];
+  const [currentTextIndex, setCurrentTextIndex] = useState(0);
 
   useEffect(() => {
-    const interval = setInterval(() => {
-      // Rotate to the next text in the array
-      const currentIndex = textOptions.indexOf(developerText);
-      const nextIndex = (currentIndex + 1) % textOptions.length;
-      setDeveloperText(textOptions[nextIndex]);
-    }, 4000); // Change text every 2 seconds (adjust as needed)
+    const intervalId = setInterval(() => {
+      setCurrentTextIndex((prevIndex) => (prevIndex + 1) % texts.length);
+    }, 1500);
 
-    return () => clearInterval(interval);
-  }, [developerText]);
+    return () => {
+      clearInterval(intervalId);
+    };
+  }, [texts.length]);
+
+  const currentText = texts[currentTextIndex];
+
+
   return (
     <div className='mt-[100px] max-md:mt-[70px]'>
 <div className="" >
@@ -30,13 +33,13 @@ const Headercomponent= () => {
       Great
     </div>
     <div className="inline-flex flex-col items-start gap-2.5 py-0 ">
-      <div className="text-[#ffbe0b] text-center font-sans  font-bold px-3   ">          {developerText}</div>
+      <div className="text-[#ffbe0b] text-center font-sans  font-bold px-3   " >           {currentText}</div>
       </div>
     </div>
   </div>
     <div className="font-sans w-[645px]  font-revert text-[#b0b0d0] text-center mb-3  mt-5  text-lg font-medium max-md:w-[344px]" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500">This is a place holder paragraph that will fit in this space. A paragraph briefly explaining the message on the heading one. Two or three lines is fine.</div>
   <div className="inline-flex items-start my-6" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="700" id='animationbutton'>
-    <div className="flex items-center gap-2 py-3 px-6  font-sans rounded-3xl bg-[#cccce0] Sans'] text-[#006] font-['DM font-medium leading-6 ">
+    <div className="flex items-center gap-2 py-3 px-6  font-sans rounded-3xl bg-[#cccce0] Sans'] text-[#006] font-['DM font-medium leading-6  ">
       Primary CTA Button
     </div>
   </div>
