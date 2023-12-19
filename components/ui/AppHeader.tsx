@@ -2,12 +2,17 @@
 'use client'
 import Link from 'next/link'
 import { useState } from 'react'
+import Button from './Button'
 
 const AppHeader = () => {
   const [menuOpen, setMenuOpen] = useState(false)
 
   const toggleMenu = () => {
     setMenuOpen(!menuOpen)
+  }
+
+  const test = () => {
+    alert('hello')
   }
   return (
     <nav className="bg-[#000024] flex justify-around  md:shrink-0  max-md:contents">
@@ -53,9 +58,8 @@ const AppHeader = () => {
           </div>
         </div>
         <div className="inline-flex items-start mr-6  max-md:hidden">
-          <div className="flex  w-[200px] items-center gap-2 py-3 px-6 rounded-3xl  hover:bg-[#FFBE0B] bg-[#cccce0] font-sans text-[#006] font-['DM font-medium leading-6">
-            Primary CTA Button
-          </div>
+        
+          <Button onClick={test} children={'Call us'} />
         </div>
         {/* Mobile Menu Toggle */}
         <div className="md:hidden flex items-center">
