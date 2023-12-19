@@ -3,8 +3,7 @@ import Link from 'next/link'
 
 const Footer = () => {
   return (
-    <footer className=" relative z-20 pl-[55px] max-md:pl-[0px]   mt-9   text-white py-8 justify-center align-center  flex">
-      <div className="container  mx-auto flex flex-wrap justify-center items-center ml-[20px]">
+    <footer className=" z-20 ml-[6.5rem] max-md:pl-[0px]   mt-9   text-white py-8 justify-center items-center  flex">
         {/* Column 1 */}
         <div className="w-full   flex items-start justify-start  flex-col sm:w-1/2 md:w-1/3 lg:w-1/3 xl:w-1/3 px-4 mb-4">
           <div className="flex items-center justify-center">
@@ -133,7 +132,6 @@ const Footer = () => {
             </div>
           </div>
         </div>
-      </div>
     </footer>
   )
 }
