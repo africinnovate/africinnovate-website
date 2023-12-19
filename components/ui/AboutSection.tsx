@@ -70,7 +70,7 @@ const AboutSection = () => {
             id="card"
             className=" flex flex-wrap gap-4 md:grid md:grid-cols-3 lg:grid-cols-3 mt-[2rem] mx-7  "
           >
-            <div className="flex-shrink-0 w-[330px] pl-5 pt-2 h-[13.5rem] rounded-2xl items-center justify-center transition duration-500 hover:bg-[#00388D] hover:shadow-lg hover:border-2 border-solid border-[#b0cdf9]  max-md:hover:w-[300px] max-md:hover:ml-[5px] max-md:p-[9px] group">
+            <div className="flex-shrink-0 w-[360px] pl-5 pt-2 h-[13.5rem] rounded-2xl items-center justify-center transition duration-500 hover:bg-[#00388D] hover:shadow-lg hover:border-2 border-solid border-[#b0cdf9]  max-md:hover:w-[300px] max-md:hover:ml-[5px] max-md:p-[9px] group">
               <div className="flex-shrink-0 w-12 h-12 rounded-full bg-white/[.10] flex items-center justify-center">
                 {' '}
                 <svg
@@ -99,7 +99,7 @@ const AboutSection = () => {
               <div className="Sans'] text-white font-['DM text-lg font-medium leading-6 mt-2">
                 Reliable high-speed internet
               </div>
-              <div className="Sans'] w-[20.5rem] text-[#b0b0d0] font-['DM font-medium leading-6 mt-2">
+              <div className="Sans'] w-[20.5rem] text-[#b0b0d0] font-['DM font-medium leading-6 mt-2  max-md:w-[19rem]">
               Experience seamless connectivity with our lightning-fast, reliable internet, ensuring you stay in the flow of productivity.
               </div>
             </div>
@@ -196,7 +196,7 @@ const AboutSection = () => {
               <div className="Sans'] text-white font-['DM text-lg font-medium leading-6 mt-2">
                 Community Friendly
               </div>
-              <div className="Sans'] w-[21.5rem] text-[#b0b0d0] font-['DM font-medium leading-6 mt-2 max-md:w-[300px] max-md:mr-6  max-md:hover:pr-9">
+              <div className="Sans'] w-[18.5rem] text-[#b0b0d0] font-['DM font-medium leading-6 mt-2  max-md:h-[350px] max-md:mr-6  ">
               Join a vibrant community that thrives on collaboration, networking, and shared experiences, making work feel like a community endeavor.
               </div>
             </div>
@@ -230,11 +230,11 @@ const AboutSection = () => {
               <div className="Sans'] text-white font-['DM text-lg font-medium leading-6 mt-2">
                 Fast and Quality Product Delivery
               </div>
-              <div className="Sans'] w-[18.5rem] text-[#b0b0d0] font-['DM font-medium leading-6 mt-2 max-md:w-[300px] max-md:mr-6  max-md:pr-5">
+              <div className="Sans'] w-[18.5rem] text-[#b0b0d0] font-['DM font-medium leading-6 mt-2 max-md:w-[290px] max-md:mr-6  ">
               Experience the best of both worlds with our swift and efficient delivery services, ensuring your products reach you fast without compromising quality.
               </div>
             </div>
-            <div className="flex-shrink-0 w-[330px]  hover:max-md:w-[300px] hover:max-md:mb-3 pl-5 pt-2 h-[13.5rem] rounded-2xl items-center justify-center transition duration-500 hover:bg-[#00388D] hover:shadow-lg hover:border-2 border-solid border-[#b0cdf9] group">
+            <div className="flex-shrink-0 w-[330px]  hover:max-md:w-[300px] hover:max-md:mb-3 pl-5 pt-2 h-[13.5rem] max-md:h-[16.5rem] rounded-2xl items-center justify-center transition duration-500 hover:bg-[#00388D] hover:shadow-lg hover:border-2 border-solid border-[#b0cdf9] max-md:h-[18.5rem]group">
               <div className="flex-shrink-0 w-12 h-12 rounded-full bg-white/[.10] flex items-center justify-center transition duration-500 hover:bg-[#00388D]">
                 <svg
                   width={20}
@@ -260,7 +260,7 @@ const AboutSection = () => {
               <div className="Sans'] text-white font-['DM text-lg font-medium leading-6 mt-2">
                 Home to Startups
               </div>
-              <div className="Sans'] w-[21.5rem] text-[#b0b0d0] font-['DM font-medium mt-2 max-md:w-[18.5rem] max-md:mr-6  max-md:pr-9">
+              <div className="Sans'] w-[18.5rem] text-[#b0b0d0] font-['DM font-medium mt-2 max-md:w-[16.5rem]  max-md:mr-6  ">
               Experience the best of both worlds with our swift and efficient delivery services, ensuring your products reach you fast without compromising quality.
               </div>
             </div>

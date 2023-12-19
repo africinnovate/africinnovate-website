@@ -1,13 +1,10 @@
 'use client'
 
-import { BlogPage, ContactUs, Footer, Navbar } from '@/app/index'
-
+import BlogPage from "@/app/blog"
 export default function Contact() {
   return (
-    <main className="overflow-hidden">
-      <Navbar />
+
       <BlogPage />
-      <Footer />
-    </main>
+
   )
 }

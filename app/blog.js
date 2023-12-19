@@ -1,6 +1,7 @@
 'use client'
 
-import { BlogNewscomponent, BlogPageonecomponent } from '.'
+import BlogPageonecomponent from '@/components/Blog'
+import BlogNewscomponent from '@/components/Blogs'
 
 export default function BlogPage() {
   return (
