@@ -1,9 +1,9 @@
 'use client'
-import { Navbar, Footer } from '@/app/index'
+
 function MainBlog() {
   return (
-    <>
-      <div className="">
+
+      <>
         <div className="flex items-center justify-center flex-col">
           <div className="w-[1000px] h-[500px] object-contain mt-8 max-md:w-auto ">
             <img
@@ -100,8 +100,8 @@ function MainBlog() {
             </div>
           </div>
         </div>
-      </div>
-    </>
+      </>
+
   )
 }
 export default MainBlog
