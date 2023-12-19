@@ -16,9 +16,6 @@ const config: Config = {
       fontFamily: {
         sans: ['Raleway', 'ui-sans-serif', 'system-ui', 'sans-serif'],
       },
-      
-   
-      
     },
   },
   plugins: [],

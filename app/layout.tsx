@@ -1,16 +1,18 @@
 import type { Metadata } from 'next'
-import { Inter,Raleway } from 'next/font/google'
-import favicon from "./favicon.ico"
+import { Raleway } from 'next/font/google'
+import favicon from './favicon.ico'
+import MyApp from '@/app/_app'
+import AppHeader from '@/components/ui/AppHeader'
+import Footer from '@/components/footer'
 import './globals.css'
-import  MyApp from '@/app/_app'
 
 const inter = Raleway({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  title: 'AfricInnovate ',
+  title: 'Africinnovate ',
 
-  description: 'AfricInnovate website',
-  icons:`${favicon}`,
+  description: 'Impossible is nonsense',
+  icons: `${favicon}`,
 }
 
 export default function RootLayout({
@@ -20,10 +22,15 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <MyApp/>
-  <link rel="icon" href="favico.ico" type="image/x-icon" />
+      <link rel="icon" href="favico.ico" type="image/x-icon" />
       <body className={inter.className}>
-        {children}</body>
+        <main className="overflow-x-hidden">
+          <AppHeader />
+          {children}
+          <Footer />
+          <MyApp />
+        </main>
+      </body>
     </html>
   )
 }

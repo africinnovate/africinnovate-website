@@ -4,17 +4,17 @@
 @tailwind components;
 @tailwind utilities;
 
-
 @media (prefers-color-scheme: dark) {
   :root {
     --foreground-rgb: 255, 255, 255;
     --background-start-rgb: 0, 0, 0;
     --background-end-rgb: 0, 0, 0;
-    --foundation-blue-darker:#000024;
+    --foundation-blue-darker: #000024;
   }
 }
-#grade{
-  background: radial-gradient(circle, #0f4ca9 -3%, #0946a1 -10%, #000000 109%);}
+#grade {
+  background: radial-gradient(circle, #0f4ca9 -3%, #0946a1 -10%, #000000 109%);
+}
 /* styles/global.css */
 
 /* In your CSS file or global stylesheet */
@@ -24,18 +24,16 @@ body {
 
   color: rgb(var(--foreground-rgb));
   background: var(--foundation-blue-darker, #000024);
-overflow-x: hidden;
-  
+  overflow-x: hidden;
 }
-#card{
+#card {
   grid-gap: 4rem;
 }
-#cardes{
+#cardes {
   grid-gap: 4rem;
 }
-@media (max-width:768px) {
-  
-  #card2{
+@media (max-width: 768px) {
+  #card2 {
     width: 350px;
     display: flex;
     padding: 20px;
@@ -45,11 +43,13 @@ overflow-x: hidden;
     align-items: center;
     padding-bottom: 20px;
   }
-  #card{
-    grid-row-gap:10px ;
+  #card {
+    grid-row-gap: 10px;
   }
-  #body{overflow: hidden;}
-  #card1{
+  #body {
+    overflow: hidden;
+  }
+  #card1 {
     width: 350px;
     display: flex;
     padding: 10px;
@@ -59,78 +59,91 @@ overflow-x: hidden;
     align-items: center;
     padding-bottom: 20px;
   }
-  #cardes{
+  #cardes {
     display: grid;
     align-items: center;
     justify-content: center;
-    grid-row-gap:20px ;
+    grid-row-gap: 20px;
   }
-  #text{width: 350px;}
- 
-body{
-  overflow-x: hidden;
-}
-#border{
-  display: flex;
+  #text {
+    width: 350px;
+  }
+
+  body {
+    overflow-x: hidden;
+  }
+  #border {
+    display: flex;
     padding-top: 2rem;
     height: auto;
     flex-direction: column;
+  }
 }
+#border {
+  box-shadow: inset 1px 1px 20px 18px rgba(236, 232, 232, 0.1);
+  background: radial-gradient(
+    circle at bottom,
+    #0f4ca93d -3%,
+    #0946a1 -10%,
+    #00000000 109%
+  );
 }
-#border{
- box-shadow:  inset 1px 1px 20px 18px rgba(236, 232, 232, 0.1);
- background: radial-gradient(circle at bottom , #0f4ca93d -3%, #0946a1 -10%, #00000000 109%);
+#border:hover {
+  box-shadow: inset 1px 1px 20px 18px rgb(236 232 232 / 22%);
+  transition: box-shadow 1s ease;
 }
-#border:hover{
-  box-shadow:inset 1px 1px 20px 18px rgb(236 232 232 / 22%);;
-  transition: box-shadow 1s ease; 
+#card1:hover {
+  box-shadow: inset 1px 1px 20px 18px rgb(236 232 232 / 22%);
+  transition: box-shadow 1s ease;
 }
-#card1:hover{
-  box-shadow:inset 1px 1px 20px 18px rgb(236 232 232 / 22%);;
-  transition: box-shadow 1s ease; 
+#card2:hover {
+  box-shadow: inset 1px 1px 20px 18px rgb(236 232 232 / 22%);
+  transition: box-shadow 1s ease;
 }
-#card2:hover{
-  box-shadow:inset 1px 1px 20px 18px rgb(236 232 232 / 22%);;
-  transition: box-shadow 1s ease; 
+#card1 {
+  box-shadow: inset 1px 1px 20px 18px rgba(236, 232, 232, 0.1);
+  background: radial-gradient(
+    circle at top right,
+    #0f4ca93d -3%,
+    #0946a1 -10%,
+    #00000000 109%
+  );
 }
-#card1{
-  box-shadow:  inset 1px 1px 20px 18px rgba(236, 232, 232, 0.1);
-  background: radial-gradient(circle at top right , #0f4ca93d -3%, #0946a1 -10%, #00000000 109%);
+#card2 {
+  box-shadow: inset 1px 1px 20px 18px rgba(236, 232, 232, 0.1);
+  background: radial-gradient(
+    circle at top left,
+    #0f4ca93d -3%,
+    #0946a1 -10%,
+    #00000000 109%
+  );
+}
 
-}
-#card2{
-  box-shadow:  inset 1px 1px 20px 18px rgba(236, 232, 232, 0.1);
-  background: radial-gradient(circle at top left , #0f4ca93d -3%, #0946a1 -10%, #00000000 109%);
-
-}
-
-#animationbutton{
-  animation: bounce .4s ease  alternate;
-  animation-iteration-count:1;
+#animationbutton {
+  animation: bounce 0.4s ease alternate;
+  animation-iteration-count: 1;
 }
 @keyframes bounce {
- 
   100% {
-    transform:translateY(-20px);
-   }
+    transform: translateY(-20px);
+  }
 }
-.grid img{
+.grid img {
   width: 100%;
   height: 25rem;
   object-fit: cover;
   border-radius: 1rem;
-  box-shadow: 1px 0.5rem 2rem 5px rgb(0 0 0 / 53%);;
- }
+  box-shadow: 1px 0.5rem 2rem 5px rgb(0 0 0 / 53%);
+}
 
-
-.grid-container{
+.grid-container {
   display: flex;
   width: 40vw;
   height: 30vh;
   gap: 1rem;
 }
 
-.grid{
+.grid {
   display: flex;
   flex-direction: column;
   height: 100%;
@@ -138,16 +151,18 @@ body{
   gap: 1rem;
 }
 
-.grid img{
-object-fit: cover;
+.grid img {
+  object-fit: cover;
 }
 
-.img1, .img4{
+.img1,
+.img4 {
   height: 60%;
   object-fit: cover;
 }
 
-.img3, .img2{
+.img3,
+.img2 {
   height: 20%;
   object-fit: cover;
 }
