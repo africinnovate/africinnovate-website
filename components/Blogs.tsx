@@ -1,4 +1,6 @@
 import Link from 'next/link'
+import RecentBlogPageImage from '../public/img7.png'
+import Image from 'next/image'
 const BlogNewscomponent = () => {
   return (
     <>
@@ -6,9 +8,10 @@ const BlogNewscomponent = () => {
         <div className="flex  mt-7 " data-aos="fade-up">
           <div className="flex flex-col sm:flex-row gap-[48px] max-md:items-center max-md:justify-center ">
             <div className="w-[325px] h-[430px] flex-col justify-start  items-start gap-2 inline-flex">
-              <img
+              <Image
                 className="w-[408px] h-[220px]  max-md:w-[320px] object-cover relative rounded-2xl"
-                src="/img7.png"
+                src={RecentBlogPageImage}
+                alt='Image-for-recents-blogs'
               />
               <div className="text-yellow-400 text-lg font-medium font-['DM Sans']  leading-normal">
                 Technology
@@ -32,9 +35,10 @@ const BlogNewscomponent = () => {
               </div>
             </div>
             <div className="w-[325px] h-[430px] flex-col justify-startitems-start gap-2 inline-flex">
-              <img
+            <Image
                 className="w-[408px] h-[220px]  max-md:w-[320px] object-cover relative rounded-2xl"
-                src="/img7.png"
+                src={RecentBlogPageImage}
+                alt='Image-for-recents-blogs'
               />
               <div className="text-yellow-400 text-lg font-medium font-['DM Sans'] leading-normal">
                 Technology
@@ -58,9 +62,10 @@ const BlogNewscomponent = () => {
               </div>
             </div>
             <div className="w-[325px] h-[430px] flex-col justify-start max-md:justify-center items-start gap-2 inline-flex">
-              <img
+            <Image
                 className="w-[408px] h-[220px]  max-md:w-[320px] object-cover relative rounded-2xl"
-                src="/img7.png"
+                src={RecentBlogPageImage}
+                alt='Image-for-recents-blogs'
               />
               <div className="text-yellow-400 text-lg font-medium font-['DM Sans'] leading-normal">
                 Technology
