@@ -2,12 +2,17 @@
 'use client'
 import Link from 'next/link'
 import { useState } from 'react'
+import Button from './Button'
 
 const AppHeader = () => {
   const [menuOpen, setMenuOpen] = useState(false)
 
   const toggleMenu = () => {
     setMenuOpen(!menuOpen)
+  }
+
+  const test = () => {
+    alert('hello')
   }
   return (
     <nav className="bg-[#000024] flex justify-around  md:shrink-0  max-md:contents">
@@ -33,29 +38,28 @@ const AppHeader = () => {
               fill="white"
             />
           </svg>
-          <div className="text-white font-sans text-[1.625rem] font-medium leading-[1.4375rem]">
+          <div className="text-white font-sans text-[1.625rem] font-medium leading-[1.4375rem] hover:text-[#FFBE0B]">
             <Link href="/"> Africinnovate </Link>
           </div>
         </div>
 
         <div className="inline-flex items-start gap-10  max-md:hidden">
-          <div className=" font-sans text-white font-['DM text-lg font-medium leading-6">
+          <div className=" font-sans text-white font-['DM text-lg font-medium leading-6 hover:text-[#FFBE0B]">
             <Link href="/trainning">Training</Link>
           </div>
-          <div className=" font-sans text-white font-['DM text-lg font-medium leading-6">
+          <div className=" font-sans text-white font-['DM text-lg font-medium leading-6 hover:text-[#FFBE0B]">
             <Link href="/about">About us</Link>
           </div>
-          <div className=" font-sans text-white font-['DM text-lg font-medium leading-6">
+          <div className=" font-sans text-white font-['DM text-lg font-medium leading-6 hover:text-[#FFBE0B]">
             <Link href="/contactus">Contact Us</Link>
           </div>
-          <div className=" font-sans text-white font-['DM text-lg font-medium leading-6">
+          <div className=" font-sans text-white font-['DM text-lg font-medium leading-6 hover:text-[#FFBE0B]">
             <Link href="/blog">Blog</Link>
           </div>
         </div>
         <div className="inline-flex items-start mr-6  max-md:hidden">
-          <div className="flex  w-[200px] items-center gap-2 py-3 px-6 rounded-3xl  hover:bg-[#FFBE0B] bg-[#cccce0] font-sans text-[#006] font-['DM font-medium leading-6">
-            Primary CTA Button
-          </div>
+        
+          <Button onClick={test} children={'Call us'} />
         </div>
         {/* Mobile Menu Toggle */}
         <div className="md:hidden flex items-center">

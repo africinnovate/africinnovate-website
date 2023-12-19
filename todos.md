@@ -1,4 +1,5 @@
-- use nest/image for image tags
+- use next/image for image tags
 - henceforth use single quotes
 - ensure you run prettier before commiting your work
 - use tsx/ts instead
+- Refactor to use button component
