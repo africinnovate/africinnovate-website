@@ -1,12 +1,17 @@
 'use client'
-
+import Image from 'next/image'
+import LaptopPic from '../../public/img1.png'
+import LaptopPicTwo from '../../public/img2.png'
+import LaptopPicThree from '../../public/img3.png'
+import LaptopPicFour from '../../public/img4.png'
+import LaptopPicMain from '../../public/img5.png'
 const AboutSection = () => {
   return (
     <section className="mt-[1rem]">
       <div className="flex items-center justify-center mt-3 "></div>
       <div className="w-full h-[600px] flex  flex-row justify-around items-start mt-[100px] pt-[5rem] max-md:flex-col max-md:justify-center max-md:items-center">
         <div
-          className="  min-w-[401px] text-start flex justify-start flex-col mt-[5rem] ml-[50px] max-md:ml-[68px]  max-md:mt-[20rem]"
+          className="  min-w-[401px] text-start flex justify-start flex-col mt-[5rem]  max-md:ml-[68px]  max-md:mt-[20rem]"
           data-aos="fade-right"
         >
           {/* <div className="Ellipse2 w-80 h-80 opacity-80  bg-blue-600 absolute left-[74%] top-[170%] rounded-full blur-[130px]" /> */}
@@ -34,23 +39,23 @@ const AboutSection = () => {
 
         <div className="grid-container">
           <div className="grid">
-            <img
+            <Image
               className="img1"
-              src="/img1.png"
+              src={LaptopPic}
               data-aos="fade-down-right"
-              alt=""
+              alt="ImageOne"
             />
-            <img
+            <Image
               className="img2"
-              src="/img2.png"
+              src={LaptopPicTwo}
               data-aos="fade-right"
-              alt=""
+              alt="imagetwo"
             />
           </div>
 
           <div className="grid">
-            <img className="img3" src="/img3.png" data-aos="fade-down" alt="" />
-            <img className="img4" src="/img4.png" data-aos="fade-up" alt="" />
+            <Image className="img3" src={LaptopPicThree} data-aos="fade-down" alt="imagethree" />
+            <Image className="img4" src={LaptopPicFour} data-aos="fade-up" alt="imagefour" />
           </div>
         </div>
       </div>
@@ -68,7 +73,7 @@ const AboutSection = () => {
             id="card"
             className=" flex flex-wrap gap-4 md:grid md:grid-cols-3 lg:grid-cols-3 mt-[2rem] mx-7  "
           >
-            <div className="flex-shrink-0 w-[330px] pl-5 pt-2 h-[13.5rem] rounded-2xl items-center justify-center transition duration-500 hover:bg-[#00388D] hover:shadow-lg hover:border-2 border-solid border-[#b0cdf9]  max-md:hover:w-[300px] max-md:hover:ml-[5px] max-md:p-[9px] group">
+            <div className="flex-shrink-0 w-[360px] pl-5 pt-2 h-[13.5rem] rounded-2xl items-center justify-center transition duration-500 hover:bg-[#00388D] hover:shadow-lg hover:border-2 border-solid border-[#b0cdf9]  max-md:hover:w-[300px] max-md:hover:ml-[5px] max-md:p-[9px] group">
               <div className="flex-shrink-0 w-12 h-12 rounded-full bg-white/[.10] flex items-center justify-center">
                 {' '}
                 <svg
@@ -172,7 +177,7 @@ const AboutSection = () => {
                 comfort meets functionality for optimal productivity.
               </div>
             </div>
-            <div className="flex-shrink-0 w-[370px] pl-5 pt-2 h-[13.5rem] rounded-2xl items-center justify-center transition duration-500 hover:bg-[#00388D] hover:shadow-lg hover:border-2 border-solid border-[#b0cdf9]   max-md:hover:w-[300px] max-md:hover:ml-[5px] max-md:p-[9px] group">
+            <div className="flex-shrink-0 w-[370px] pl-5 pt-2 h-[13.5rem] rounded-2xl items-center justify-center transition duration-500 hover:bg-[#00388D] hover:shadow-lg hover:border-2 border-solid border-[#b0cdf9]  max-md:h-[14.5rem] max-md:hover:w-[300px] max-md:hover:ml-[5px] max-md:p-[9px] group">
               <div className="flex-shrink-0 w-12 h-12 rounded-full bg-white/[.10] flex items-center justify-center">
                 {' '}
                 <svg
@@ -206,7 +211,7 @@ const AboutSection = () => {
               </div>
             </div>
 
-            <div className="flex-shrink-0 w-[330px] pl-5 pt-2 h-[13.5rem] rounded-2xl items-center justify-center transition duration-300 hover:bg-[#00388D] hover:max-md:pb-5 hover:shadow-lg hover:border-2 border-solid border-[#b0cdf9] max-md:hover:w-[300px] max-md:hover:ml-[5px] max-md:p-[9px]  group ">
+            <div className="flex-shrink-0 w-[330px] pl-5 pt-2 h-[13.5rem] rounded-2xl items-center justify-center transition duration-300 hover:bg-[#00388D] hover:max-md:pb-5 hover:shadow-lg hover:border-2 border-solid border-[#b0cdf9] max-md:w-[300px] max-md:hover:ml-[5px] max-md:p-[9px] max-md:h-[17.5rem] group ">
               <div className="flex-shrink-0 w-12 h-12 rounded-full bg-white/[.10] flex items-center justify-center">
                 {' '}
                 <svg
@@ -241,7 +246,7 @@ const AboutSection = () => {
                 compromising quality.
               </div>
             </div>
-            <div className="flex-shrink-0 w-[330px]  hover:max-md:w-[300px] hover:max-md:mb-3 pl-5 pt-2 h-[13.5rem] rounded-2xl items-center justify-center transition duration-500 hover:bg-[#00388D] hover:shadow-lg hover:border-2 border-solid border-[#b0cdf9] group">
+            <div className="flex-shrink-0 w-[330px]  hover:max-md:w-[300px] hover:max-md:mb-3 pl-5 pt-2 h-[13.5rem] max-md:h-[16.5rem] rounded-2xl items-center justify-center transition duration-500 hover:bg-[#00388D] hover:shadow-lg hover:border-2 border-solid border-[#b0cdf9] max-md:h-[18.5rem]group">
               <div className="flex-shrink-0 w-12 h-12 rounded-full bg-white/[.10] flex items-center justify-center transition duration-500 hover:bg-[#00388D]">
                 <svg
                   width={20}
@@ -267,7 +272,7 @@ const AboutSection = () => {
               <div className="Sans'] text-white font-['DM text-lg font-medium leading-6 mt-2">
                 Home to Startups
               </div>
-              <div className="Sans'] w-[21.5rem] text-[#b0b0d0] font-['DM font-medium mt-2 max-md:w-[18.5rem] max-md:mr-6  max-md:pr-9">
+              <div className="Sans'] w-[19.5rem] text-[#b0b0d0] font-['DM font-medium mt-2 max-md:w-[18.5rem] max-md:mr-6  max-md:pr-9">
                 Experience the best of both worlds with our swift and efficient
                 delivery services, ensuring your products reach you fast without
                 compromising quality.
@@ -308,8 +313,8 @@ const AboutSection = () => {
           </div>
           <div className=" " />
 
-          <img
-            src="/img5.png"
+          <Image
+            src={LaptopPicMain}
             alt="Description of the image"
             className="w-full h-full object-cover"
           />
