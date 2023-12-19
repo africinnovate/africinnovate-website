@@ -1,8 +1,6 @@
-
 'use client'
 
 const AboutSection = () => {
-
   return (
     <section className="mt-[1rem]">
       <div className="flex items-center justify-center mt-3 "></div>
@@ -99,8 +97,10 @@ const AboutSection = () => {
               <div className="Sans'] text-white font-['DM text-lg font-medium leading-6 mt-2">
                 Reliable high-speed internet
               </div>
-              <div className="Sans'] w-[20.5rem] text-[#b0b0d0] font-['DM font-medium leading-6 mt-2  max-md:w-[19rem]">
-              Experience seamless connectivity with our lightning-fast, reliable internet, ensuring you stay in the flow of productivity.
+              <div className="Sans'] w-[20.5rem] text-[#b0b0d0] font-['DM font-medium leading-6 mt-2">
+                Experience seamless connectivity with our lightning-fast,
+                reliable internet, ensuring you stay in the flow of
+                productivity.
               </div>
             </div>
 
@@ -133,7 +133,9 @@ const AboutSection = () => {
                 Top Notch Designs
               </div>
               <div className="Sans'] w-[21.5rem] text-[#b0b0d0] font-['DM font-medium leading-6 mt-2 max-md:w-[300px] max-md:mr-5 max-md:hover:m\pr-9">
-              Immerse yourself in creativity with our top-notch designs, crafted to elevate your experience and leave a lasting impression.
+                Immerse yourself in creativity with our top-notch designs,
+                crafted to elevate your experience and leave a lasting
+                impression.
               </div>
             </div>
             <div className="flex-shrink-0w-[330px] pl-5 pt-2 h-[13.5rem] rounded-2xl items-center justify-center transition duration-500 hover:bg-[#00388D] hover:shadow-lg hover:border-2 border-solid border-[#b0cdf9]  max-md:hover:w-[300px] max-md:hover:ml-[5px]  group">
@@ -166,7 +168,8 @@ const AboutSection = () => {
                 Conducive Work Space
               </div>
               <div className="Sans'] w-[280px] text-[#b0b0d0] font-['DM font-medium leading-6 max-md:w-[300px] max-md:mr-6  max-md:hover:pr-9">
-              Foster innovation in our thoughtfully designed workspaces, where comfort meets functionality for optimal productivity.
+                Foster innovation in our thoughtfully designed workspaces, where
+                comfort meets functionality for optimal productivity.
               </div>
             </div>
             <div className="flex-shrink-0 w-[370px] pl-5 pt-2 h-[13.5rem] rounded-2xl items-center justify-center transition duration-500 hover:bg-[#00388D] hover:shadow-lg hover:border-2 border-solid border-[#b0cdf9]   max-md:hover:w-[300px] max-md:hover:ml-[5px] max-md:p-[9px] group">
@@ -196,8 +199,10 @@ const AboutSection = () => {
               <div className="Sans'] text-white font-['DM text-lg font-medium leading-6 mt-2">
                 Community Friendly
               </div>
-              <div className="Sans'] w-[18.5rem] text-[#b0b0d0] font-['DM font-medium leading-6 mt-2  max-md:h-[350px] max-md:mr-6  ">
-              Join a vibrant community that thrives on collaboration, networking, and shared experiences, making work feel like a community endeavor.
+              <div className="Sans'] w-[21.5rem] text-[#b0b0d0] font-['DM font-medium leading-6 mt-2 max-md:w-[300px] max-md:mr-6  max-md:hover:pr-9">
+                Join a vibrant community that thrives on collaboration,
+                networking, and shared experiences, making work feel like a
+                community endeavor.
               </div>
             </div>
 
@@ -230,8 +235,10 @@ const AboutSection = () => {
               <div className="Sans'] text-white font-['DM text-lg font-medium leading-6 mt-2">
                 Fast and Quality Product Delivery
               </div>
-              <div className="Sans'] w-[18.5rem] text-[#b0b0d0] font-['DM font-medium leading-6 mt-2 max-md:w-[290px] max-md:mr-6  ">
-              Experience the best of both worlds with our swift and efficient delivery services, ensuring your products reach you fast without compromising quality.
+              <div className="Sans'] w-[18.5rem] text-[#b0b0d0] font-['DM font-medium leading-6 mt-2 max-md:w-[300px] max-md:mr-6  max-md:pr-5">
+                Experience the best of both worlds with our swift and efficient
+                delivery services, ensuring your products reach you fast without
+                compromising quality.
               </div>
             </div>
             <div className="flex-shrink-0 w-[330px]  hover:max-md:w-[300px] hover:max-md:mb-3 pl-5 pt-2 h-[13.5rem] max-md:h-[16.5rem] rounded-2xl items-center justify-center transition duration-500 hover:bg-[#00388D] hover:shadow-lg hover:border-2 border-solid border-[#b0cdf9] max-md:h-[18.5rem]group">
@@ -260,8 +267,10 @@ const AboutSection = () => {
               <div className="Sans'] text-white font-['DM text-lg font-medium leading-6 mt-2">
                 Home to Startups
               </div>
-              <div className="Sans'] w-[18.5rem] text-[#b0b0d0] font-['DM font-medium mt-2 max-md:w-[16.5rem]  max-md:mr-6  ">
-              Experience the best of both worlds with our swift and efficient delivery services, ensuring your products reach you fast without compromising quality.
+              <div className="Sans'] w-[21.5rem] text-[#b0b0d0] font-['DM font-medium mt-2 max-md:w-[18.5rem] max-md:mr-6  max-md:pr-9">
+                Experience the best of both worlds with our swift and efficient
+                delivery services, ensuring your products reach you fast without
+                compromising quality.
               </div>
             </div>
           </div>
@@ -285,7 +294,9 @@ const AboutSection = () => {
               Software Solutions
             </div>
             <div className="Sans'] w-[451px] text-[#d9d9e8] font-['DM font-medium leading-6 max-md:w-[272px]">
-            Unlock the power of cutting-edge technology with our bespoke software and blockchain solutions tailored to meet the unique demands of your business, ensuring efficiency and innovation.
+              Unlock the power of cutting-edge technology with our bespoke
+              software and blockchain solutions tailored to meet the unique
+              demands of your business, ensuring efficiency and innovation.
             </div>
             <div className="justify-start items-start inline-flex">
               <div className="px-6 py-3 bg-slate-300 rounded-3xl justify-start items-center gap-2 flex mt-10 max-md:mt-[2] mb-5">
@@ -317,7 +328,10 @@ const AboutSection = () => {
                 Training
               </div>
               <div className="w-[541px] text-zinc-200 text-base font-medium font-['DM Sans'] leading-normal max-md:w-auto">
-              Invest in your future with our comprehensive training programs, equipping you with the skills and knowledge needed to excel in the ever-evolving world of technology. Empower yourself with Africinnovate's transformative education.
+                Invest in your future with our comprehensive training programs,
+                equipping you with the skills and knowledge needed to excel in
+                the ever-evolving world of technology. Empower yourself with
+                Africinnovate's transformative education.
               </div>
               <div className="justify-start items-start inline-flex">
                 <div className="px-6 py-3 bg-slate-300 rounded-3xl justify-start items-center gap-2 flex">
@@ -339,9 +353,8 @@ const AboutSection = () => {
               </div>
               <div className="w-[541px] text-zinc-200 text-base font-medium font-['DM Sans'] leading-normal mr-[30px] max-md:w-auto">
                 Our Office Space is designed with you in mind. Uninterrupted
-                light and internet at affordable rate.
-                We offer flexible package to accommodate Students and Corp
-                members
+                light and internet at affordable rate. We offer flexible package
+                to accommodate Students and Corp members
               </div>
               <div className="justify-start items-start inline-flex">
                 <div className="px-6 py-3 bg-slate-300 rounded-3xl justify-start items-center gap-2 flex">
@@ -354,7 +367,6 @@ const AboutSection = () => {
           </div>
         </div>
         {/* blog page */}
-        
       </div>
 
       {/* two boxes */}
