@@ -1,5 +1,4 @@
-// components/Footer.js
-import Link from 'next/link'
+
 
 const Footer = () => {
   return (
@@ -8,11 +7,11 @@ const Footer = () => {
         <div className="w-full   flex items-start justify-start  flex-col sm:w-1/2 md:w-1/3 lg:w-1/3 xl:w-1/3 px-4 mb-4">
           <div className="flex items-center justify-center">
             <div className="w-[45.41px] h-[23.49px] relative">
-              <img
+              {/* <img
                 src="/logo-2.png"
                 alt="Description of the image"
                 className="w-full h-full object-cover"
-              />
+              /> */}
             </div>{' '}
             <div className="text-white text-[26.10px] font-medium font-['Raleway'] leading-normal">
               Africinnovate
@@ -27,32 +26,32 @@ const Footer = () => {
             <li>
               <div className=" flex gap-2 mt-5" id="social-icons">
                 <div className="w-6 h-6 relative">
-                  <img
+                  {/* <img
                     src="/facebook.png"
                     alt="Description of the image"
                     className="w-full h-full object-cover"
-                  />
+                  /> */}
                 </div>
                 <div className="w-6 h-6 relative">
-                  <img
+                  {/* <img
                     src="/instagram.png"
                     alt="Description of the image"
                     className="w-full h-full object-cover"
-                  />
+                  /> */}
                 </div>
                 <div className="w-6 h-6 relative">
-                  <img
+                  {/* <img
                     src="/linkedin.png"
                     alt="Description of the image"
                     className="w-full h-full object-cover"
-                  />
+                  /> */}
                 </div>
                 <div className="w-6 h-6 relative">
-                  <img
+                  {/* <img
                     src="/twitter.png"
                     alt="Description of the image"
                     className="w-full h-full object-cover"
-                  />
+                  /> */}
                 </div>
               </div>
             </li>
@@ -71,11 +70,11 @@ const Footer = () => {
             <li>
               <div className="flex mt-3 ">
                 <div className="w-6 h-6 relative">
-                  <img
+                  {/* <img
                     src="/email.png"
                     alt="Description of the image"
                     className="w-full h-full object-cover"
-                  />
+                  /> */}
                 </div>
                 <div className="text-white text-base ml-2  font-medium font-['DM Sans'] leading-normal">
                   Info@africinnovate.com
@@ -85,11 +84,11 @@ const Footer = () => {
             <li>
               <div className="flex mt-3 ">
                 <div className="w-6 h-6 relative">
-                  <img
+                  {/* <img
                     src="/phone.png"
                     alt="Description of the image"
                     className="w-full h-full object-cover"
-                  />
+                  /> */}
                 </div>
                 <div className="text-white text-base ml-2  font-medium font-['DM Sans'] leading-normal">
                   +234 815 886 8727
@@ -99,11 +98,11 @@ const Footer = () => {
             <li>
               <div className="flex items-center    ml-1 mt-3 ">
                 <div className="w-6 h-6 relative justify-center items-center">
-                  <img
+                  {/* <img
                     src="/vector2.png"
                     alt="Description of the image"
                     className=" h-full object-cover"
-                  />
+                  /> */}
                 </div>
                 <div className="w-[180px] text-white text-base font-medium font-['DM Sans'] leading-normal  mt-1 ml-2">
                   16, Uqua Road, Eket

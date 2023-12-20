@@ -6,10 +6,10 @@ function MainBlog() {
       <>
         <div className="flex items-center justify-center flex-col">
           <div className="w-[1000px] h-[500px] object-contain mt-8 max-md:w-auto ">
-            <img
+            {/* <img
               className=" w-full h-full max-md:w-[320px] object-cover rounded-2xl"
               src="/img-8.png"
-            />
+            /> */}
           </div>
           <div className="w-[1010px] text-white  mt-9 font-['Raleway'] text-5xl font-bold leading-[64px] max-md:w-auto max-md:ml-3">
             This space is for the Blog Title
