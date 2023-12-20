@@ -1,4 +1,3 @@
-
 import RecentBlogPageImage from '../public/img7.png'
 import Image from 'next/image'
 const BlogNewscomponent = () => {

@@ -1,10 +1,12 @@
-'use client'
+
 import Image from 'next/image'
-import LaptopPic from '../../public/img1.png'
-import LaptopPicTwo from '../../public/img2.png'
-import LaptopPicThree from '../../public/img3.png'
-import LaptopPicFour from '../../public/img4.png'
-import LaptopPicMain from '../../public/img5.png'
+import LaptopPic from '@/public/img1.png'
+import LaptopPicTwo from '@/public/img2.png'
+import LaptopPicThree from '@/public/img3.png'
+import LaptopPicFour from '@/public/img4.png'
+import LaptopPicMain from '@/public/img5.png'
+import Button from './Button'
+
 const AboutSection = () => {
   return (
     <section className="mt-[1rem]">
@@ -22,18 +24,12 @@ const AboutSection = () => {
             Who are we?
           </div>
           <div className="w-[541px] text-zinc-200 text-base font-medium font-sans leading-normal max-md:w-[350px]  max-md:px-[px] max-md:text-[15.5px]">
-            A paragraph of text describing Africinnovate.A paragraph of text
-            describing Africinnovate. A paragraph of text describing
-            Africinnovate. A paragraph of text describing Africinnovate. A
-            paragraph of text describing Africinnovate. A paragraph of text
-            describing Africinnovate.
+            We are Africinnovate Technologies, empowering Africans through cutting-edge tech education. Our mission is to equip youth with essential skills for success. 
+            As a premier training organization, we envision universal access to top-tier tech education, fostering excellence, innovation, and social change.
           </div>
           <div className="justify-start items-start inline-flex">
-            <div className="px-6 py-3 bg-slate-300 rounded-3xl justify-start items-center gap-2 flex mt-10 max-md:mt-[2] mb-5">
-              <div className="text-blue-950 text-base font-medium font-sans leading-normal ">
-                Learn more
-              </div>
-            </div>
+            <Button className="mt-6 max-md:mt-[2] mb-5">Learn More</Button>
+         
           </div>
         </div>
 

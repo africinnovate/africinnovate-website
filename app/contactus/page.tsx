@@ -143,5 +143,5 @@ export default function ContactUs() {
       </form>
       <div className="Ellipse1 w-96 h-96 opacity-80 z-10 bg-blue-600 rounded-full blur-[190px] absolute left-[60%] bottom-[5%]  max-md:hidden" />
     </div>
-  ) 
+  )
 }
