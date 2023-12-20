@@ -1,5 +1,6 @@
 import RecentBlogPageImage from '../public/img7.png'
 import Image from 'next/image'
+import Button from './ui/Button'
 const BlogNewscomponent = () => {
   return (
     <>
@@ -25,13 +26,7 @@ const BlogNewscomponent = () => {
                 Lorem ipsum dolor sit amet consectetur. Aliquam dolor varius
                 nunc morbi non. Elementum curabitur massa pharetra urna...
               </div>
-              <div className="justify-start items-start inline-flex">
-                <div className="px-6 py-3 bg-neutral-300 bg-opacity-0 rounded-3xl border border-slate-300 justify-center items-center gap-2 flex">
-                  <div className="text-slate-300 text-base font-medium font-['DM Sans'] leading-normal">
-                    Read More
-                  </div>
-                </div>
-              </div>
+              <Button>Read More</Button>
             </div>
             <div className="w-[325px] h-[430px] flex-col justify-startitems-start gap-2 inline-flex">
               <Image
@@ -52,13 +47,7 @@ const BlogNewscomponent = () => {
                 Lorem ipsum dolor sit amet consectetur. Aliquam dolor varius
                 nunc morbi non. Elementum curabitur massa pharetra urna...
               </div>
-              <div className="justify-start items-start inline-flex">
-                <div className="px-6 py-3 bg-neutral-300 bg-opacity-0 rounded-3xl border border-slate-300 justify-center items-center gap-2 flex">
-                  <div className="text-slate-300 text-base font-medium font-['DM Sans'] leading-normal">
-                    Read More
-                  </div>
-                </div>
-              </div>
+              <Button>Read More</Button>
             </div>
             <div className="w-[325px] h-[430px] flex-col justify-start max-md:justify-center items-start gap-2 inline-flex">
               <Image
@@ -79,13 +68,7 @@ const BlogNewscomponent = () => {
                 Lorem ipsum dolor sit amet consectetur. Aliquam dolor varius
                 nunc morbi non. Elementum curabitur massa pharetra urna...
               </div>
-              <div className="justify-start items-start inline-flex">
-                <div className="px-6 py-3 bg-neutral-300 bg-opacity-0 rounded-3xl border border-slate-300 justify-center items-center gap-2 flex">
-                  <div className="text-slate-300 text-base font-medium font-['DM Sans'] leading-normal">
-                    Read More
-                  </div>
-                </div>
-              </div>
+              <Button>Read More</Button>
             </div>
           </div>
         </div>
