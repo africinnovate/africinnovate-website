@@ -8,7 +8,7 @@ export default function ContactUs() {
   const [selectCourse, setSelectCourse] = useState('Select course')
   const [yourMessage, setYourMessage] = useState('')
 
-  const handleSubmit = (e) => {
+  const handleSubmit = (e: { preventDefault: () => void }) => {
     e.preventDefault()
 
     // Handle form submission logic here
