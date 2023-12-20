@@ -11,8 +11,7 @@ const Blog = () => {
         <Image
           className="w-[500px] h-[440px]   mt-[25px] max-md:mr-[54px] max-md:h-[322px] max-md:w-[350px] max-md:mt-[21px] object-cover relative rounded-2xl"
           data-aos="fade-up"
-          data-aos-duration="1200"
-          data-aos-delay="700"
+        
           src={BlogImage}
           alt="blog-page-image"
         />
@@ -21,8 +20,7 @@ const Blog = () => {
         <div
           className="w-[578px] h-[400px] flex-col justify-start items-start gap-4 inline-flex mt-[5px] "
           data-aos="fade-up"
-          data-aos-duration="1200"
-          data-aos-delay="700"
+          
         >
           <div className="text-yellow-400 text-lg font-medium font-['DM Sans'] leading-normal">
             Training
