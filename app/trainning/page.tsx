@@ -1,8 +1,6 @@
 'use client'
 
 const Trainingcomponent = () => {
- 
-
   return (
     <section className="mt-[4.5rem]">
       <div className="flex justify-center items-center flex-col  mt-4 max-md:mt-1">

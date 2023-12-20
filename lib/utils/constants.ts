@@ -4,5 +4,6 @@ export const HERO_TEXTS = [
   'DevOps Engrs.',
   'Data Analysts',
   'Dreamers',
-  'Doers'
+  'Doers',
+  'Web3 Devs.'
 ]
