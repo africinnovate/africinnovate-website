@@ -58,7 +58,7 @@ const AppHeader = () => {
           </div>
         </div>
         <div className="inline-flex items-start mr-6  max-md:hidden">
-          <Button onClick={test} children={'Call us'} />
+          <Button onClick={test}>Call Us</Button>
         </div>
         {/* Mobile Menu Toggle */}
         <div className="md:hidden flex items-center">
