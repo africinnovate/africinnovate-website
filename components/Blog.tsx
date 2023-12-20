@@ -11,7 +11,7 @@ const Blog = () => {
           data-aos-duration="1200"
           data-aos-delay="700"
           src={BlogImage}
-          alt='blog-page-image'
+          alt="blog-page-image"
         />
       </div>
       <div className=" max-md:w-[400px]">
