@@ -5,5 +5,5 @@ export const HERO_TEXTS = [
   'Data Analysts',
   'Dreamers',
   'Doers',
-  'Web3 Devs.'
+  'Web3 Devs.',
 ]
