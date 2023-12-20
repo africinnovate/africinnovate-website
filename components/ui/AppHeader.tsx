@@ -67,20 +67,9 @@ const AppHeader = () => {
             className="text-white focus:outline-none"
           >
             {menuOpen ? (
-              <svg
-                width={30}
-                height={30}
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                {/* SVG for 'X' icon */}
-                <path
-                  fillRule="evenodd"
-                  clipRule="evenodd"
-                  d="M5.70711 5.70711C5.31658 6.09763 4.68342 6.09763 4.29289 5.70711C3.90237 5.31658 3.90237 4.68342 4.29289 4.29289C4.68342 3.90237 5.31658 3.90237 5.70711 4.29289C6.09763 4.68342 6.09763 5.31658 5.70711 5.70711ZM15 14.9999L4.29289 5.70711C3.90237 5.31658 3.90237 4.68342 4.29289 4.29289C4.68342 3.90237 5.31658 3.90237 5.70711 4.29289L15 14.9999ZM4.29289 15.7071C3.90237 15.3166 3.90237 14.6834 4.29289 14.2929C4.68342 13.9024 5.31658 13.9024 5.70711 14.2929L16.4142 24L15 25.4142L4.29289 15.7071ZM16.4142 24L27.1213 14.2929C27.5118 13.9024 28.145 13.9024 28.5355 14.2929C28.926 14.6834 28.926 15.3166 28.5355 15.7071L17.8284 25.4142L16.4142 24Z"
-                  fill="white"
-                />
-              </svg>
+         <svg xmlns="http://www.w3.org/2000/svg" width="26" height="36" fill="currentColor"  className="bi bi-x" viewBox="0 0 16 16">
+         <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708"/>
+       </svg>
             ) : (
               <svg
                 width={30}
@@ -104,7 +93,7 @@ const AppHeader = () => {
       {/* Mobile menu */}
       {menuOpen && (
         <div
-          className={`md:hidden max-md:absolute max-md:h-[100%] max-md:w-[100%] max-md:z-[30] max-md:justify-center max-md:gap-[50px] bg-gray-800 text-white flex flex-col items-center transition-all duration-500 ${
+          className={` bg-[#000024] md:hidden max-md:absolute max-md:h-[100%] max-md:w-[100%] max-md:z-[30] max-md:justify-center max-md:gap-[50px]  text-white flex flex-col items-center transition-all duration-500 ${
             menuOpen
               ? 'clip-path-[polygon(0 0, 100% 0, 100% 100%, 0 80%)]'
               : 'clip-path-[polygon(0 0, 100% 0, 100% 100%, 0 0)]'

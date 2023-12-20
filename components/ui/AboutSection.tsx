@@ -1,11 +1,12 @@
 
 import Image from 'next/image'
-import LaptopPic from '@/public/img1.png'
-import LaptopPicTwo from '@/public/img2.png'
-import LaptopPicThree from '@/public/img3.png'
-import LaptopPicFour from '@/public/img4.png'
+import LaptopPic from '@/public/Images/Masonary-Imageone.svg'
+import LaptopPicTwo from '@/public/Images/Masonary-ImageTwo.svg'
+import LaptopPicThree from '@/public/Images/Masonary-ImageThree.svg'
+import LaptopPicFour from '@/public/Images/Masonary-ImageFour.svg'
 import LaptopPicMain from '@/public/img5.png'
 import Button from './Button'
+import Blog from '../Blog'
 
 const AboutSection = () => {
   return (
@@ -33,7 +34,7 @@ const AboutSection = () => {
           </div>
         </div>
 
-        <div className="grid-container">
+        <div className="flex w-[40vw] h-[30vh] gap-[1rem] max-md:w-[83vw] max-md:h-[66vh] max-md:gap-[1rem] max-md:mt-[20%]">
           <div className="grid">
             <Image
               className="img1"
@@ -108,7 +109,7 @@ const AboutSection = () => {
               <div className="Sans'] text-white font-['DM text-lg font-medium leading-6 mt-2">
                 Reliable high-speed internet
               </div>
-              <div className="Sans'] w-[20.5rem] text-[#b0b0d0] font-['DM font-medium leading-6 mt-2">
+              <div className="Sans'] w-[20.5rem] max-md:w-[17.5rem] text-[#b0b0d0] font-['DM font-medium leading-6 mt-2">
                 Experience seamless connectivity with our lightning-fast,
                 reliable internet, ensuring you stay in the flow of
                 productivity.
@@ -379,7 +380,6 @@ const AboutSection = () => {
         </div>
         {/* blog page */}
       </div>
-
       {/* two boxes */}
     </section>
   )

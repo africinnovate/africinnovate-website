@@ -1,13 +1,13 @@
 import Link from 'next/link'
 import Image from 'next/image'
-import BlogImage from '../public/img6.png'
+import BlogImage from '../public/Images/BlogImage.svg'
 const Blog = () => {
   return (
-    <div className="w-[1200px] h-[427px] flex flex-row    items-center justify-center mt-[20px] ml-[83px]  max-md:ml-[50px] max-md:flex-col max-md:justify-center max-md:items-center gap-[30px]  max-md:mt-[10rem]">
+    <div className="w-[1200px] max-md:w-[400px] h-[427px] flex flex-row    items-center justify-center mt-[20px] ml-[83px]  max-md:ml-[50px] max-md:flex-col max-md:justify-center max-md:items-center gap-[30px]  max-md:mt-[10rem]">
       <div className="mt-[20px]">
         <Image
           className="w-[500px] h-[440px]   mt-[25px] max-md:mr-[54px] max-md:h-[322px] max-md:w-[350px] max-md:mt-[21px] object-cover relative rounded-2xl"
-          data-aos="fade-right"
+          data-aos="fade-up"
           data-aos-duration="1200"
           data-aos-delay="700"
           src={BlogImage}
@@ -17,7 +17,7 @@ const Blog = () => {
       <div className=" max-md:w-[400px]">
         <div
           className="w-[578px] h-[400px] flex-col justify-start items-start gap-4 inline-flex mt-[5px] "
-          data-aos="fade-left"
+          data-aos="fade-up"
           data-aos-duration="1200"
           data-aos-delay="700"
         >

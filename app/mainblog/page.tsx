@@ -1,14 +1,13 @@
 'use client'
-
+import Image from 'next/image'
+import BlogPageImage from '@/public/img7.png'
 function MainBlog() {
   return (
     <>
       <div className="flex items-center justify-center flex-col">
         <div className="w-[1000px] h-[500px] object-contain mt-8 max-md:w-auto ">
-          {/* <img
-              className=" w-full h-full max-md:w-[320px] object-cover rounded-2xl"
-              src="/img-8.png"
-            /> */}
+          <Image alt='Blog-Image-News' className=" w-full h-full max-md:w-[320px] object-cover rounded-2xl"
+              src={BlogPageImage} />
         </div>
         <div className="w-[1010px] text-white  mt-9 font-['Raleway'] text-5xl font-bold leading-[64px] max-md:w-auto max-md:ml-3">
           This space is for the Blog Title

@@ -1,15 +1,24 @@
+import Image from 'next/image'
+import AfricInnovateLogo from '../public/svg-icons/Africinnovate.svg'
+import FaceBook from '../public/svg-icons/facebook.svg'
+import Instagram from '../public/svg-icons/instagram.svg'
+import  LinkedIn from '../public/svg-icons/linkedin.svg'
+import  Twitter from '../public/svg-icons/twitter.svg'
+import Contact from '../public/svg-icons/call-us.svg'
+import Location from '../public/svg-icons/location.svg'
+import Mail from '../public/svg-icons/email.svg'
 const Footer = () => {
   return (
-    <footer className=" z-20 ml-[6.5rem] max-md:pl-[0px]   mt-9   text-white py-8 justify-center items-center  flex">
+    <footer className=" z-20 max-md:flex-col ml-[6.5rem] max-md:ml-[2.5rem] max-md:pl-[0px]   mt-9   text-white py-8 justify-center items-center  flex">
       {/* Column 1 */}
       <div className="w-full   flex items-start justify-start  flex-col sm:w-1/2 md:w-1/3 lg:w-1/3 xl:w-1/3 px-4 mb-4">
         <div className="flex items-center justify-center">
           <div className="w-[45.41px] h-[23.49px] relative">
-            {/* <img
-                src="/logo-2.png"
-                alt="Description of the image"
+            <Image
+                src={AfricInnovateLogo}
+                alt="AfricInnovate-Logo"
                 className="w-full h-full object-cover"
-              /> */}
+              />
           </div>{' '}
           <div className="text-white text-[26.10px] font-medium font-['Raleway'] leading-normal">
             Africinnovate
@@ -24,32 +33,32 @@ const Footer = () => {
           <li>
             <div className=" flex gap-2 mt-5" id="social-icons">
               <div className="w-6 h-6 relative">
-                {/* <img
-                    src="/facebook.png"
-                    alt="Description of the image"
+                <Image
+                    src={FaceBook}
+                    alt="facebook-logo"
                     className="w-full h-full object-cover"
-                  /> */}
+                  /> 
               </div>
               <div className="w-6 h-6 relative">
-                {/* <img
-                    src="/instagram.png"
-                    alt="Description of the image"
+                <Image
+                    src={Instagram}
+                    alt="Instagram"
                     className="w-full h-full object-cover"
-                  /> */}
+                  />
               </div>
               <div className="w-6 h-6 relative">
-                {/* <img
-                    src="/linkedin.png"
-                    alt="Description of the image"
+                <Image
+                    src={LinkedIn}
+                    alt="LinkedIn-Logo"
                     className="w-full h-full object-cover"
-                  /> */}
+                  />
               </div>
               <div className="w-6 h-6 relative">
-                {/* <img
-                    src="/twitter.png"
-                    alt="Description of the image"
+                <Image
+                    src={Twitter}
+                    alt="twitter-logo"
                     className="w-full h-full object-cover"
-                  /> */}
+                  />
               </div>
             </div>
           </li>
@@ -68,11 +77,11 @@ const Footer = () => {
           <li>
             <div className="flex mt-3 ">
               <div className="w-6 h-6 relative">
-                {/* <img
-                    src="/email.png"
-                    alt="Description of the image"
+                <Image
+                    src={Mail}
+                    alt="mail-com"
                     className="w-full h-full object-cover"
-                  /> */}
+                  />
               </div>
               <div className="text-white text-base ml-2  font-medium font-['DM Sans'] leading-normal">
                 Info@africinnovate.com
@@ -82,11 +91,11 @@ const Footer = () => {
           <li>
             <div className="flex mt-3 ">
               <div className="w-6 h-6 relative">
-                {/* <img
-                    src="/phone.png"
-                    alt="Description of the image"
+                <Image
+                    src={Contact}
+                    alt="contact-mail"
                     className="w-full h-full object-cover"
-                  /> */}
+                  />
               </div>
               <div className="text-white text-base ml-2  font-medium font-['DM Sans'] leading-normal">
                 +234 815 886 8727
@@ -96,11 +105,11 @@ const Footer = () => {
           <li>
             <div className="flex items-center    ml-1 mt-3 ">
               <div className="w-6 h-6 relative justify-center items-center">
-                {/* <img
-                    src="/vector2.png"
+                <Image
+                    src={Location}
                     alt="Description of the image"
                     className=" h-full object-cover"
-                  /> */}
+                  />
               </div>
               <div className="w-[180px] text-white text-base font-medium font-['DM Sans'] leading-normal  mt-1 ml-2">
                 16, Uqua Road, Eket
