@@ -1,4 +1,3 @@
-
 import Image from 'next/image'
 import LaptopPic from '@/public/Images/Masonary-Imageone.svg'
 import LaptopPicTwo from '@/public/Images/Masonary-ImageTwo.svg'
@@ -25,12 +24,14 @@ const AboutSection = () => {
             Who are we?
           </div>
           <div className="w-[541px] text-zinc-200 text-base font-medium font-sans leading-normal max-md:w-[350px]  max-md:px-[px] max-md:text-[15.5px]">
-            We are Africinnovate Technologies, empowering Africans through cutting-edge tech education. Our mission is to equip youth with essential skills for success. 
-            As a premier training organization, we envision universal access to top-tier tech education, fostering excellence, innovation, and social change.
+            We are Africinnovate Technologies, empowering Africans through
+            cutting-edge tech education. Our mission is to equip youth with
+            essential skills for success. As a premier training organization, we
+            envision universal access to top-tier tech education, fostering
+            excellence, innovation, and social change.
           </div>
           <div className="justify-start items-start inline-flex">
             <Button className="mt-6 max-md:mt-[2] mb-5">Learn More</Button>
-         
           </div>
         </div>
 
@@ -280,7 +281,8 @@ const AboutSection = () => {
                 Home to Startups
               </div>
               <div className="Sans'] w-[19.5rem] text-[#b0b0d0] font-['DM font-medium mt-2 max-md:w-[17rem] ">
-                Nurture your startup journey in our thriving ecosystem. Join a community that fosters collaboration and shared experiences, 
+                Nurture your startup journey in our thriving ecosystem. Join a
+                community that fosters collaboration and shared experiences,
                 providing a supportive home for your entrepreneurial endeavors.
               </div>
             </div>
@@ -310,21 +312,18 @@ const AboutSection = () => {
               demands of your business, ensuring efficiency and innovation.
             </div>
             <Button className="w-[200px] mt-6">Start a project</Button>
-           
           </div>
           <Image
             src={LaptopPicMain}
             alt="Description of the image"
             className="w-full h-full object-cover"
           />
-        
-      </div>
+        </div>
         <div className="w-[1200px] h-[427px] flex flex-row    items-start mt-[50px]  max-md:flex-col max-md:justify-center max-md:items-center gap-[30px]  max-md:mt-[15rem]">
           <div
             className="w-[627px] h-[472px] ]   bg-sky-500 bg-opacity-20 rounded-2xl shadow-inner backdrop-blur-[10px] justify-end items-center inline-flex  "
             id="card1"
             data-aos="fade-up"
-           
           >
             <div className="w-[541px] h-56 flex-col justify-start items-start gap-4 inline-flex max-md:w-[329px] max-md:h-auto max-md:px-[10px] max-md:py-[10px]">
               <div className="text-white text-[40px] font-bold font-['Raleway'] leading-[48px]">
@@ -349,15 +348,15 @@ const AboutSection = () => {
                 Co-working Space
               </div>
               <div className="w-[541px] text-zinc-200 text-base font-medium font-['DM Sans'] leading-normal mr-[30px] max-md:w-auto">
-                
-                Elevate your work experience in our collaborative workspaces. Our Office Space is designed with you in mind. Uninterrupted
+                Elevate your work experience in our collaborative workspaces.
+                Our Office Space is designed with you in mind. Uninterrupted
                 light and internet at affordable rate. We offer flexible package
                 to accommodate Students and Corp members
               </div>
               <Button className="w-[200px] mt-6">Visit us today</Button>
             </div>
           </div>
-        </div>     
+        </div>
       </div>
     </section>
   )
