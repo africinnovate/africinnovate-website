@@ -9,7 +9,7 @@ import Location from '../public/svg-icons/location.svg'
 import Mail from '../public/svg-icons/email.svg'
 const Footer = () => {
   return (
-    <footer className=" z-20 max-md:flex-col ml-[6.5rem] max-md:ml-[2.5rem] max-md:pl-[0px]   mt-9   text-white py-8 justify-center items-center  flex">
+    <footer className=" z-20 max-md:flex-col ml-[6.9rem] max-md:ml-[0.9rem] max-md:pl-[0px]   mt-9   text-white py-8 justify-center items-center  flex">
       {/* Column 1 */}
       <div className="w-full   flex items-start justify-start  flex-col sm:w-1/2 md:w-1/3 lg:w-1/3 xl:w-1/3 px-4 mb-4">
         <div className="flex items-center justify-center">

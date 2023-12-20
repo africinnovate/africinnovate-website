@@ -4,7 +4,7 @@ import LaptopPic from '@/public/Images/Masonary-Imageone.svg'
 import LaptopPicTwo from '@/public/Images/Masonary-ImageTwo.svg'
 import LaptopPicThree from '@/public/Images/Masonary-ImageThree.svg'
 import LaptopPicFour from '@/public/Images/Masonary-ImageFour.svg'
-import LaptopPicMain from '@/public/img5.png'
+import LaptopPicMain from '@/public/Images/LaptopImage.png'
 import Button from './Button'
 import Blog from '../Blog'
 
@@ -211,7 +211,7 @@ const AboutSection = () => {
               <div className="Sans'] text-white font-['DM text-lg font-medium leading-6 mt-2">
                 Community Friendly
               </div>
-              <div className="Sans'] w-[21.5rem] text-[#b0b0d0] font-['DM font-medium leading-6 mt-2 max-md:w-[300px] max-md:mr-6  max-md:hover:pr-9">
+              <div className="Sans'] w-[21.5rem] text-[#b0b0d0] font-['DM font-medium leading-6 mt-2 max-md:w-[290px]   ">
                 Join a vibrant community that thrives on collaboration,
                 networking, and shared experiences, making work feel like a
                 community endeavor.
@@ -253,7 +253,7 @@ const AboutSection = () => {
                 compromising quality.
               </div>
             </div>
-            <div className="flex-shrink-0 w-[330px]  hover:max-md:w-[300px] hover:max-md:mb-3 pl-5 pt-2 h-[13.5rem] max-md:h-[16.5rem] rounded-2xl items-center justify-center transition duration-500 hover:bg-[#00388D] hover:shadow-lg hover:border-2 border-solid border-[#b0cdf9] max-md:h-[18.5rem]group">
+            <div className="flex-shrink-0 w-[330px]  max-md:w-[310px] hover:max-md:mb-3 pl-5 pt-2 h-[13.5rem] rounded-2xl items-center justify-center transition duration-500 hover:bg-[#00388D] hover:shadow-lg hover:border-2 border-solid border-[#b0cdf9] max-md:h-[18.5rem] group">
               <div className="flex-shrink-0 w-12 h-12 rounded-full bg-white/[.10] flex items-center justify-center transition duration-500 hover:bg-[#00388D]">
                 <svg
                   width={20}
@@ -279,7 +279,7 @@ const AboutSection = () => {
               <div className="Sans'] text-white font-['DM text-lg font-medium leading-6 mt-2">
                 Home to Startups
               </div>
-              <div className="Sans'] w-[19.5rem] text-[#b0b0d0] font-['DM font-medium mt-2 max-md:w-[18.5rem] max-md:mr-6  max-md:pr-9">
+              <div className="Sans'] w-[19.5rem] text-[#b0b0d0] font-['DM font-medium mt-2 max-md:w-[17rem] ">
                 Nurture your startup journey in our thriving ecosystem. Join a community that fosters collaboration and shared experiences, 
                 providing a supportive home for your entrepreneurial endeavors.
               </div>
@@ -319,13 +319,12 @@ const AboutSection = () => {
           />
         
       </div>
-        <div className="w-[1200px] h-[427px] flex flex-row    items-start mt-[50px]  max-md:flex-col max-md:justify-center max-md:items-center gap-[30px]  max-md:mt-[10rem]">
+        <div className="w-[1200px] h-[427px] flex flex-row    items-start mt-[50px]  max-md:flex-col max-md:justify-center max-md:items-center gap-[30px]  max-md:mt-[15rem]">
           <div
-            className="w-[627px] h-[472px] ]   bg-sky-500 bg-opacity-20 rounded-2xl shadow-inner backdrop-blur-[10px] justify-end items-center inline-flex "
+            className="w-[627px] h-[472px] ]   bg-sky-500 bg-opacity-20 rounded-2xl shadow-inner backdrop-blur-[10px] justify-end items-center inline-flex  "
             id="card1"
-            data-aos="fade-right"
-            data-aos-duration="600"
-            data-aos-delay="500"
+            data-aos="fade-up"
+           
           >
             <div className="w-[541px] h-56 flex-col justify-start items-start gap-4 inline-flex max-md:w-[329px] max-md:h-auto max-md:px-[10px] max-md:py-[10px]">
               <div className="text-white text-[40px] font-bold font-['Raleway'] leading-[48px]">
@@ -343,7 +342,7 @@ const AboutSection = () => {
           <div
             className="w-[627px] h-[472px]  bg-sky-500 bg-opacity-20 rounded-2xl shadow-inner backdrop-blur-[10px] justify-end items-center inline-flex "
             id="card2"
-            data-aos="fade-left"
+            data-aos="fade-up"
           >
             <div className="w-[541px] h-[248px] flex-col justify-start items-start gap-4 inline-flex max-md:w-[329px] max-md:h-auto  mr-[20px]">
               <div className="text-white text-[40px] font-bold font-['Raleway'] leading-[48px]">

@@ -1,4 +1,4 @@
-import RecentBlogPageImage from '../public/img7.png'
+import RecentBlogPageImage from '../public/Images/BlogPageImage.png'
 import Image from 'next/image'
 import Button from './ui/Button'
 const BlogNewscomponent = () => {

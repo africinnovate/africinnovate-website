@@ -3,16 +3,16 @@
 const Trainingcomponent = () => {
   return (
     <section className="mt-[4.5rem]">
-      <div className="flex justify-center items-center flex-col  mt-4 max-md:mt-1">
+      <div className="flex justify-center  items-center flex-col   mt-4 max-md:mt-1">
         <div
-          className=" text-center max-md:text-start max-md:text-[25px] text-white text-[80px] font-extrabold font-['Raleway'] leading-[96px] max-md:leading-3"
+          className=" text-center   max-md:text-[25px] text-white text-[80px] font-extrabold font-['Raleway'] leading-[96px] max-md:leading-3"
           data-aos="zoom-in"
         >
           {' '}
           Our training programs
         </div>
 
-        <div className="w-[1000px]    max-md:h-fit max-md:w-[350px] max-md:mt-[10px] max-md:ml-5 ">
+        <div className="w-[1000px]    max-md:h-fit max-md:w-[350px] max-md:mt-[10px]  ">
           <div className="Ellipse1 w-96 h-96 opacity-80 bg-blue-600 rounded-full blur-[130px] absolute left-[70%]  max-md:hidden" />
           <div
             id="cardes"

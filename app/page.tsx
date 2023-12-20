@@ -10,7 +10,7 @@ export default function Home() {
       <AboutSection />
       <div
         id="wrapperFor"
-        className="mt-[10rem] max-md:mt-[13rem] max-md:ml-1"
+        className=" mt-[12rem] max-md:mt-[16rem]  flex-col flex items-center justify-center max-md:flex-col"
         data-aos="zoom-in"
       >
         <div className="text-center text-white text-5xl font-bold font-['Raleway'] leading-[64px]">

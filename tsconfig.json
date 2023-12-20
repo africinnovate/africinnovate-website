@@ -29,6 +29,6 @@
     ".next/types/**/*.ts",
     "components/ui/AppHeader.tsx",
     "components/Blog.tsx"
-  ],
+, "components/CountUpAnimation.jsx"  ],
   "exclude": ["node_modules"]
 }
