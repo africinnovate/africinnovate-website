@@ -54,7 +54,7 @@ export default function ContactUs() {
       </div>
       {/* contact-us card  */}
       <form
-        className="Frame25624 flex  gap-[26px] items-start pl-[40px] max-md:pl-[25px] justify-center flex-col mt-9 w-[39rem] h-[38rem]  bg-blue-800 rounded-2xl shadow max-md:w-[25rem]"
+        className="Frame25624 flex  gap-[26px] items-start pl-[40px] max-md:pl-[25px] justify-center flex-col mt-9 w-[39rem] h-[38rem]  bg-blue-800 rounded-2xl shadow max-md:w-[20rem]"
         data-aos="fade-up"
         data-aos-duration="1200"
         data-aos-delay="700"
@@ -70,7 +70,7 @@ export default function ContactUs() {
           name="fullName"
           value={fullName}
           onChange={(e) => setFullName(e.target.value)}
-          className="flex-shrink-0 w-[527px] max-md:w-[335px] focus:bg-transparent focus:text-[#b0b0d0]  focus:outline-none border-b-[#b0b0d0] bg-transparent border-solid border border-t-transparent  border-l-transparent border-r-transparent text-[#b0b0d0]"
+          className="flex-shrink-0 w-[527px] max-md:w-[250px] focus:bg-transparent focus:text-[#b0b0d0]  focus:outline-none border-b-[#b0b0d0] bg-transparent border-solid border border-t-transparent  border-l-transparent border-r-transparent text-[#b0b0d0]"
         />
 
         <label
@@ -83,7 +83,7 @@ export default function ContactUs() {
           name="email"
           value={email}
           onChange={(e) => setEmail(e.target.value)}
-          className="flex-shrink-0 w-[527px] max-md:w-[335px] focus:bg-transparent focus:text-[#b0b0d0]  focus:outline-none border-b-[#b0b0d0] bg-transparent border-solid border border-t-transparent  border-l-transparent border-r-transparent text-[#b0b0d0]"
+          className="flex-shrink-0 w-[527px] max-md:w-[250px] focus:bg-transparent focus:text-[#b0b0d0]  focus:outline-none border-b-[#b0b0d0] bg-transparent border-solid border border-t-transparent  border-l-transparent border-r-transparent text-[#b0b0d0]"
         />
 
         <label
@@ -96,7 +96,7 @@ export default function ContactUs() {
           name="phoneNumber"
           value={phoneNumber}
           onChange={(e) => setPhoneNumber(e.target.value)}
-          className="flex-shrink-0 w-[527px] max-md:w-[335px] focus:bg-transparent focus:text-[#b0b0d0]  focus:outline-none border-b-[#b0b0d0] bg-transparent border-solid border border-t-transparent  border-l-transparent border-r-transparent text-[#b0b0d0]"
+          className="flex-shrink-0 w-[527px] max-md:w-[250px] focus:bg-transparent focus:text-[#b0b0d0]  focus:outline-none border-b-[#b0b0d0] bg-transparent border-solid border border-t-transparent  border-l-transparent border-r-transparent text-[#b0b0d0]"
         />
 
         <label
@@ -108,7 +108,7 @@ export default function ContactUs() {
           name="selectCourse"
           value={selectCourse}
           onChange={(e) => setSelectCourse(e.target.value)}
-          className="flex-shrink-0 w-[527px]  max-md:w-[335px]  focus:bg-transparent focus:text-[#b0b0d0]  focus:outline-none border-b-[#b0b0d0] bg-transparent border-solid border border-t-transparent  border-l-transparent border-r-transparent text-[#b0b0d0]"
+          className="flex-shrink-0 w-[527px]  max-md:w-[250px]  focus:bg-transparent focus:text-[#b0b0d0]  focus:outline-none border-b-[#b0b0d0] bg-transparent border-solid border border-t-transparent  border-l-transparent border-r-transparent text-[#b0b0d0]"
         >
           <option className="hover:bg-blue-600 text-red" value="course1">
             Course 1
@@ -127,7 +127,7 @@ export default function ContactUs() {
           name="yourMessage"
           value={yourMessage}
           onChange={(e) => setYourMessage(e.target.value)}
-          className="flex-shrink-0 w-[527px] max-md:w-[335px] h-24 rounded-lg border border-[#b0b0d0] bg-transparent"
+          className="flex-shrink-0 w-[527px] max-md:w-[250px] h-24 rounded-lg border border-[#b0b0d0] bg-transparent"
         ></textarea>
 
         <div className="FilledButtonsDarkMode left-[76px] top-[472px]  justify-start items-start inline-flex">

@@ -100,6 +100,7 @@ body {
   box-shadow: inset 1px 1px 20px 18px rgb(236 232 232 / 22%);
   transition: box-shadow 1s ease;
 }
+
 #card1 {
   box-shadow: inset 1px 1px 20px 18px rgba(236, 232, 232, 0.1);
   background: radial-gradient(
@@ -134,13 +135,6 @@ body {
   object-fit: cover;
   border-radius: 1rem;
   box-shadow: 1px 0.5rem 2rem 5px rgb(0 0 0 / 53%);
-}
-
-.grid-container {
-  display: flex;
-  width: 40vw;
-  height: 30vh;
-  gap: 1rem;
 }
 
 .grid {
