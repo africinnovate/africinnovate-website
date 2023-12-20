@@ -18,10 +18,10 @@ function AboutUs() {
       </div>
       <div id="image">
         <div className="  relative z-20  mt-[50px] lightgray 50% / cover no-repeat] flex-shrink-0 w-[1000px]  max-md:w-[300px] h-auto ">
-          <img
+          {/* <img
             className=" max-md:w-200px max-md:h-157px  rounded-lg object-cover"
             src="/full-img.png"
-          />
+          /> */}
         </div>
         <div className="Ellipse2 z-10 w-96 h-96 opacity-80  bg-blue-600 rounded-full blur-[190px] absolute  top-[150%] max-md:hidden" />
       </div>
