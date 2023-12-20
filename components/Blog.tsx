@@ -1,7 +1,10 @@
 import Link from 'next/link'
 import Image from 'next/image'
 import BlogImage from '../public/Images/BlogImage.svg'
+import Button from './ui/Button'
+
 const Blog = () => {
+
   return (
     <div className="w-[1200px] max-md:w-[400px] h-[427px] flex flex-row    items-center justify-center mt-[20px] ml-[83px]  max-md:ml-[50px] max-md:flex-col max-md:justify-center max-md:items-center gap-[30px]  max-md:mt-[10rem]">
       <div className="mt-[20px]">
@@ -40,14 +43,7 @@ const Blog = () => {
             bibendum praesent justo amet integer. In quis tortor enim dictum
             ultrices id. Et.
           </div>
-          <div className="justify-start items-start inline-flex max-md:mt-[6rem]">
-            <div className="px-6 py-3  bg-neutral-300 bg-opacity-0 rounded-3xl border border-slate-300 justify-center items-center gap-2 flex hover:bg-[#00002e]">
-              {' '}
-              <div className="text-slate-300 text-base font-medium font-['DM Sans'] leading-normal">
-                <Link href="/mainblog">Read More</Link>
-              </div>
-            </div>
-          </div>
+          <Button>Read More</Button>
         </div>
       </div>
     </div>

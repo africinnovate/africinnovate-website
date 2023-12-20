@@ -1,6 +1,7 @@
 'use client'
 import { useState, useEffect } from 'react'
 import { HERO_TEXTS } from '@/lib/utils'
+import Button from './Button'
 
 const Hero = () => {
   const [currentTextIndex, setCurrentTextIndex] = useState<number>(0)
@@ -45,9 +46,7 @@ const Hero = () => {
           data-aos-delay="700"
           id="animationbutton"
         >
-          <button className="flex items-center gap-2 py-3 px-6  font-sans rounded-3xl bg-[#cccce0] Sans'] text-[#006] font-['DM font-medium leading-6  ">
-            Contact Us
-          </button>
+          <Button> Contact Us </Button>
         </div>
       </div>
       <div className="flex items-start justify-center mt-[55px]">

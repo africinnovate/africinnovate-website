@@ -280,9 +280,8 @@ const AboutSection = () => {
                 Home to Startups
               </div>
               <div className="Sans'] w-[19.5rem] text-[#b0b0d0] font-['DM font-medium mt-2 max-md:w-[18.5rem] max-md:mr-6  max-md:pr-9">
-                Experience the best of both worlds with our swift and efficient
-                delivery services, ensuring your products reach you fast without
-                compromising quality.
+                Nurture your startup journey in our thriving ecosystem. Join a community that fosters collaboration and shared experiences, 
+                providing a supportive home for your entrepreneurial endeavors.
               </div>
             </div>
           </div>
@@ -310,23 +309,16 @@ const AboutSection = () => {
               software and blockchain solutions tailored to meet the unique
               demands of your business, ensuring efficiency and innovation.
             </div>
-            <div className="justify-start items-start inline-flex">
-              <div className="px-6 py-3 bg-slate-300 rounded-3xl justify-start items-center gap-2 flex mt-10 max-md:mt-[2] mb-5">
-                <div className="text-blue-950 text-base font-medium font-sans leading-normal ">
-                  Start a project
-                </div>
-              </div>
-            </div>
+            <Button className="w-[200px] mt-6">Start a project</Button>
+           
           </div>
-          <div className=" " />
-
           <Image
             src={LaptopPicMain}
             alt="Description of the image"
             className="w-full h-full object-cover"
           />
-        </div>
-        {/* two boxes */}
+        
+      </div>
         <div className="w-[1200px] h-[427px] flex flex-row    items-start mt-[50px]  max-md:flex-col max-md:justify-center max-md:items-center gap-[30px]  max-md:mt-[10rem]">
           <div
             className="w-[627px] h-[472px] ]   bg-sky-500 bg-opacity-20 rounded-2xl shadow-inner backdrop-blur-[10px] justify-end items-center inline-flex "
@@ -345,13 +337,7 @@ const AboutSection = () => {
                 the ever-evolving world of technology. Empower yourself with
                 Africinnovate's transformative education.
               </div>
-              <div className="justify-start items-start inline-flex">
-                <div className="px-6 py-3 bg-slate-300 rounded-3xl justify-start items-center gap-2 flex">
-                  <div className="text-blue-950 text-base font-medium font-['DM Sans'] leading-normal">
-                    Train with us
-                  </div>
-                </div>
-              </div>
+              <Button className="w-[200px] mt-6">Train with us</Button>
             </div>
           </div>
           <div
@@ -364,23 +350,16 @@ const AboutSection = () => {
                 Co-working Space
               </div>
               <div className="w-[541px] text-zinc-200 text-base font-medium font-['DM Sans'] leading-normal mr-[30px] max-md:w-auto">
-                Our Office Space is designed with you in mind. Uninterrupted
+                
+                Elevate your work experience in our collaborative workspaces. Our Office Space is designed with you in mind. Uninterrupted
                 light and internet at affordable rate. We offer flexible package
                 to accommodate Students and Corp members
               </div>
-              <div className="justify-start items-start inline-flex">
-                <div className="px-6 py-3 bg-slate-300 rounded-3xl justify-start items-center gap-2 flex">
-                  <div className="text-blue-950 text-base font-medium font-['DM Sans'] leading-normal">
-                    Visit us today
-                  </div>
-                </div>
-              </div>
+              <Button className="w-[200px] mt-6">Visit us today</Button>
             </div>
           </div>
-        </div>
-        {/* blog page */}
+        </div>     
       </div>
-      {/* two boxes */}
     </section>
   )
 }
