@@ -27,11 +27,11 @@ const Hero = () => {
             data-aos="fade-up"
           >
             <div className="w-full text-center text-white text-[80px] font-semibold font-sans  max-md:text-[2rem] max-md:leading-normal">
-             We are a community that thrives on innovation,
+             Innovation fueled by the power
             </div>
             <div className="flex-shrink-0 w-[701px] h-[4.625rem] flex text-center items-center justify-center text-[4rem] max-md:text-[32px]">
               <div className="inline-flex items-start    text-white text-center  font-bold  font-sans    ">
-                bringing together
+                of
               </div>
               <div className="inline-flex flex-col items-start gap-2.5 py-0 ">
                 <div className="text-[#ffbe0b] text-center font-sans  font-bold px-3   ">
