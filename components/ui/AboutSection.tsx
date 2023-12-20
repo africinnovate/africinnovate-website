@@ -279,9 +279,8 @@ const AboutSection = () => {
                 Home to Startups
               </div>
               <div className="Sans'] w-[19.5rem] text-[#b0b0d0] font-['DM font-medium mt-2 max-md:w-[18.5rem] max-md:mr-6  max-md:pr-9">
-                Experience the best of both worlds with our swift and efficient
-                delivery services, ensuring your products reach you fast without
-                compromising quality.
+                Nurture your startup journey in our thriving ecosystem. Join a community that fosters collaboration and shared experiences, 
+                providing a supportive home for your entrepreneurial endeavors.
               </div>
             </div>
           </div>
@@ -363,7 +362,8 @@ const AboutSection = () => {
                 Co-working Space
               </div>
               <div className="w-[541px] text-zinc-200 text-base font-medium font-['DM Sans'] leading-normal mr-[30px] max-md:w-auto">
-                Our Office Space is designed with you in mind. Uninterrupted
+                
+                Elevate your work experience in our collaborative workspaces. Our Office Space is designed with you in mind. Uninterrupted
                 light and internet at affordable rate. We offer flexible package
                 to accommodate Students and Corp members
               </div>
