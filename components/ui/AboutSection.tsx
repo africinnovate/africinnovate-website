@@ -54,8 +54,18 @@ const AboutSection = () => {
           </div>
 
           <div className="grid">
-            <Image className="img3" src={LaptopPicThree} data-aos="fade-down" alt="imagethree" />
-            <Image className="img4" src={LaptopPicFour} data-aos="fade-up" alt="imagefour" />
+            <Image
+              className="img3"
+              src={LaptopPicThree}
+              data-aos="fade-down"
+              alt="imagethree"
+            />
+            <Image
+              className="img4"
+              src={LaptopPicFour}
+              data-aos="fade-up"
+              alt="imagefour"
+            />
           </div>
         </div>
       </div>

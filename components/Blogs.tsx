@@ -11,7 +11,7 @@ const BlogNewscomponent = () => {
               <Image
                 className="w-[408px] h-[220px]  max-md:w-[320px] object-cover relative rounded-2xl"
                 src={RecentBlogPageImage}
-                alt='Image-for-recents-blogs'
+                alt="Image-for-recents-blogs"
               />
               <div className="text-yellow-400 text-lg font-medium font-['DM Sans']  leading-normal">
                 Technology
@@ -35,10 +35,10 @@ const BlogNewscomponent = () => {
               </div>
             </div>
             <div className="w-[325px] h-[430px] flex-col justify-startitems-start gap-2 inline-flex">
-            <Image
+              <Image
                 className="w-[408px] h-[220px]  max-md:w-[320px] object-cover relative rounded-2xl"
                 src={RecentBlogPageImage}
-                alt='Image-for-recents-blogs'
+                alt="Image-for-recents-blogs"
               />
               <div className="text-yellow-400 text-lg font-medium font-['DM Sans'] leading-normal">
                 Technology
@@ -62,10 +62,10 @@ const BlogNewscomponent = () => {
               </div>
             </div>
             <div className="w-[325px] h-[430px] flex-col justify-start max-md:justify-center items-start gap-2 inline-flex">
-            <Image
+              <Image
                 className="w-[408px] h-[220px]  max-md:w-[320px] object-cover relative rounded-2xl"
                 src={RecentBlogPageImage}
-                alt='Image-for-recents-blogs'
+                alt="Image-for-recents-blogs"
               />
               <div className="text-yellow-400 text-lg font-medium font-['DM Sans'] leading-normal">
                 Technology

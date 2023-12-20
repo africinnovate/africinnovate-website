@@ -112,25 +112,25 @@ const Footer = () => {
               </div>
             </li>
 
-            {/* Add more links as needed */}
-          </ul>
-        </div>
+          {/* Add more links as needed */}
+        </ul>
+      </div>
 
-        {/* Column 3 */}
-        <div className="w-full sm:w-1/2 md:w-1/3 lg:w-1/3 xl:w-1/3 px-4 mb-4">
-          <div className="flex items-center justify-start">
-            <div className="w-[200px] text-white text-lg font-medium font-['DM Sans'] leading-normal ">
-              Let's build something awesome together!
-            </div>
+      {/* Column 3 */}
+      <div className="w-full sm:w-1/2 md:w-1/3 lg:w-1/3 xl:w-1/3 px-4 mb-4">
+        <div className="flex items-center justify-start">
+          <div className="w-[200px] text-white text-lg font-medium font-['DM Sans'] leading-normal ">
+            Let's build something awesome together!
           </div>
-          <div className="w-[158px] h-12 justify-start items-start inline-flex">
-            <div className="px-6 py-3 bg-slate-300 mt-5 rounded-3xl justify-start items-center gap-2 flex">
-              <div className="text-blue-950 text-base font-medium font-['DM Sans'] leading-normal">
-                Start a project
-              </div>
+        </div>
+        <div className="w-[158px] h-12 justify-start items-start inline-flex">
+          <div className="px-6 py-3 bg-slate-300 mt-5 rounded-3xl justify-start items-center gap-2 flex">
+            <div className="text-blue-950 text-base font-medium font-['DM Sans'] leading-normal">
+              Start a project
             </div>
           </div>
         </div>
+      </div>
     </footer>
   )
 }
