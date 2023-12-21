@@ -1,9 +1,9 @@
 import type { Metadata } from 'next'
 import { Raleway } from 'next/font/google'
-import favicon from '@/public/icon.png'
+import favicon from './favicon.ico'
 import MyApp from '@/app/_app'
 import AppHeader from '@/components/ui/AppHeader'
-import Footer from '@/components/footer'
+import Footer from '@/components/Footer'
 import './globals.css'
 
 const inter = Raleway({ subsets: ['latin'] })
@@ -23,6 +23,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <link rel="icon" href="favico.ico" type="image/x-icon" />
+      
       <body className={inter.className}>
         <main className="overflow-x-hidden">
           <AppHeader />
