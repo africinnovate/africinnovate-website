@@ -6,7 +6,7 @@ import Button from './ui/Button'
 const Blog = () => {
   return (
     <div className="w-[1200px] max-md:w-[400px] h-[427px] flex flex-row    items-center justify-center mt-[20px] ml-[83px]  max-md:ml-[50px] max-md:flex-col max-md:justify-center max-md:items-center gap-[30px]  max-md:mt-[10rem]">
-      <div className="mt-[20px]">
+      <div className="mt-[20px] ">
         <Image
           className="w-[500px] h-[440px]   mt-[20px] max-md:mr-[54px] max-md:h-[322px] max-md:w-[350px] max-md:mt-[21px] object-cover relative rounded-2xl"
           data-aos="fade-up"
