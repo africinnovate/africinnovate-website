@@ -1,11 +1,11 @@
-
 import Image from 'next/image'
-import LaptopPic from '@/public/img1.png'
-import LaptopPicTwo from '@/public/img2.png'
-import LaptopPicThree from '@/public/img3.png'
-import LaptopPicFour from '@/public/img4.png'
-import LaptopPicMain from '@/public/img5.png'
+import LaptopPic from '@/public/Images/Masonary-Imageone.svg'
+import LaptopPicTwo from '@/public/Images/Masonary-ImageTwo.svg'
+import LaptopPicThree from '@/public/Images/Masonary-ImageThree.svg'
+import LaptopPicFour from '@/public/Images/Masonary-ImageFour.svg'
+import LaptopPicMain from '@/public/Images/LaptopImage.png'
 import Button from './Button'
+import Blog from '../Blog'
 
 const AboutSection = () => {
   return (
@@ -24,16 +24,18 @@ const AboutSection = () => {
             Who are we?
           </div>
           <div className="w-[541px] text-zinc-200 text-base font-medium font-sans leading-normal max-md:w-[350px]  max-md:px-[px] max-md:text-[15.5px]">
-            We are Africinnovate Technologies, empowering Africans through cutting-edge tech education. Our mission is to equip youth with essential skills for success. 
-            As a premier training organization, we envision universal access to top-tier tech education, fostering excellence, innovation, and social change.
+            We are Africinnovate Technologies, empowering Africans through
+            cutting-edge tech education. Our mission is to equip youth with
+            essential skills for success. As a premier training organization, we
+            envision universal access to top-tier tech education, fostering
+            excellence, innovation, and social change.
           </div>
           <div className="justify-start items-start inline-flex">
             <Button className="mt-6 max-md:mt-[2] mb-5">Learn More</Button>
-         
           </div>
         </div>
 
-        <div className="grid-container">
+        <div className="flex w-[40vw] h-[30vh] gap-[1rem] max-md:w-[83vw] max-md:h-[66vh] max-md:gap-[1rem] max-md:mt-[20%]">
           <div className="grid">
             <Image
               className="img1"
@@ -108,7 +110,7 @@ const AboutSection = () => {
               <div className="Sans'] text-white font-['DM text-lg font-medium leading-6 mt-2">
                 Reliable high-speed internet
               </div>
-              <div className="Sans'] w-[20.5rem] text-[#b0b0d0] font-['DM font-medium leading-6 mt-2">
+              <div className="Sans'] w-[20.5rem] max-md:w-[17.5rem] text-[#b0b0d0] font-['DM font-medium leading-6 mt-2">
                 Experience seamless connectivity with our lightning-fast,
                 reliable internet, ensuring you stay in the flow of
                 productivity.
@@ -210,7 +212,7 @@ const AboutSection = () => {
               <div className="Sans'] text-white font-['DM text-lg font-medium leading-6 mt-2">
                 Community Friendly
               </div>
-              <div className="Sans'] w-[21.5rem] text-[#b0b0d0] font-['DM font-medium leading-6 mt-2 max-md:w-[300px] max-md:mr-6  max-md:hover:pr-9">
+              <div className="Sans'] w-[21.5rem] text-[#b0b0d0] font-['DM font-medium leading-6 mt-2 max-md:w-[290px]   ">
                 Join a vibrant community that thrives on collaboration,
                 networking, and shared experiences, making work feel like a
                 community endeavor.
@@ -252,7 +254,7 @@ const AboutSection = () => {
                 compromising quality.
               </div>
             </div>
-            <div className="flex-shrink-0 w-[330px]  hover:max-md:w-[300px] hover:max-md:mb-3 pl-5 pt-2 h-[13.5rem] max-md:h-[16.5rem] rounded-2xl items-center justify-center transition duration-500 hover:bg-[#00388D] hover:shadow-lg hover:border-2 border-solid border-[#b0cdf9] max-md:h-[18.5rem]group">
+            <div className="flex-shrink-0 w-[330px]  max-md:w-[310px] hover:max-md:mb-3 pl-5 pt-2 h-[13.5rem] rounded-2xl items-center justify-center transition duration-500 hover:bg-[#00388D] hover:shadow-lg hover:border-2 border-solid border-[#b0cdf9] max-md:h-[18.5rem] group">
               <div className="flex-shrink-0 w-12 h-12 rounded-full bg-white/[.10] flex items-center justify-center transition duration-500 hover:bg-[#00388D]">
                 <svg
                   width={20}
@@ -278,8 +280,9 @@ const AboutSection = () => {
               <div className="Sans'] text-white font-['DM text-lg font-medium leading-6 mt-2">
                 Home to Startups
               </div>
-              <div className="Sans'] w-[19.5rem] text-[#b0b0d0] font-['DM font-medium mt-2 max-md:w-[18.5rem] max-md:mr-6  max-md:pr-9">
-                Nurture your startup journey in our thriving ecosystem. Join a community that fosters collaboration and shared experiences, 
+              <div className="Sans'] w-[19.5rem] text-[#b0b0d0] font-['DM font-medium mt-2 max-md:w-[17rem] ">
+                Nurture your startup journey in our thriving ecosystem. Join a
+                community that fosters collaboration and shared experiences,
                 providing a supportive home for your entrepreneurial endeavors.
               </div>
             </div>
@@ -309,22 +312,18 @@ const AboutSection = () => {
               demands of your business, ensuring efficiency and innovation.
             </div>
             <Button className="w-[200px] mt-6">Start a project</Button>
-           
           </div>
           <Image
             src={LaptopPicMain}
             alt="Description of the image"
             className="w-full h-full object-cover"
           />
-        
-      </div>
-        <div className="w-[1200px] h-[427px] flex flex-row    items-start mt-[50px]  max-md:flex-col max-md:justify-center max-md:items-center gap-[30px]  max-md:mt-[10rem]">
+        </div>
+        <div className="w-[1200px] h-[427px] flex flex-row    items-start mt-[50px]  max-md:flex-col max-md:justify-center max-md:items-center gap-[30px]  max-md:mt-[15rem]">
           <div
-            className="w-[627px] h-[472px] ]   bg-sky-500 bg-opacity-20 rounded-2xl shadow-inner backdrop-blur-[10px] justify-end items-center inline-flex "
+            className="w-[627px] h-[472px] ]   bg-sky-500 bg-opacity-20 rounded-2xl shadow-inner backdrop-blur-[10px] justify-end items-center inline-flex  "
             id="card1"
-            data-aos="fade-right"
-            data-aos-duration="600"
-            data-aos-delay="500"
+            data-aos="fade-up"
           >
             <div className="w-[541px] h-56 flex-col justify-start items-start gap-4 inline-flex max-md:w-[329px] max-md:h-auto max-md:px-[10px] max-md:py-[10px]">
               <div className="text-white text-[40px] font-bold font-['Raleway'] leading-[48px]">
@@ -342,22 +341,22 @@ const AboutSection = () => {
           <div
             className="w-[627px] h-[472px]  bg-sky-500 bg-opacity-20 rounded-2xl shadow-inner backdrop-blur-[10px] justify-end items-center inline-flex "
             id="card2"
-            data-aos="fade-left"
+            data-aos="fade-up"
           >
             <div className="w-[541px] h-[248px] flex-col justify-start items-start gap-4 inline-flex max-md:w-[329px] max-md:h-auto  mr-[20px]">
               <div className="text-white text-[40px] font-bold font-['Raleway'] leading-[48px]">
                 Co-working Space
               </div>
               <div className="w-[541px] text-zinc-200 text-base font-medium font-['DM Sans'] leading-normal mr-[30px] max-md:w-auto">
-                
-                Elevate your work experience in our collaborative workspaces. Our Office Space is designed with you in mind. Uninterrupted
+                Elevate your work experience in our collaborative workspaces.
+                Our Office Space is designed with you in mind. Uninterrupted
                 light and internet at affordable rate. We offer flexible package
                 to accommodate Students and Corp members
               </div>
               <Button className="w-[200px] mt-6">Visit us today</Button>
             </div>
           </div>
-        </div>     
+        </div>
       </div>
     </section>
   )
