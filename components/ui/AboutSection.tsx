@@ -3,7 +3,7 @@ import LaptopPic from '@/public/Images/Masonary-Imageone.svg'
 import LaptopPicTwo from '@/public/Images/Masonary-ImageTwo.svg'
 import LaptopPicThree from '@/public/Images/Masonary-ImageThree.svg'
 import LaptopPicFour from '@/public/Images/Masonary-ImageFour.svg'
-import LaptopPicMain from '@/public/Images/LaptopImage.png'
+import LaptopPicMain from '@/public/Images/LaptopImage.webp'
 import Button from './Button'
 
 

@@ -1,5 +1,5 @@
 import Image from 'next/image'
-import RecentBlogPageImage from '@/public/Images/BlogPageImage.png'
+import RecentBlogPageImage from '@/public/Images/BlogPageImage.webp'
 import Button from './Button'
 
 interface IPost {

@@ -1,4 +1,4 @@
-import RecentBlogPageImage from '../public/Images/BlogPageImage.png'
+import RecentBlogPageImage from '../public/Images/BlogPageImage.webp'
 import Image from 'next/image'
 import Button from './ui/Button'
 
@@ -6,7 +6,7 @@ const BlogNewscomponent = () => {
   return (
     <>
       <div>
-        <div className="flex  mt-[10%] " data-aos="fade-up">
+        <div className="flex  mt-[10%] " >
           <div className="flex flex-col sm:flex-row gap-[48px] max-md:items-center max-md:justify-center ">
             <div className="w-[325px] h-[430px] flex-col justify-start  items-start gap-2 inline-flex">
               <Image
