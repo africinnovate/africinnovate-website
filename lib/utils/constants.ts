@@ -7,3 +7,5 @@ export const HERO_TEXTS = [
   'Doers',
   'Web3 Devs.',
 ]
+
+export const DISCORD_INVITE = 'https://discord.gg/VwcMMaJc'

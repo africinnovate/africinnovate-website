@@ -1,11 +1,17 @@
 'use client'
 import { useState, useEffect } from 'react'
-import { HERO_TEXTS } from '@/lib/utils'
+import { DISCORD_INVITE, HERO_TEXTS } from '@/lib/utils'
 import Button from './Button'
 import CountUpAnimation from '@/components/CountUpAnimation'
 
 const Hero = () => {
   const [currentTextIndex, setCurrentTextIndex] = useState<number>(0)
+
+  const currentText = HERO_TEXTS[currentTextIndex]
+
+  const joinCommunity = () => {
+    window.open(DISCORD_INVITE, '_blank')
+  }
 
   useEffect(() => {
     const intervalId = setInterval(() => {
@@ -17,8 +23,6 @@ const Hero = () => {
     }
   }, [HERO_TEXTS.length])
 
-  const currentText = HERO_TEXTS[currentTextIndex]
-
   return (
     <div className="mt-[100px] max-md:mt-[70px]">
       <div className="flex  items-center justify-center flex-col">
@@ -27,8 +31,8 @@ const Hero = () => {
           data-aos="fade-up"
         >
           <div className="w-[80%] text-center text-white text-[80px] font-semibold font-sans  max-md:text-[2rem] max-md:leading-normal">
-            Innovation fueled by the community of{' '}
-            <span className="text-[#ffbe0b]">{currentText}</span>
+            Innovation fueled by the community of
+            <span className="text-[#ffbe0b]"> {currentText}</span>
           </div>
         </div>
         <div
@@ -48,7 +52,10 @@ const Hero = () => {
           data-aos-delay="700"
           id="animationbutton"
         >
-          <Button> Contact Us </Button>
+          <Button onClick={joinCommunity} className="w-[200px]">
+            {' '}
+            Join our community{' '}
+          </Button>
         </div>
       </div>
 
@@ -59,7 +66,7 @@ const Hero = () => {
         <div className="flex   ">
           <div className=" flex items-start gap-10 ">
             <div className="text-white font-sans text-[2rem]  font-bold ">
-              <CountUpAnimation end={100} />
+              <CountUpAnimation count={400} />
               <div className="font-sans text-[#b0b0d0] font-__Raleway_bdd8fd font-bold   text-[1.3rem]">
                 Students <br /> Trained
               </div>
@@ -67,9 +74,9 @@ const Hero = () => {
 
             <div className="flex-col items-start ">
               <div className="text-white font-__Raleway_bdd8fd text-[2rem]  font-bold ">
-                <CountUpAnimation end={23} />
+                <CountUpAnimation count={65} />
                 <div className="font-sans text-[#b0b0d0] font-__Raleway_bdd8fd font-meduim text-[1.3rem]">
-                  Projects <br /> Delivered
+                  Events <br /> Hosted
                 </div>
               </div>
             </div>
@@ -78,17 +85,17 @@ const Hero = () => {
         <div className="flex gap-10 max-md:gap-4 max-md:ml-[23px]">
           <div className=" flex-col items-start  ">
             <div className="text-white font-__Raleway_bdd8fd text-[2rem]   font-bold ">
-              <CountUpAnimation end={12} />
+              <CountUpAnimation count={12} />
               <div className="font-__Raleway_bdd8fd text-[#b0b0d0] font-['DM font-bold max-md:w-[120px] text-[1.3rem]">
                 Hackathon <br /> Won
               </div>
             </div>
           </div>
-          <div className="  flex flex-col items-start  ">
+          <div className="  flex flex-col items-start ">
             <div className="text-white font-__Raleway_bdd8fd font-bold  text-[2rem]  ">
-              <CountUpAnimation end={308} />
+              <CountUpAnimation count={120} />
               <div className="font-__Raleway_bdd8fd text-[#b0b0d0] font-bold  text-[1.3rem]">
-                Community <br /> Members
+                Hub <br /> Users
               </div>
             </div>
           </div>

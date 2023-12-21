@@ -3,17 +3,41 @@
 import Link from 'next/link'
 import { useState } from 'react'
 import Button from './Button'
+import FormComponent from '../FormComponent'
 
 const AppHeader = () => {
   const [menuOpen, setMenuOpen] = useState(false)
+  const [isModalOpen, setIsModalOpen] = useState(false)
 
   const toggleMenu = () => {
     setMenuOpen(!menuOpen)
   }
-
-  const test = () => {
-    alert('hello')
+  interface ModalProps {
+    children: React.ReactNode
   }
+
+  const handleClose = () => {
+    setIsModalOpen(false)
+  }
+
+  // Function to create the modal with type safety
+  const Modal = ({ children }: ModalProps) => {
+    document.body.classList.toggle('overflow-hidden', isModalOpen)
+
+    const handleOverlayClick = (event: { stopPropagation: () => void }) => {
+      event.stopPropagation() // Stop event propagation
+    }
+
+    return (
+      <div
+        className="fixed  flex items-center justify-center top-0 left-0 w-full  bg-black bg-opacity-50 z-10 h-[100vh]"
+        onClick={handleOverlayClick}
+      >
+        {children}
+      </div>
+    )
+  }
+
   return (
     <nav className="bg-[#000024] flex justify-around  md:shrink-0  max-md:contents">
       <div className="w-[100vw] h-20 border-b-[0.5px] border-b-[#9a8888] bg-[#000024] flex items-center justify-around">
@@ -58,9 +82,14 @@ const AppHeader = () => {
           </div>
         </div>
         <div className="inline-flex items-start mr-6  max-md:hidden">
-          <Button onClick={test} className="w-[200px]">
+          <Button className="w-[200px]" onClick={() => setIsModalOpen(true)}>
             Call Us
           </Button>
+          {isModalOpen && (
+            <Modal>
+              <FormComponent onClose={handleClose} />
+            </Modal>
+          )}
         </div>
         {/* Mobile Menu Toggle */}
         <div className="md:hidden flex items-center">
