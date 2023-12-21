@@ -51,20 +51,20 @@ const BlogLayout = ({ title, subTitle, data }: BlogPageProps) => {
         </div>
       )}
 
-      <div className="mt-[5%]">
+      <div className="mt-[2%]">
         <FeaturedBlog textLimit={400} post={data[0].fields} />
         <div
           id="wrapper"
-          className="max-md:mt-[20rem] max-md: flex items-center  max-md:flex-col   flex-col max-md:justify-center mt-[5%]"
+          className="max-md:mt-[20rem]  flex items-center   max-md:flex-col    flex-col max-md:justify-center mt-[15%]"
         >
           <div
-            className="text-white text-[40px] font-bold font-['Raleway'] leading-[48px]"
+            className="text-white max-md:text-[26px]  text-[40px] font-bold font-['Raleway'] leading-[48px]"
             data-aos="fade-up"
           >
             Recent Blogs
           </div>
           <div className="flex  mt-7 " data-aos="fade-up">
-          <div className="flex flex-col sm:flex-row gap-[48px] max-md:items-center max-md:justify-center ">
+          <div className="flex flex-col sm:flex-row gap-[15%] max-md:items-center max-md:justify-center ">
             {data && data.map(item => <PostCard textLimit={130} post={item.fields} key={item.sys.id} />)}
           </div>
         </div>

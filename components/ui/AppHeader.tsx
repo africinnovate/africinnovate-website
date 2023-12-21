@@ -150,7 +150,7 @@ const AppHeader = () => {
           <div className="font-sans text-white text-lg font-medium leading-6 my-4">
             <Link href="/blog">Blog</Link>
           </div>
-          <div className="inline-flex items-start mr-6  max-md:hidden">
+          <div className="inline-flex items-start mr-6  ">
           <Button className="w-[200px]" onClick={() => setIsModalOpen(true)}>
             Call Us
           </Button>
