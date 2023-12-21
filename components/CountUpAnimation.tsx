@@ -7,8 +7,9 @@ interface CountUpAnimationProps {
 const CountUpAnimation: React.FC<CountUpAnimationProps> = ({ end }) => {
   return (
     <CountUp delay={0} end={end} enableScrollSpy>
-      {({ countUpRef }) => <span ref={countUpRef} />}
+      {({ countUpRef }) => <span ref={countUpRef} />} 
     </CountUp>
+    
   )
 }
 

@@ -2,15 +2,36 @@
 import React, { useState } from 'react'
 
 export default function ContactUs() {
-  const [fullName, setFullName] = useState('Full-Name')
-  const [email, setEmail] = useState('Email')
-  const [phoneNumber, setPhoneNumber] = useState('Phone Number')
-  const [selectCourse, setSelectCourse] = useState('Select course')
-  const [yourMessage, setYourMessage] = useState('')
-
-  const handleSubmit = (e: { preventDefault: () => void }) => {
+  const [fullName, setFullName] = useState<string>('')
+  const [email, setEmail] = useState <string>('')
+  const [phoneNumber, setPhoneNumber] = useState <string>('')
+  const [selectCourse, setSelectCourse] = useState<string>('')
+  const [yourMessage, setYourMessage] = useState<string>('')
+  
+  const handleSubmit = async (e: { preventDefault: () => void }) => {
     e.preventDefault()
+    const sanitizedFullName = fullName.replace(/<[^>]+>/g, ''); // Remove any HTML tags
+    const sanitizedEmail = email.toLowerCase().trim(); // Sanitize email
+    const sanitizedPhoneNumber = phoneNumber.replace(/[^0-9]/g, ''); // Allow only numbers
+    const sanitizedYourMessage = yourMessage.replace(/<[^>]+>/g, ''); // Remove any HTML tags
 
+    // Validation
+    const isValid =
+      !sanitizedFullName.includes('Full-Name') &&
+      sanitizedEmail.includes('@') &&
+      sanitizedPhoneNumber.length > 9 &&
+      selectCourse !== 'Select course' &&
+      sanitizedYourMessage.trim() !== '';
+
+    if (!isValid) {
+      alert('Please fill in all fields correctly.');
+      return;
+    }
+// handling sending messages
+    await fetch("/api/ContactUsMailer", {
+      method: "POST",
+      body: JSON.stringify({ email,phoneNumber,fullName,selectCourse,yourMessage }),
+    })
     // Handle form submission logic here
     console.log('Form submitted:', {
       fullName,
@@ -58,7 +79,6 @@ export default function ContactUs() {
         data-aos="fade-up"
         data-aos-duration="1200"
         data-aos-delay="700"
-        onSubmit={handleSubmit}
       >
         <label
           htmlFor="fullName"
@@ -68,6 +88,7 @@ export default function ContactUs() {
           type="text"
           id="fullName"
           name="fullName"
+          placeholder='fullName'
           value={fullName}
           onChange={(e) => setFullName(e.target.value)}
           className="flex-shrink-0 w-[527px] max-md:w-[250px] focus:bg-transparent focus:text-[#b0b0d0]  focus:outline-none border-b-[#b0b0d0] bg-transparent border-solid border border-t-transparent  border-l-transparent border-r-transparent text-[#b0b0d0]"
@@ -81,9 +102,10 @@ export default function ContactUs() {
           type="email"
           id="email"
           name="email"
+          placeholder='email'
           value={email}
           onChange={(e) => setEmail(e.target.value)}
-          className="flex-shrink-0 w-[527px] max-md:w-[250px] focus:bg-transparent focus:text-[#b0b0d0]  focus:outline-none border-b-[#b0b0d0] bg-transparent border-solid border border-t-transparent  border-l-transparent border-r-transparent text-[#b0b0d0]"
+          className="flex-shrink-0 w-[527px] max-md:w-[250px] bg-transparent focus:text-[#b0b0d0]  focus:outline-none border-b-[#b0b0d0] border-solid border border-t-transparent  border-l-transparent border-r-transparent text-[#b0b0d0]"
         />
 
         <label
@@ -93,6 +115,7 @@ export default function ContactUs() {
         <input
           type="tel"
           id="phoneNumber"
+          placeholder='phoneNumber'
           name="phoneNumber"
           value={phoneNumber}
           onChange={(e) => setPhoneNumber(e.target.value)}
@@ -106,6 +129,7 @@ export default function ContactUs() {
         <select
           id="selectCourse"
           name="selectCourse"
+          placeholder='selectCourse'
           value={selectCourse}
           onChange={(e) => setSelectCourse(e.target.value)}
           className="flex-shrink-0 w-[527px]  max-md:w-[250px]  focus:bg-transparent focus:text-[#b0b0d0]  focus:outline-none border-b-[#b0b0d0] bg-transparent border-solid border border-t-transparent  border-l-transparent border-r-transparent text-[#b0b0d0]"
@@ -125,9 +149,10 @@ export default function ContactUs() {
         <textarea
           id="yourMessage"
           name="yourMessage"
+          placeholder='yourMessage'
           value={yourMessage}
           onChange={(e) => setYourMessage(e.target.value)}
-          className="flex-shrink-0 w-[527px] max-md:w-[250px] h-24 rounded-lg border border-[#b0b0d0] bg-transparent"
+          className="flex-shrink-0 text-slate-400  w-[527px] max-md:w-[250px] h-24 rounded-lg border border-[#b0b0d0] bg-transparent"
         ></textarea>
 
         <div className="FilledButtonsDarkMode left-[76px] top-[472px]  justify-start items-start inline-flex">
@@ -135,7 +160,7 @@ export default function ContactUs() {
             type="submit"
             className="Frame11947 px-6 py-3 bg-slate-300 rounded-3xl justify-start items-center gap-2 flex"
           >
-            <span className="Button text-blue-950 text-base font-medium font-['DM Sans'] leading-normal">
+            <span onClick={handleSubmit} className="Button text-blue-950 text-base font-medium font-['DM Sans'] leading-normal">
               Send Message
             </span>
           </button>

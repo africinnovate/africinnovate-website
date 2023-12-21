@@ -79,7 +79,7 @@ const Hero = () => {
         <div className="flex gap-10 max-md:gap-4 max-md:ml-[23px]">
           <div className=" flex-col items-start  ">
             <div className="text-white font-__Raleway_bdd8fd text-[2rem]   font-bold ">
-              <CountUpAnimation end={12} />
+              <CountUpAnimation end={12} />+
               <div className="font-__Raleway_bdd8fd text-[#b0b0d0] font-['DM font-bold max-md:w-[120px] text-[1.3rem]">
                 Hackathon <br /> Won
               </div>
