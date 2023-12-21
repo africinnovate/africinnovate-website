@@ -23,7 +23,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <link rel="icon" href="favico.ico" type="image/x-icon" />
-      
+
       <body className={inter.className}>
         <main className="overflow-x-hidden">
           <AppHeader />

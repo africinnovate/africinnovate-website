@@ -10,7 +10,7 @@ const Hero = () => {
   const currentText = HERO_TEXTS[currentTextIndex]
 
   const joinCommunity = () => {
-   window.open(DISCORD_INVITE, '_blank')
+    window.open(DISCORD_INVITE, '_blank')
   }
 
   useEffect(() => {
@@ -26,7 +26,10 @@ const Hero = () => {
   return (
     <div className="mt-[100px] max-md:mt-[70px]">
       <div className="flex  items-center justify-center flex-col">
-        <div className="flex w-full items-center justify-center flex-col " data-aos="fade-up" >
+        <div
+          className="flex w-full items-center justify-center flex-col "
+          data-aos="fade-up"
+        >
           <div className="w-[80%] text-center text-white text-[80px] font-semibold font-sans  max-md:text-[2rem] max-md:leading-normal">
             Innovation fueled by the community of
             <span className="text-[#ffbe0b]"> {currentText}</span>
@@ -49,7 +52,10 @@ const Hero = () => {
           data-aos-delay="700"
           id="animationbutton"
         >
-          <Button onClick={joinCommunity} className="w-[200px]"> Join our community </Button>
+          <Button onClick={joinCommunity} className="w-[200px]">
+            {' '}
+            Join our community{' '}
+          </Button>
         </div>
       </div>
 

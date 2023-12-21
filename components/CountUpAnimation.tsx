@@ -1,18 +1,17 @@
 import CountUp from 'react-countup'
 
 interface CountUpAnimationProps {
-  count: number;
+  count: number
 }
 
 const CountUpAnimation: React.FC<CountUpAnimationProps> = ({ count }) => {
-  return (<>
-
-    <CountUp delay={0} end={count} enableScrollSpy>
-      {({ countUpRef }) => <span ref={countUpRef} />} 
-    </CountUp>
-    +
+  return (
+    <>
+      <CountUp delay={0} end={count} enableScrollSpy>
+        {({ countUpRef }) => <span ref={countUpRef} />}
+      </CountUp>
+      +
     </>
-    
   )
 }
 
