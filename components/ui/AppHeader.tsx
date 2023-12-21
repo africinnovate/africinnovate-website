@@ -11,9 +11,7 @@ const AppHeader = () => {
     setMenuOpen(!menuOpen)
   }
 
-  const test = () => {
-    alert('hello')
-  }
+
   return (
     <nav className="bg-[#000024] flex justify-around  md:shrink-0  max-md:contents">
       <div className="w-[100vw] h-20 border-b-[0.5px] border-b-[#9a8888] bg-[#000024] flex items-center justify-around">
@@ -58,7 +56,7 @@ const AppHeader = () => {
           </div>
         </div>
         <div className="inline-flex items-start mr-6  max-md:hidden">
-          <Button onClick={test} className="w-[200px]">
+          <Button className="w-[200px]">
             Call Us
           </Button>
         </div>
