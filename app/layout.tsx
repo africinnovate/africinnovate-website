@@ -1,6 +1,6 @@
 import type { Metadata } from 'next'
 import { Raleway } from 'next/font/google'
-import favicon from './favicon.ico'
+import favicon from '@/public/icon.png'
 import MyApp from '@/app/_app'
 import AppHeader from '@/components/ui/AppHeader'
 import Footer from '@/components/footer'

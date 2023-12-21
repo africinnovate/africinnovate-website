@@ -1,7 +1,9 @@
 import RecentBlogPageImage from '../public/img7.png'
 import Image from 'next/image'
 import Button from './ui/Button'
+
 const BlogNewscomponent = () => {
+  
   return (
     <>
       <div>
