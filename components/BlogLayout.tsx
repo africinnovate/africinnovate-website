@@ -20,7 +20,13 @@ type BlogPost = {
   fields: {
     title: string
     body: string
-    featureImage: object
+    featureImage: {
+      fields: {
+        file: {
+          url: string
+        }
+      }
+    }
     created: string
   }
 }

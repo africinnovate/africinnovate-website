@@ -7,6 +7,13 @@ interface IPost {
   post: {
     title: string
     body: string
+    featureImage: {
+      fields: {
+        file: {
+          url: string
+        }
+      }
+    }
   }
   textLimit: number
 }
@@ -18,8 +25,10 @@ const FeaturedBlog = ({ post, textLimit }: IPost) => {
         <Image
           className="w-[500px] h-[440px]   mt-[25px] max-md:mr-[54px] max-md:h-[322px] max-md:w-[350px] max-md:mt-[21px] object-cover relative rounded-2xl"
           data-aos="fade-up"
-          src={BlogImage}
+          src={`https:${post.featureImage.fields.file.url}`}
           alt="blog-page-image"
+          width={100}
+          height={100}
         />
       </div>
       <div className=" max-md:w-[400px]">
