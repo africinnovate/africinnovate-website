@@ -4,7 +4,7 @@ import { AppProps } from 'next/app'
 import { useEffect } from 'react'
 
 import AppHeader from '@/components/ui/AppHeader'
-import Footer from '@/components/Footer'
+import AppFooter from '@/components/ui/AppFooter'
 import MyApp from '@/app/_app'
 import '../app/globals.css'
 
@@ -29,7 +29,7 @@ const PageApp = ({ Component, pageProps }: AppProps) => {
     <main className="overflow-x-hidden">
       <AppHeader />
       <Component {...pageProps} />
-      <Footer />
+      <AppFooter />
       <MyApp />
     </main>
   )
