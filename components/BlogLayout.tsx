@@ -1,8 +1,8 @@
 'use client'
 
 import { getBlogPosts } from '@/lib/utils'
-import Blog from '@/components/Blog'
-import Blogs from '@/components/Blogs'
+import FeaturedBlog from '@/components/ui/FeaturedBlog'
+import PostCard from '@/components/ui/PostCard'
 
 type BlogPost = {
   metadata: { tags: string[] }
@@ -52,7 +52,7 @@ const BlogLayout = ({ title, subTitle, data }: BlogPageProps) => {
       )}
 
       <div className="mt-[5%]">
-        <Blog />
+        <FeaturedBlog textLimit={400} post={data[0].fields} />
         <div
           id="wrapper"
           className="max-md:mt-[20rem] max-md: flex items-center  max-md:flex-col   flex-col max-md:justify-center mt-[5%]"
@@ -63,7 +63,12 @@ const BlogLayout = ({ title, subTitle, data }: BlogPageProps) => {
           >
             Recent Blogs
           </div>
-          <Blogs />
+          <div className="flex  mt-7 " data-aos="fade-up">
+          <div className="flex flex-col sm:flex-row gap-[48px] max-md:items-center max-md:justify-center ">
+            {data && data.map(item => <PostCard textLimit={130} post={item.fields} key={item.sys.id} />)}
+          </div>
+        </div>
+
         </div>
       </div>
     </div>
