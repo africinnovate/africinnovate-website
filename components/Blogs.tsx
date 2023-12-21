@@ -29,7 +29,7 @@ const BlogNewscomponent = () => {
               </div>
               <Button>Read More</Button>
             </div>
-            <div className="w-[325px] h-[430px] flex-col justify-startitems-start gap-2 inline-flex">
+            <div className="w-[325px] h-[430px] flex-col justify-start items-start gap-2 inline-flex">
               <Image
                 className="w-[408px] h-[220px]  max-md:w-[320px] object-cover relative rounded-2xl"
                 src={RecentBlogPageImage}
