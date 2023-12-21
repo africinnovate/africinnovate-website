@@ -38,7 +38,7 @@ const Blog = () => {
             bibendum praesent justo amet integer. In quis tortor enim dictum
             ultrices id. Et.
           </div>
-          <Button className="mt-[5rem]">Read More</Button>
+          <Button className="max-md:mt-[5rem]">Read More</Button>
         </div>
       </div>
     </div>

@@ -10,7 +10,7 @@ const Hero = () => {
   const currentText = HERO_TEXTS[currentTextIndex]
 
   const joinCommunity = () => {
-   window.open(DISCORD_INVITE, '_blank')
+    window.open(DISCORD_INVITE, '_blank')
   }
 
   useEffect(() => {
@@ -26,7 +26,10 @@ const Hero = () => {
   return (
     <div className="mt-[100px] max-md:mt-[70px]">
       <div className="flex  items-center justify-center flex-col">
-        <div className="flex w-full items-center justify-center flex-col " data-aos="fade-up" >
+        <div
+          className="flex w-full items-center justify-center flex-col "
+          data-aos="fade-up"
+        >
           <div className="w-[80%] text-center text-white text-[80px] font-semibold font-sans  max-md:text-[2rem] max-md:leading-normal">
             Innovation fueled by the community of
             <span className="text-[#ffbe0b]"> {currentText}</span>
@@ -49,7 +52,10 @@ const Hero = () => {
           data-aos-delay="700"
           id="animationbutton"
         >
-          <Button onClick={joinCommunity} className="w-[200px]"> Join our community </Button>
+          <Button onClick={joinCommunity} className="w-[200px]">
+            {' '}
+            Join our community{' '}
+          </Button>
         </div>
       </div>
 
@@ -60,7 +66,7 @@ const Hero = () => {
         <div className="flex   ">
           <div className=" flex items-start gap-10 ">
             <div className="text-white font-sans text-[2rem]  font-bold ">
-              <CountUpAnimation end={400} />+
+              <CountUpAnimation count={400} />
               <div className="font-sans text-[#b0b0d0] font-__Raleway_bdd8fd font-bold   text-[1.3rem]">
                 Students <br /> Trained
               </div>
@@ -68,7 +74,7 @@ const Hero = () => {
 
             <div className="flex-col items-start ">
               <div className="text-white font-__Raleway_bdd8fd text-[2rem]  font-bold ">
-                <CountUpAnimation end={65} />+
+                <CountUpAnimation count={65} />
                 <div className="font-sans text-[#b0b0d0] font-__Raleway_bdd8fd font-meduim text-[1.3rem]">
                   Events <br /> Hosted
                 </div>
@@ -79,7 +85,7 @@ const Hero = () => {
         <div className="flex gap-10 max-md:gap-4 max-md:ml-[23px]">
           <div className=" flex-col items-start  ">
             <div className="text-white font-__Raleway_bdd8fd text-[2rem]   font-bold ">
-              <CountUpAnimation end={12} />
+              <CountUpAnimation count={12} />
               <div className="font-__Raleway_bdd8fd text-[#b0b0d0] font-['DM font-bold max-md:w-[120px] text-[1.3rem]">
                 Hackathon <br /> Won
               </div>
@@ -87,7 +93,7 @@ const Hero = () => {
           </div>
           <div className="  flex flex-col items-start ">
             <div className="text-white font-__Raleway_bdd8fd font-bold  text-[2rem]  ">
-              <CountUpAnimation end={120} />+
+              <CountUpAnimation count={120} />
               <div className="font-__Raleway_bdd8fd text-[#b0b0d0] font-bold  text-[1.3rem]">
                 Hub <br /> Users
               </div>
