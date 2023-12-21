@@ -1,8 +1,5 @@
-
-
 pages/
 ├── blog/
-│   ├── [slug].tsx
-│   └── ...
-└── _app.tsx
-
+│ ├── [slug].tsx
+│ └── ...
+└── \_app.tsx
