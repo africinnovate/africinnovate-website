@@ -65,7 +65,7 @@ const BlogLayout = ({ title, subTitle, data }: BlogPageProps) => {
           </div>
           <div className="flex  mt-7 " data-aos="fade-up">
           <div className="flex flex-col sm:flex-row gap-[48px] max-md:items-center max-md:justify-center ">
-            {data && data.map(item => <PostCard textLimit={130} post={item.fields} />)}
+            {data && data.map(item => <PostCard textLimit={130} post={item.fields} key={item.sys.id} />)}
           </div>
         </div>
 
