@@ -21,7 +21,7 @@ const Hero = () => {
     return () => {
       clearInterval(intervalId)
     }
-  }, [HERO_TEXTS.length])
+  }, [])
 
   return (
     <div className="mt-[100px] max-md:mt-[70px]">

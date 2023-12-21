@@ -1,6 +1,5 @@
-import Link from 'next/link'
+
 import Image from 'next/image'
-import BlogImage from '@/public/Images/BlogImage.svg'
 import Button from '@/components/ui/Button'
 
 interface IPost {
