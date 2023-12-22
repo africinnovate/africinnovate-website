@@ -1,5 +1,5 @@
 import Image from 'next/image'
-import RecentBlogPageImage from '@/public/Images/BlogPageImage.png'
+import RecentBlogPageImage from '@/public/Images/BlogPageImage.webp'
 import Button from './Button'
 
 interface IPost {
@@ -14,7 +14,7 @@ const PostCard = ({post, textLimit}: IPost) => {
 
 
   return (
-    <div className="w-[325px] h-[430px] flex-col justify-start  items-start gap-2 inline-flex">
+    <div className="w-fit h-fit flex-col justify-start  items-start gap-3 inline-flex">
               <Image
                 className="w-[408px] h-[220px]  max-md:w-[320px] object-cover relative rounded-2xl"
                 src={RecentBlogPageImage}
@@ -32,7 +32,7 @@ const PostCard = ({post, textLimit}: IPost) => {
               >
                 {post.body.substring(0, textLimit)}...
               </div>
-              <Button>Read More</Button>
+              <Button className='max-md:mb-[30px]'>Read More</Button>
             </div>
   )
 }
