@@ -3,7 +3,7 @@ import { Raleway } from 'next/font/google'
 import favicon from './favicon.ico'
 import MyApp from '@/app/_app'
 import AppHeader from '@/components/ui/AppHeader'
-import Footer from '@/components/Footer'
+import AppFooter from '@/components/ui/AppFooter'
 import './globals.css'
 
 const inter = Raleway({ subsets: ['latin'] })
@@ -28,7 +28,7 @@ export default function RootLayout({
         <main className="overflow-x-hidden">
           <AppHeader />
           {children}
-          <Footer />
+          <AppFooter />
           <MyApp />
         </main>
       </body>

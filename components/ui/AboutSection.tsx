@@ -3,20 +3,20 @@ import LaptopPic from '@/public/Images/Masonary-Imageone.svg'
 import LaptopPicTwo from '@/public/Images/Masonary-ImageTwo.svg'
 import LaptopPicThree from '@/public/Images/Masonary-ImageThree.svg'
 import LaptopPicFour from '@/public/Images/Masonary-ImageFour.svg'
-import LaptopPicMain from '@/public/Images/LaptopImage.png'
+import LaptopPicMain from '@/public/Images/LaptopImage.webp'
 import Button from './Button'
-import Blog from '../Blog'
+
 
 const AboutSection = () => {
   return (
-    <section className="mt-[1rem]">
+    <section className="mt-[2rem] max-md:mb-[80%]">
       <div className="flex items-center justify-center mt-3 "></div>
       <div className="w-full h-[600px] flex  flex-row justify-around items-start mt-[100px] pt-[5rem] max-md:flex-col max-md:justify-center max-md:items-center">
         <div
           className="  min-w-[401px] text-start flex justify-start flex-col mt-[5rem]  max-md:ml-[68px]  max-md:mt-[20rem]"
           data-aos="fade-right"
         >
-          {/* <div className="Ellipse2 w-80 h-80 opacity-80  bg-blue-600 absolute left-[74%] top-[170%] rounded-full blur-[130px]" /> */}
+
           <div className=" text-white text-[32px] font-bold font-sans leading-10  ">
             About us
           </div>

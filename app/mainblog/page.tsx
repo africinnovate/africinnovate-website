@@ -1,6 +1,6 @@
 'use client'
 import Image from 'next/image'
-import BlogPageImage from '@/public/img7.png'
+import BlogPageImage from '@/public/Images/BlogPageImage.png'
 function MainBlog() {
   return (
     <>

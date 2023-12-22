@@ -1,13 +1,14 @@
 import Image from 'next/image'
-import AfricInnovateLogo from '../public/svg-icons/Africinnovate.svg'
-import FaceBook from '../public/svg-icons/facebook.svg'
-import Instagram from '../public/svg-icons/instagram.svg'
-import LinkedIn from '../public/svg-icons/linkedin.svg'
-import Twitter from '../public/svg-icons/twitter.svg'
-import Contact from '../public/svg-icons/call-us.svg'
-import Location from '../public/svg-icons/location.svg'
-import Mail from '../public/svg-icons/email.svg'
-const Footer = () => {
+import AfricInnovateLogo from '@/public/svg-icons/Africinnovate.svg'
+import FaceBook from '@/public/svg-icons/facebook.svg'
+import Instagram from '@/public/svg-icons/instagram.svg'
+import LinkedIn from '@/public/svg-icons/linkedin.svg'
+import Twitter from '@/public/svg-icons/twitter.svg'
+import Contact from '@/public/svg-icons/call-us.svg'
+import Location from '@/public/svg-icons/location.svg'
+import Mail from '@/public/svg-icons/email.svg'
+
+const AppFooter = () => {
   return (
     <footer className=" z-20 max-md:flex-col ml-[6.9rem] max-md:ml-[0.9rem] max-md:pl-[0px]   mt-9   text-white py-8 justify-center items-center  flex">
       {/* Column 1 */}
@@ -142,4 +143,4 @@ const Footer = () => {
   )
 }
 
-export default Footer
+export default AppFooter
