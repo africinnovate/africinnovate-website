@@ -24,7 +24,7 @@ const PostCard = ({post, textLimit}: IPost) => {
                 Technology
               </div>
               <div className="w-[409px] text-white text-2xl font-bold font-['Raleway'] leading-loose max-md:w-[350px]">
-                {post.title}
+                {post.title.length > 60 ? `${post.title.substring(0, 60)}...` : post.title}
               </div>
               <div
                 className="w-[350px] h-[74px] max-md:w-[350px] text-white text-base font-medium font-['DM Sans'] leading-normal  "
