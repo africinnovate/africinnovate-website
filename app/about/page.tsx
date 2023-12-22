@@ -137,8 +137,6 @@ function AboutUs() {
               id="textsize"
             >
               Embracing diverse ideas and beliefs without judgment, we foster an open environment where candor and respect guide our interactions.
-              {/* We welcome differing ideas and beliefs without judgment and
-              practice candor and respect in all communications. */}
             </div>
             <div className="w-[130px]h-[55px] px-6 py-3 bg-slate-300 rounded-3xl justify-start items-center  mt-5 gap-2 inline-flex">
               <div className="text-blue-950  font-medium font-sans leading-normal ">

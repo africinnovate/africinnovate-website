@@ -80,6 +80,9 @@ const AppHeader = () => {
           <div className=" font-sans text-white font-['DM text-lg font-medium leading-6 hover:text-[#FFBE0B]">
             <Link href="/blog">Blog</Link>
           </div>
+          <div className=" font-sans text-white font-['DM text-lg font-medium leading-6 hover:text-[#FFBE0B]">
+            <Link href="/blockchain">Blockchain</Link>
+          </div>
         </div>
         <div className="inline-flex items-start mr-6  max-md:hidden">
           <Button className="w-[200px]" onClick={() => setIsModalOpen(true)}>
