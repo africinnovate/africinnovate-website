@@ -85,19 +85,11 @@ function AboutUs() {
               </svg>
             </div>
             <div className="text-white  font-bold font-['Raleway'] text-[16px] leading-loose">
-              Experienced &amp; Professional team
+              Collaboration
             </div>
 
-            <div
-              className=" text-slate-400  font-medium font-sansleading-normal  mr-5 text-[11px]"
-              id="textsize"
-            >
-              Paragraph on UIUX Design. Paragraph on UIUX Design. Paragraph on
-              UIUX Design. Paragraph on UIUX Design. Paragraph on UIUX Design.
-              Paragraph on UIUX Design. Paragraph on UIUX Design. Paragraph on
-              UIUX Design. Paragraph on UIUX Design. Paragraph on UIUX Design.
-              Paragraph on UIUX Design. Paragraph on UIUX Design. Paragraph on
-              UIUX Design. Paragraph on UIUX Design.{' '}
+            <div className=" text-slate-400  font-medium font-sansleading-normal  mr-5" id="textsize" >
+              We believe that we can achieve more as a team than we ever could individually and are eager to give and receive constructive feedback in order to improve.
             </div>
             <div className="w-[130px]h-[55px] px-6 py-3 bg-slate-300 rounded-3xl justify-start items-center  mt-5 gap-2 inline-flex">
               <div className="text-blue-950  font-medium font-sans leading-normal ">
@@ -132,19 +124,11 @@ function AboutUs() {
               </svg>
             </div>
             <div className="text-white text-[16px] font-bold font-['Raleway'] leading-loose">
-              Experienced &amp; Professional team
+              Openness
             </div>
 
-            <div
-              className=" text-slate-400  font-medium font-sansleading-normal  mr-5 text-[11px]"
-              id="textsize"
-            >
-              Paragraph on UIUX Design. Paragraph on UIUX Design. Paragraph on
-              UIUX Design. Paragraph on UIUX Design. Paragraph on UIUX Design.
-              Paragraph on UIUX Design. Paragraph on UIUX Design. Paragraph on
-              UIUX Design. Paragraph on UIUX Design. Paragraph on UIUX Design.
-              Paragraph on UIUX Design. Paragraph on UIUX Design. Paragraph on
-              UIUX Design. Paragraph on UIUX Design.{' '}
+            <div className=" text-slate-400  font-medium font-sansleading-normal  mr-5" id="textsize" >
+              We welcome differing ideas and beliefs without judgment and practice candor and respect in all communications.
             </div>
             <div className="w-[130px]h-[55px] px-6 py-3 bg-slate-300 rounded-3xl justify-start items-center  mt-5 gap-2 inline-flex">
               <div className="text-blue-950  font-medium font-sans leading-normal ">
@@ -178,19 +162,11 @@ function AboutUs() {
               </svg>
             </div>
             <div className="text-white text-[16px] font-bold font-['Raleway'] leading-loose">
-              Experienced &amp; Professional team
+              Diligence
             </div>
 
-            <div
-              className=" text-slate-400  font-medium font-sansleading-normal  mr-5 text-[11px]"
-              id="textsize"
-            >
-              Paragraph on UIUX Design. Paragraph on UIUX Design. Paragraph on
-              UIUX Design. Paragraph on UIUX Design. Paragraph on UIUX Design.
-              Paragraph on UIUX Design. Paragraph on UIUX Design. Paragraph on
-              UIUX Design. Paragraph on UIUX Design. Paragraph on UIUX Design.
-              Paragraph on UIUX Design. Paragraph on UIUX Design. Paragraph on
-              UIUX Design. Paragraph on UIUX Design.{' '}
+            <div className=" text-slate-400  font-medium font-sansleading-normal  mr-5" id="textsize" >
+              We hold ourselves and our colleagues accountable to a high standard and look for the long-term solution instead of providing a short-term fix.
             </div>
             <div className="w-[130px]h-[55px] px-6 py-3 bg-slate-300 rounded-3xl justify-start items-center  mt-5 gap-2 inline-flex">
               <div className="text-blue-950  font-medium font-sans leading-normal ">
@@ -224,19 +200,14 @@ function AboutUs() {
               </svg>
             </div>
             <div className="text-white text-[16px] font-bold font-['Raleway'] leading-loose">
-              Experienced &amp; Professional team
+              Empathy
             </div>
 
             <div
-              className=" text-slate-400  font-medium font-sansleading-normal  mr-5 text-[11px]"
+              className=" text-slate-400  font-medium font-sansleading-normal  mr-5"
               id="textsize"
             >
-              Paragraph on UIUX Design. Paragraph on UIUX Design. Paragraph on
-              UIUX Design. Paragraph on UIUX Design. Paragraph on UIUX Design.
-              Paragraph on UIUX Design. Paragraph on UIUX Design. Paragraph on
-              UIUX Design. Paragraph on UIUX Design. Paragraph on UIUX Design.
-              Paragraph on UIUX Design. Paragraph on UIUX Design. Paragraph on
-              UIUX Design. Paragraph on UIUX Design.{' '}
+We value diverse perspectives and actively listen, seeking to understand deeply and respond with compassion. Our commitment to empathy fosters an inclusive environment.
             </div>
             <div className="w-[130px]h-[55px] px-6 py-3 bg-slate-300 rounded-3xl justify-start items-center  mt-5 gap-2 inline-flex">
               <div className="text-blue-950  font-medium font-sans leading-normal ">
@@ -244,10 +215,6 @@ function AboutUs() {
               </div>
             </div>
           </div>
-
-          {/* next three collum */}
-
-          {/* next three column */}
         </div>
       </div>
     </div>
