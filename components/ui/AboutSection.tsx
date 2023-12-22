@@ -3,13 +3,13 @@ import LaptopPic from '@/public/Images/Masonary-Imageone.svg'
 import LaptopPicTwo from '@/public/Images/Masonary-ImageTwo.svg'
 import LaptopPicThree from '@/public/Images/Masonary-ImageThree.svg'
 import LaptopPicFour from '@/public/Images/Masonary-ImageFour.svg'
-import LaptopPicMain from '@/public/Images/LaptopImage.png'
+import LaptopPicMain from '@/public/Images/LaptopImage.webp'
 import Button from './Button'
 
 
 const AboutSection = () => {
   return (
-    <section className="mt-[1rem]">
+    <section className="mt-[2rem] max-md:mb-[80%]">
       <div className="flex items-center justify-center mt-3 "></div>
       <div className="w-full h-[600px] flex  flex-row justify-around items-start mt-[100px] pt-[5rem] max-md:flex-col max-md:justify-center max-md:items-center">
         <div

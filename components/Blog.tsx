@@ -1,33 +1,17 @@
-
+import Link from 'next/link'
 import Image from 'next/image'
-import Button from '@/components/ui/Button'
+import BlogImage from '../public/Images/BlogImage.svg'
+import Button from './ui/Button'
 
-interface IPost {
-  post: {
-    title: string
-    body: string
-    featureImage: {
-      fields: {
-        file: {
-          url: string
-        }
-      }
-    }
-  }
-  textLimit: number
-}
-
-const FeaturedBlog = ({ post, textLimit }: IPost) => {
+const Blog = () => {
   return (
     <div className="w-[1200px] max-md:w-[400px] h-[427px] flex flex-row    items-center justify-center mt-[20px] ml-[83px]  max-md:ml-[50px] max-md:flex-col max-md:justify-center max-md:items-center gap-[30px]  max-md:mt-[10rem]">
       <div className="mt-[20px] ">
         <Image
           className="w-[500px] h-[440px]   mt-[20px] max-md:mr-[54px] max-md:h-[322px] max-md:w-[350px] max-md:mt-[21px] object-cover relative rounded-2xl"
           data-aos="fade-up"
-          src={`https:${post.featureImage.fields.file.url}`}
+          src={BlogImage}
           alt="blog-page-image"
-          width={100}
-          height={100}
         />
       </div>
       <div className=" max-md:w-[400px]">
@@ -38,11 +22,21 @@ const FeaturedBlog = ({ post, textLimit }: IPost) => {
           <div className="text-yellow-400 text-lg font-medium font-['DM Sans'] leading-normal">
             Training
           </div>
-          <div className="w-[544px] max-md:w-[350px] max-md:leading-[34px] text-white text-5xl font-bold font-['Raleway'] leading-[60px] max-md:text-[24px]">
-            {post.title}
+          <div className="w-[544px] text-white text-5xl font-bold font-['Raleway'] leading-[60px] max-md:text-[24px]">
+            This space is for the Blog Title
           </div>
           <div className="w-[578px] h-[200px] max-md:w-[350px]  max-md:text-[15px] text-zinc-200 text-base font-medium font-['DM Sans'] leading-normal">
-            {post.body.substring(0, textLimit)}...
+            Lorem ipsum dolor sit amet consectetur. Mattis lorem sit etiam
+            suspendisse. Aliquam erat egestas quis sed enim facilisis integer
+            libero. Adipiscing erat consequat sed amet amet bibendum facilisi
+            ut. Quis urna at mi orci ultrices ultrices consequat tempor.
+            Volutpat et sit varius nunc enim sapien.
+            <br />
+            Cursus aliquet nunc vitae egestas non sagittis amet vitae elit.
+            Sapien consectetur sociis lacinia diam mattis vulputate. Et ultrices
+            aliquet sit ornare enim. Malesuada egestas massa facilisi lobortis
+            bibendum praesent justo amet integer. In quis tortor enim dictum
+            ultrices id. Et.
           </div>
           <Button className="max-md:mt-[5rem]">Read More</Button>
         </div>
@@ -51,4 +45,4 @@ const FeaturedBlog = ({ post, textLimit }: IPost) => {
   )
 }
 
-export default FeaturedBlog
+export default Blog

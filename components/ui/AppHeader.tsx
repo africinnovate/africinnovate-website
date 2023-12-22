@@ -150,9 +150,16 @@ const AppHeader = () => {
           <div className="font-sans text-white text-lg font-medium leading-6 my-4">
             <Link href="/blog">Blog</Link>
           </div>
-          <div className="flex  w-[200px] items-center gap-2 py-3 px-6 rounded-3xl  hover:bg-[#FFBE0B] bg-[#cccce0] font-sans text-[#006] font-['DM font-medium leading-6">
-            Primary CTA Button
-          </div>
+          <div className="inline-flex items-start mr-6  ">
+          <Button className="w-[200px]" onClick={() => setIsModalOpen(true)}>
+            Call Us
+          </Button>
+          {isModalOpen && (
+            <Modal>
+              <FormComponent onClose={handleClose} />
+            </Modal>
+          )}
+        </div>
         </div>
       )}
     </nav>
