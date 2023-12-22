@@ -54,12 +54,12 @@ function AboutUs() {
         </div>
       </div>
       {/* card */}
-      <div className="w-[724px]  mt-[5%]   max-md:h-fit max-md:w-[350px] max-md:mt-[10px] max-md:ml-2 ">
+      <div className="mt-[5%]   max-md:h-fit max-md:w-[350px] max-md:mt-[10px] max-md:ml-2 ">
         <div
           id="cardes"
           className="  md:grid md:grid-cols-2 lg:grid-cols-2  mt-[2rem]   "
         >
-          <div className="flex-shrink-0   w-[350px] h-[300px]   rounded-2xl border-[0.5px] border-blue-100 pl-5 pt-2  items-center justify-center transition duration-500 hover:bg-[#00388D] hover:shadow-lg hover:border-2 border-solid  max-md:w-[300px] max-md:h-[350px] max-md:hover:ml-[5px] max-md:p-[9px] group">
+          <div className="flex-shrink-0   w-[400px] h-[300px]   rounded-2xl border-[0.5px] border-blue-100 pl-5 pt-2  items-center justify-center transition duration-500 hover:bg-[#00388D] hover:shadow-lg hover:border-2 border-solid  max-md:w-[300px] max-md:h-[350px] max-md:hover:ml-[5px] max-md:p-[9px] group">
             <div className="flex-shrink-0 w-12 h-12 rounded-full bg-white/[.10] flex items-center justify-center">
               {' '}
               <svg
@@ -88,8 +88,13 @@ function AboutUs() {
               Collaboration
             </div>
 
-            <div className=" text-slate-400  font-medium font-sansleading-normal  mr-5" id="textsize" >
-              We believe that we can achieve more as a team than we ever could individually and are eager to give and receive constructive feedback in order to improve.
+            <div
+              className=" text-slate-400  font-medium font-sansleading-normal  mr-5"
+              id="textsize"
+            >
+              We believe that we can achieve more as a team than we ever could
+              individually and are eager to give and receive constructive
+              feedback in order to improve.
             </div>
             <div className="w-[130px]h-[55px] px-6 py-3 bg-slate-300 rounded-3xl justify-start items-center  mt-5 gap-2 inline-flex">
               <div className="text-blue-950  font-medium font-sans leading-normal ">
@@ -98,7 +103,7 @@ function AboutUs() {
             </div>
           </div>
 
-          <div className="flex-shrink-0 w-[340px]h-[300px]  rounded-2xl border-[0.5px] border-blue-100 pl-5 pt-2  items-center justify-center transition duration-500 hover:bg-[#00388D] hover:shadow-lg hover:border-2 border-solid  max-md:w-[300px] max-md:h-[350px] max-md:hover:ml-[5px] max-md:p-[9px] group">
+          <div className="flex-shrink-0 w-[400px] h-[300px]  rounded-2xl border-[0.5px] border-blue-100 pl-5 pt-2  items-center justify-center transition duration-500 hover:bg-[#00388D] hover:shadow-lg hover:border-2 border-solid  max-md:w-[300px] max-md:h-[350px] max-md:hover:ml-[5px] max-md:p-[9px] group">
             <div className="flex-shrink-0 w-12 h-12 rounded-full bg-white/[.10] flex items-center justify-center">
               {' '}
               <svg
@@ -127,8 +132,13 @@ function AboutUs() {
               Openness
             </div>
 
-            <div className=" text-slate-400  font-medium font-sansleading-normal  mr-5" id="textsize" >
-              We welcome differing ideas and beliefs without judgment and practice candor and respect in all communications.
+            <div
+              className=" text-slate-400  font-medium font-sansleading-normal  mr-5"
+              id="textsize"
+            >
+              Embracing diverse ideas and beliefs without judgment, we foster an open environment where candor and respect guide our interactions.
+              {/* We welcome differing ideas and beliefs without judgment and
+              practice candor and respect in all communications. */}
             </div>
             <div className="w-[130px]h-[55px] px-6 py-3 bg-slate-300 rounded-3xl justify-start items-center  mt-5 gap-2 inline-flex">
               <div className="text-blue-950  font-medium font-sans leading-normal ">
@@ -136,7 +146,7 @@ function AboutUs() {
               </div>
             </div>
           </div>
-          <div className="flex-shrink-0 w-[340px] h-[300px] rounded-2xl border border-blue-100 pl-5 pt-2  items-center justify-center transition duration-500 hover:bg-[#00388D] hover:shadow-lg hover:border-2 border-solid max-md:w-[300px] max-md:h-[350px] max-md:hover:ml-[5px] max-md:p-[9px] group">
+          <div className="flex-shrink-0 w-[400px] h-[300px] rounded-2xl border border-blue-100 pl-5 pt-2  items-center justify-center transition duration-500 hover:bg-[#00388D] hover:shadow-lg hover:border-2 border-solid max-md:w-[300px] max-md:h-[350px] max-md:hover:ml-[5px] max-md:p-[9px] group">
             <div className="flex-shrink-0 w-12 h-12 rounded-full bg-white/[.10] flex items-center justify-center">
               {' '}
               <svg
@@ -165,8 +175,13 @@ function AboutUs() {
               Diligence
             </div>
 
-            <div className=" text-slate-400  font-medium font-sansleading-normal  mr-5" id="textsize" >
-              We hold ourselves and our colleagues accountable to a high standard and look for the long-term solution instead of providing a short-term fix.
+            <div
+              className=" text-slate-400  font-medium font-sansleading-normal  mr-5"
+              id="textsize"
+            >
+              We hold ourselves and our colleagues accountable to a high
+              standard and look for the long-term solution instead of providing
+              a short-term fix.
             </div>
             <div className="w-[130px]h-[55px] px-6 py-3 bg-slate-300 rounded-3xl justify-start items-center  mt-5 gap-2 inline-flex">
               <div className="text-blue-950  font-medium font-sans leading-normal ">
@@ -174,7 +189,7 @@ function AboutUs() {
               </div>
             </div>
           </div>
-          <div className="flex-shrink-0 w-[340px]  h-[300px] rounded-2xl border border-blue-100 pl-5 pt-2  items-center justify-center transition duration-500 hover:bg-[#00388D] hover:shadow-lg hover:border-2 border-solid max-md:w-[300px] max-md:h-[350px] max-md:hover:ml-[5px] max-md:p-[9px] group">
+          <div className="flex-shrink-0 w-[400px]  h-[300px] rounded-2xl border border-blue-100 pl-5 pt-2  items-center justify-center transition duration-500 hover:bg-[#00388D] hover:shadow-lg hover:border-2 border-solid max-md:w-[300px] max-md:h-[350px] max-md:hover:ml-[5px] max-md:p-[9px] group">
             <div className="flex-shrink-0 w-12 h-12 rounded-full bg-white/[.10] flex items-center justify-center">
               {' '}
               <svg
@@ -207,7 +222,9 @@ function AboutUs() {
               className=" text-slate-400  font-medium font-sansleading-normal  mr-5"
               id="textsize"
             >
-We value diverse perspectives and actively listen, seeking to understand deeply and respond with compassion. Our commitment to empathy fosters an inclusive environment.
+              We value diverse perspectives, seeking to
+              understand deeply and respond with compassion. Our commitment to
+              empathy fosters an inclusive environment.
             </div>
             <div className="w-[130px]h-[55px] px-6 py-3 bg-slate-300 rounded-3xl justify-start items-center  mt-5 gap-2 inline-flex">
               <div className="text-blue-950  font-medium font-sans leading-normal ">

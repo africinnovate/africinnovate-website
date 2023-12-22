@@ -6,7 +6,7 @@ const BlogNewscomponent = () => {
   return (
     <>
       <div>
-        <div className="flex  mt-[10%] " >
+        <div className="flex  mt-[10%] ">
           <div className="flex flex-col sm:flex-row gap-[48px] max-md:items-center max-md:justify-center ">
             <div className="w-[325px] h-[430px] flex-col justify-start  items-start gap-2 inline-flex">
               <Image

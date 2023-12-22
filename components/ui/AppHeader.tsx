@@ -151,15 +151,15 @@ const AppHeader = () => {
             <Link href="/blog">Blog</Link>
           </div>
           <div className="inline-flex items-start mr-6  ">
-          <Button className="w-[200px]" onClick={() => setIsModalOpen(true)}>
-            Call Us
-          </Button>
-          {isModalOpen && (
-            <Modal>
-              <FormComponent onClose={handleClose} />
-            </Modal>
-          )}
-        </div>
+            <Button className="w-[200px]" onClick={() => setIsModalOpen(true)}>
+              Call Us
+            </Button>
+            {isModalOpen && (
+              <Modal>
+                <FormComponent onClose={handleClose} />
+              </Modal>
+            )}
+          </div>
         </div>
       )}
     </nav>

@@ -6,7 +6,6 @@ import LaptopPicFour from '@/public/Images/Masonary-ImageFour.svg'
 import LaptopPicMain from '@/public/Images/LaptopImage.webp'
 import Button from './Button'
 
-
 const AboutSection = () => {
   return (
     <section className="mt-[2rem] max-md:mb-[80%]">
@@ -16,7 +15,6 @@ const AboutSection = () => {
           className="  min-w-[401px] text-start flex justify-start flex-col mt-[5rem]  max-md:ml-[68px]  max-md:mt-[20rem]"
           data-aos="fade-right"
         >
-
           <div className=" text-white text-[32px] font-bold font-sans leading-10  ">
             About us
           </div>
