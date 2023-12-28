@@ -1,5 +1,8 @@
 'use client'
 
+import Image from "next/image"
+import AboutImage from '@/public/Images/about.png'
+
 function AboutUs() {
   return (
     <div className="aboutusheader flex  flex-col items-center mt-[72px] justify-center">
@@ -9,7 +12,7 @@ function AboutUs() {
       />
 
       <div className=" relative z-20 w-[53rem] text-center max-md:w-[287px] ">
-        <span className="text-white text-7xl font-extrabold font-['Raleway'] leading-[82px] max-md:leading-[24px] max-md:font-meduim max-md:text-[29px]">
+        <span className="[#d9d9e8] text-7xl font-extrabold font-['Raleway'] leading-[82px] max-md:leading-[24px] max-md:font-meduim max-md:text-[29px]">
           We are a community of developers, dreamers and{' '}
         </span>
         <span className="text-yellow-400 text-7xl font-extrabold font-['Raleway'] leading-10 max-md:text-[32px]">
@@ -17,20 +20,24 @@ function AboutUs() {
         </span>
       </div>
       <div id="image">
-        <div className="  relative z-20  mt-[50px] lightgray 50% / cover no-repeat] flex-shrink-0 w-[1000px]  max-md:w-[300px] h-auto ">
-          {/* <img
-            className=" max-md:w-200px max-md:h-157px  rounded-lg object-cover"
-            src="/full-img.png"
-          /> */}
-        </div>
+
+          <Image
+            className="w-[1000px] h-[440px] mt-[20px] max-md:mr-[54px] max-md:h-[322px] max-md:w-[350px] max-md:mt-[21px] object-cover relative rounded-2xl"
+            data-aos="fade-up"
+            src={AboutImage}
+            alt="blog-page-image"
+            width={1000}
+            height={500}
+          />
+   
         <div className="Ellipse2 z-10 w-96 h-96 opacity-80  bg-blue-600 rounded-full blur-[190px] absolute  top-[150%] max-md:hidden" />
       </div>
 
       <div className="mt-[5%] relative z-20">
-        <div className="text-white text-center font-['Raleway'] text-5xl font-bold  max-md:text-4xl max-md:text-left">
+        <div className="text-center font-['Raleway'] text-5xl font-bold  max-md:text-4xl max-md:text-left">
           Our Mission
         </div>
-        <div className="Sans']  mt-[50px] w-[744px] text-white font-['DM font-medium leading-6 max-md:w-[300px] max-md:text-[13px] max-md:mt-[10px]">
+        <div className="mt-[50px] w-[744px] text-[#d9d9e8] font-['DM font-medium leading-6 max-md:w-[300px] max-md:text-[13px] max-md:mt-[10px]">
           Africinnovate Technologies is dedicated to empowering individuals and
           organizations across Africa through world-class technology education
           and training. We are driven by the belief that technology has the
@@ -41,10 +48,10 @@ function AboutUs() {
         </div>
       </div>
       <div className="mt-[5%] relative z-20">
-        <div className="text-white text-center font-['Raleway'] text-5xl font-bold  max-md:text-4xl max-md:text-left">
+        <div className="text-center font-['Raleway'] text-5xl font-bold  max-md:text-4xl max-md:text-left">
           Our Vision
         </div>
-        <div className="Sans']  mt-[50px] w-[744px] text-white font-['DM font-medium leading-6 max-md:w-[300px] max-md:text-[13px] max-md:mt-[10px]">
+        <div className="mt-[50px] w-[744px] text-[#d9d9e8] font-['DM font-medium leading-6 max-md:w-[300px] max-md:text-[13px] max-md:mt-[10px]">
           Our vision is to stand as the premier technology training organization
           in Africa, renowned for our unwavering commitment to excellence,
           innovation, and impactful social change. We envision a future where
@@ -84,7 +91,7 @@ function AboutUs() {
                 </defs>
               </svg>
             </div>
-            <div className="text-white  font-bold font-['Raleway'] text-[16px] leading-loose">
+            <div className="[#d9d9e8]  font-bold font-['Raleway'] text-[16px] leading-loose">
               Collaboration
             </div>
 
@@ -128,7 +135,7 @@ function AboutUs() {
                 </defs>
               </svg>
             </div>
-            <div className="text-white text-[16px] font-bold font-['Raleway'] leading-loose">
+            <div className="[#d9d9e8] text-[16px] font-bold font-['Raleway'] leading-loose">
               Openness
             </div>
 
@@ -136,7 +143,8 @@ function AboutUs() {
               className=" text-slate-400  font-medium font-sansleading-normal  mr-5"
               id="textsize"
             >
-              Embracing diverse ideas and beliefs without judgment, we foster an open environment where candor and respect guide our interactions.
+              Embracing diverse ideas and beliefs without judgment, we foster an
+              open environment where candor and respect guide our interactions.
             </div>
             <div className="w-[130px]h-[55px] px-6 py-3 bg-slate-300 rounded-3xl justify-start items-center  mt-5 gap-2 inline-flex">
               <div className="text-blue-950  font-medium font-sans leading-normal ">
@@ -169,7 +177,7 @@ function AboutUs() {
                 </defs>
               </svg>
             </div>
-            <div className="text-white text-[16px] font-bold font-['Raleway'] leading-loose">
+            <div className="[#d9d9e8] text-[16px] font-bold font-['Raleway'] leading-loose">
               Diligence
             </div>
 
@@ -212,7 +220,7 @@ function AboutUs() {
                 </defs>
               </svg>
             </div>
-            <div className="text-white text-[16px] font-bold font-['Raleway'] leading-loose">
+            <div className="[#d9d9e8] text-[16px] font-bold font-['Raleway'] leading-loose">
               Empathy
             </div>
 
@@ -220,9 +228,9 @@ function AboutUs() {
               className=" text-slate-400  font-medium font-sansleading-normal  mr-5"
               id="textsize"
             >
-              We value diverse perspectives, seeking to
-              understand deeply and respond with compassion. Our commitment to
-              empathy fosters an inclusive environment.
+              We value diverse perspectives, seeking to understand deeply and
+              respond with compassion. Our commitment to empathy fosters an
+              inclusive environment.
             </div>
             <div className="w-[130px]h-[55px] px-6 py-3 bg-slate-300 rounded-3xl justify-start items-center  mt-5 gap-2 inline-flex">
               <div className="text-blue-950  font-medium font-sans leading-normal ">

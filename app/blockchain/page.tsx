@@ -1,4 +1,3 @@
-
 const Blockchain = () => {
   return (
     <div className="flex items-center justify-center h-screen">
@@ -8,5 +7,3 @@ const Blockchain = () => {
 }
 
 export default Blockchain
-
-

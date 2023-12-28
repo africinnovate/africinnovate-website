@@ -14,4 +14,12 @@ export const getBlogPosts = async () => {
   return response.items
 }
 
-// export default getBlogPosts;
+// Retrieve a blog post from Contentful
+
+export const getBlogPost = async (DD) => {
+  console.log('SSSSSSSSSSSSSSSSSSSSSSSSSSS')
+  console.log(DD)
+
+  // return await client.getEntry('The Transformative Power of Technology: Elevating Lives and Communities')
+  return await client.getEntry('1zAT98ZxXR0MsbBPCk0AvR')
+}

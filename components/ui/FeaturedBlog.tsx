@@ -37,7 +37,7 @@ const FeaturedBlog = ({ post, textLimit }: IPost) => {
           <div className="text-yellow-400 text-lg font-medium font-['DM Sans'] leading-normal">
             Training
           </div>
-          <div className="w-[544px] max-md:w-[350px] max-md:leading-[34px] text-white text-5xl font-bold font-['Raleway'] leading-[60px] max-md:text-[24px]">
+          <div className="w-[544px] max-md:w-[350px] max-md:leading-[34px]text-[#d9d9e8] text-5xl font-bold font-['Raleway'] leading-[60px] max-md:text-[24px]">
             {post.title}
           </div>
           <div className="w-[578px] h-[200px] max-md:w-[350px]  max-md:text-[15px] text-zinc-200 text-base font-medium font-['DM Sans'] leading-normal">

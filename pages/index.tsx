@@ -2,36 +2,10 @@ import Hero from '@/components/ui/Hero'
 import AboutSection from '@/components/ui/AboutSection'
 import BlogLayout from '@/components/BlogLayout'
 import { getBlogPosts } from '@/lib/utils'
-
-type BlogPost = {
-  metadata: { tags: string[] }
-  sys: {
-    space: object
-    id: string
-    type: string
-    createdAt: string
-    updatedAt: string
-    environment: object
-    revision: number
-    contentType: object
-    locale: string
-  }
-  fields: {
-    title: string
-    body: string
-    featureImage: {
-      fields: {
-        file: {
-          url: string
-        }
-      }
-    }
-    created: string
-  }
-}
+import { PostType } from '@/interfaces'
 
 interface BlogPageProps {
-  data: BlogPost[]
+  data: PostType[]
   title: string
 }
 

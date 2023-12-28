@@ -9,11 +9,11 @@ const ContactUs = () => {
         className="flex w-full items-center justify-center flex-col  mt-[72px]"
         data-aos="fade-up"
       >
-        <div className="w-full text-center text-white text-7xl font-semibold font-sans  max-md:text-[2rem] max-md:leading-normal">
+        <div className="w-full text-centertext-[#d9d9e8] text-7xl font-semibold font-sans  max-md:text-[2rem] max-md:leading-normal">
           Get in touch with
         </div>
         <div className="flex-shrink-0 w-[701px] h-[4.625rem] flex text-center items-center justify-center text-[4rem] max-md:text-[32px]">
-          <div className="inline-flex items-start    text-white text-center  font-bold  font-sans    ">
+          <div className="inline-flex items-start   text-[#d9d9e8] text-center  font-bold  font-sans    ">
             Our
           </div>
           <div className="inline-flex flex-col items-start gap-2.5 py-0 ">

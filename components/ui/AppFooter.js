@@ -10,7 +10,7 @@ import Mail from '@/public/svg-icons/email.svg'
 
 const AppFooter = () => {
   return (
-    <footer className=" z-20 max-md:flex-col ml-[6.9rem] max-md:ml-[0.9rem] max-md:pl-[0px]   mt-9   text-white py-8 justify-center items-center  flex">
+    <footer className=" z-20 max-md:flex-col ml-[6.9rem] max-md:ml-[0.9rem] max-md:pl-[0px]   mt-9  text-[#d9d9e8] py-8 justify-center items-center  flex">
       {/* Column 1 */}
       <div className="w-full   flex items-start justify-start  flex-col sm:w-1/2 md:w-1/3 lg:w-1/3 xl:w-1/3 px-4 mb-4">
         <div className="flex items-center justify-center">
@@ -21,13 +21,13 @@ const AppFooter = () => {
               className="w-full h-full object-cover"
             />
           </div>{' '}
-          <div className="text-white text-[26.10px] font-medium font-['Raleway'] leading-normal">
+          <div className="[#d9d9e8] text-[26.10px] font-medium font-['Raleway'] leading-normal">
             Africinnovate
           </div>
         </div>
         <ul>
           <li>
-            <div className="text-white  mt-5 text-base font-medium font-['DM Sans'] leading-normal">
+            <div className="[#d9d9e8]  mt-5 text-base font-medium font-['DM Sans'] leading-normal">
               Follow us on
             </div>
           </li>
@@ -70,7 +70,7 @@ const AppFooter = () => {
       {/* Column 2 */}
       <div className="w-full  sm:w-1/2 md:w-1/3 lg:w-1/3 xl:w-1/3 px-4 mb-4">
         <div className="flex mt-5 ">
-          <div className="text-white   text-lg font-medium font-['DM Sans'] leading-normal">
+          <div className="[#d9d9e8]   text-lg font-medium font-['DM Sans'] leading-normal">
             Contact Us
           </div>
         </div>
@@ -84,7 +84,7 @@ const AppFooter = () => {
                   className="w-full h-full object-cover"
                 />
               </div>
-              <div className="text-white text-base ml-2  font-medium font-['DM Sans'] leading-normal">
+              <div className="[#d9d9e8] text-base ml-2  font-medium font-['DM Sans'] leading-normal">
                 Info@africinnovate.com
               </div>
             </div>
@@ -98,7 +98,7 @@ const AppFooter = () => {
                   className="w-full h-full object-cover"
                 />
               </div>
-              <div className="text-white text-base ml-2  font-medium font-['DM Sans'] leading-normal">
+              <div className="[#d9d9e8] text-base ml-2  font-medium font-['DM Sans'] leading-normal">
                 +234 815 886 8727
               </div>
             </div>
@@ -112,7 +112,7 @@ const AppFooter = () => {
                   className=" h-full object-cover"
                 />
               </div>
-              <div className="w-[180px] text-white text-base font-medium font-['DM Sans'] leading-normal  mt-1 ml-2">
+              <div className="w-[180px]text-[#d9d9e8] text-base font-medium font-['DM Sans'] leading-normal  mt-1 ml-2">
                 16, Uqua Road, Eket
                 <br />
                 Akwa Ibom State
@@ -127,7 +127,7 @@ const AppFooter = () => {
       {/* Column 3 */}
       <div className="w-full sm:w-1/2 md:w-1/3 lg:w-1/3 xl:w-1/3 px-4 mb-4">
         <div className="flex items-center justify-start">
-          <div className="w-[200px] text-white text-lg font-medium font-['DM Sans'] leading-normal ">
+          <div className="w-[200px]text-[#d9d9e8] text-lg font-medium font-['DM Sans'] leading-normal ">
             Let's build something awesome together!
           </div>
         </div>

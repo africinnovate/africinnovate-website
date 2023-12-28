@@ -5,7 +5,7 @@ const Trainingcomponent = () => {
     <section className="mt-[4.5rem]">
       <div className="flex justify-center  items-center flex-col   mt-4 max-md:mt-1">
         <div
-          className=" text-center   max-md:text-[25px] text-white text-[80px] font-extrabold font-['Raleway'] leading-[96px] max-md:leading-3"
+          className=" text-center   max-md:text-[25px]text-[#d9d9e8] text-[80px] font-extrabold font-['Raleway'] leading-[96px] max-md:leading-3"
           data-aos="zoom-in"
         >
           {' '}
@@ -24,7 +24,7 @@ const Trainingcomponent = () => {
               data-aos-duration="800"
               delay-aos-delay="500"
             >
-              <div className="text-white text-2xl font-bold font-['Raleway'] leading-loose">
+              <div className="[#d9d9e8] text-2xl font-bold font-['Raleway'] leading-loose">
                 Course Outline
               </div>
 
@@ -51,7 +51,7 @@ const Trainingcomponent = () => {
               data-aos-duration="800"
               delay-aos-delay="500"
             >
-              <div className="text-white text-2xl font-bold font-['Raleway'] leading-loose">
+              <div className="[#d9d9e8] text-2xl font-bold font-['Raleway'] leading-loose">
                 Course Outline
               </div>
 
@@ -78,7 +78,7 @@ const Trainingcomponent = () => {
               data-aos-duration="800"
               delay-aos-delay="500"
             >
-              <div className="text-white text-2xl font-bold font-['Raleway'] leading-loose">
+              <div className="[#d9d9e8] text-2xl font-bold font-['Raleway'] leading-loose">
                 Course Outline
               </div>
 
@@ -115,7 +115,7 @@ const Trainingcomponent = () => {
               data-aos-duration="800"
               delay-aos-delay="500"
             >
-              <div className="text-white text-2xl font-bold font-['Raleway'] leading-loose">
+              <div className="[#d9d9e8] text-2xl font-bold font-['Raleway'] leading-loose">
                 Course Outline
               </div>
 
@@ -142,7 +142,7 @@ const Trainingcomponent = () => {
               data-aos-duration="800"
               delay-aos-delay="500"
             >
-              <div className="text-white text-2xl font-bold font-['Raleway'] leading-loose">
+              <div className="[#d9d9e8] text-2xl font-bold font-['Raleway'] leading-loose">
                 Course Outline
               </div>
 
@@ -169,7 +169,7 @@ const Trainingcomponent = () => {
               data-aos-duration="800"
               delay-aos-delay="500"
             >
-              <div className="text-white text-2xl font-bold font-['Raleway'] leading-loose">
+              <div className="[#d9d9e8] text-2xl font-bold font-['Raleway'] leading-loose">
                 Course Outline
               </div>
 
@@ -206,7 +206,7 @@ const Trainingcomponent = () => {
               data-aos-duration="800"
               delay-aos-delay="500"
             >
-              <div className="text-white text-2xl font-bold font-['Raleway'] leading-loose">
+              <div className="[#d9d9e8] text-2xl font-bold font-['Raleway'] leading-loose">
                 Course Outline
               </div>
 
@@ -233,7 +233,7 @@ const Trainingcomponent = () => {
               data-aos-duration="800"
               delay-aos-delay="500"
             >
-              <div className="text-white text-2xl font-bold font-['Raleway'] leading-loose">
+              <div className="[#d9d9e8] text-2xl font-bold font-['Raleway'] leading-loose">
                 Course Outline
               </div>
 
@@ -260,7 +260,7 @@ const Trainingcomponent = () => {
               data-aos-duration="800"
               delay-aos-delay="500"
             >
-              <div className="text-white text-2xl font-bold font-['Raleway'] leading-loose">
+              <div className="[#d9d9e8] text-2xl font-bold font-['Raleway'] leading-loose">
                 Course Outline
               </div>
 

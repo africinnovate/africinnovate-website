@@ -3,36 +3,10 @@
 import { getBlogPosts } from '@/lib/utils'
 import FeaturedBlog from '@/components/ui/FeaturedBlog'
 import PostCard from '@/components/ui/PostCard'
-
-type BlogPost = {
-  metadata: { tags: string[] }
-  sys: {
-    space: object
-    id: string
-    type: string
-    createdAt: string
-    updatedAt: string
-    environment: object
-    revision: number
-    contentType: object
-    locale: string
-  }
-  fields: {
-    title: string
-    body: string
-    featureImage: {
-      fields: {
-        file: {
-          url: string
-        }
-      }
-    }
-    created: string
-  }
-}
+import { PostType } from '@/interfaces'
 
 interface BlogPageProps {
-  data: BlogPost[]
+  data: PostType[]
   title: string
   subTitle?: boolean
 }
@@ -41,7 +15,7 @@ const BlogLayout = ({ title, subTitle, data }: BlogPageProps) => {
   return (
     <div className="flex flex-col items-center justify-center mt-[50px]">
       <div
-        className="text-center max-md:text-start max-md:text-[25px] text-white text-5xl font-extrabold font-['Raleway'] leading-[96px] max-md:leading-3"
+        className="text-center max-md:text-start max-md:text-[25px]text-[#d9d9e8] text-5xl font-extrabold font-['Raleway'] leading-[96px] max-md:leading-3"
         data-aos="fade-up"
       >
         {title}
@@ -64,7 +38,7 @@ const BlogLayout = ({ title, subTitle, data }: BlogPageProps) => {
           className="max-md:mt-[20rem]  flex items-center   max-md:flex-col    flex-col max-md:justify-center mt-[15%]"
         >
           <div
-            className="text-white max-md:text-[26px]  text-[40px] font-bold font-['Raleway'] leading-[48px]"
+            className="[#d9d9e8] max-md:text-[26px]  text-[40px] font-bold font-['Raleway'] leading-[48px]"
             data-aos="fade-up"
           >
             Recent Blogs
@@ -76,7 +50,7 @@ const BlogLayout = ({ title, subTitle, data }: BlogPageProps) => {
                   <PostCard
                     textLimit={130}
                     post={item.fields}
-                    key={item.sys.id}
+                    slug={item.fields.slug}
                   />
                 ))}
             </div>

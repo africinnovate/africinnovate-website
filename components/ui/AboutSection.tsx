@@ -15,10 +15,10 @@ const AboutSection = () => {
           className="  min-w-[401px] text-start flex justify-start flex-col mt-[5rem]  max-md:ml-[68px]  max-md:mt-[20rem]"
           data-aos="fade-right"
         >
-          <div className=" text-white text-[32px] font-bold font-sans leading-10  ">
+          <div className="text-[#d9d9e8] text-[32px] font-bold font-sans leading-10  ">
             About us
           </div>
-          <div className=" text-white text-5xl font-bold font-sans leading-[64px]">
+          <div className="text-[#d9d9e8] text-5xl font-bold font-sans leading-[64px]">
             Who are we?
           </div>
           <div className="w-[541px] text-zinc-200 text-base font-medium font-sans leading-normal max-md:w-[350px]  max-md:px-[px] max-md:text-[15.5px]">
@@ -71,7 +71,7 @@ const AboutSection = () => {
           id="grade"
           data-aos="fade-up"
         >
-          <div className="text-white text-center font-['Raleway'] mt-[48px] text-5xl font-bold leading-[64px] max-md:text-[30px]">
+          <div className="[#d9d9e8] text-center font-['Raleway'] mt-[48px] text-5xl font-bold leading-[64px] max-md:text-[30px]">
             Why Choose Us
           </div>
 
@@ -105,7 +105,7 @@ const AboutSection = () => {
                 </svg>
               </div>
 
-              <div className="Sans'] text-white font-['DM text-lg font-medium leading-6 mt-2">
+              <div className="Sans']text-[#d9d9e8] font-['DM text-lg font-medium leading-6 mt-2">
                 Reliable high-speed internet
               </div>
               <div className="Sans'] w-[20.5rem] max-md:w-[17.5rem] text-[#b0b0d0] font-['DM font-medium leading-6 mt-2">
@@ -140,7 +140,7 @@ const AboutSection = () => {
                 </svg>
               </div>
 
-              <div className="Sans'] text-white font-['DM text-lg font-medium leading-6 mt-2">
+              <div className="Sans']text-[#d9d9e8] font-['DM text-lg font-medium leading-6 mt-2">
                 Top Notch Designs
               </div>
               <div className="Sans'] w-[21.5rem] text-[#b0b0d0] font-['DM font-medium leading-6 mt-2 max-md:w-[300px] max-md:mr-5 max-md:hover:m\pr-9">
@@ -175,7 +175,7 @@ const AboutSection = () => {
                 </svg>
               </div>
 
-              <div className="Sans'] text-white font-['DM text-lg font-medium leading-6 mt-2">
+              <div className="Sans']text-[#d9d9e8] font-['DM text-lg font-medium leading-6 mt-2">
                 Conducive Work Space
               </div>
               <div className="Sans'] w-[280px] text-[#b0b0d0] font-['DM font-medium leading-6 max-md:w-[300px] max-md:mr-6  max-md:hover:pr-9">
@@ -207,7 +207,7 @@ const AboutSection = () => {
                 </svg>
               </div>
 
-              <div className="Sans'] text-white font-['DM text-lg font-medium leading-6 mt-2">
+              <div className="Sans']text-[#d9d9e8] font-['DM text-lg font-medium leading-6 mt-2">
                 Community Friendly
               </div>
               <div className="Sans'] w-[21.5rem] text-[#b0b0d0] font-['DM font-medium leading-6 mt-2 max-md:w-[290px]   ">
@@ -243,7 +243,7 @@ const AboutSection = () => {
                 </svg>
               </div>
 
-              <div className="Sans'] text-white font-['DM text-lg font-medium leading-6 mt-2">
+              <div className="Sans']text-[#d9d9e8] font-['DM text-lg font-medium leading-6 mt-2">
                 Fast and Quality Product Delivery
               </div>
               <div className="Sans'] w-[18.5rem] text-[#b0b0d0] font-['DM font-medium leading-6 mt-2 max-md:w-[300px] max-md:mr-6  max-md:pr-5">
@@ -275,7 +275,7 @@ const AboutSection = () => {
                 </svg>
               </div>
 
-              <div className="Sans'] text-white font-['DM text-lg font-medium leading-6 mt-2">
+              <div className="Sans']text-[#d9d9e8] font-['DM text-lg font-medium leading-6 mt-2">
                 Home to Startups
               </div>
               <div className="Sans'] w-[19.5rem] text-[#b0b0d0] font-['DM font-medium mt-2 max-md:w-[17rem] ">
@@ -292,7 +292,7 @@ const AboutSection = () => {
         className="mt-[60px] flex items-center justify-center flex-col"
         data-aos="fade-up"
       >
-        <div className="text-white text-center font-['Raleway'] text-5xl font-bold leading-[64px] ">
+        <div className="[#d9d9e8] text-center font-['Raleway'] text-5xl font-bold leading-[64px] ">
           What we do
         </div>
         {/* what-we-do */}
@@ -301,7 +301,7 @@ const AboutSection = () => {
           id="border"
         >
           <div className="  min-w-[401px] text-start flex justify-start flex-col mt-[5rem] ml-[50px] max-md:ml-[20px] max-md:items-center max-md:justify-center max-md:mt-[2rem]">
-            <div className="text-white text-[40px] font-bold font-['Raleway'] leading-[48px] max-md:text-[30px]">
+            <div className="[#d9d9e8] text-[40px] font-bold font-['Raleway'] leading-[48px] max-md:text-[30px]">
               Software Solutions
             </div>
             <div className="Sans'] w-[451px] text-[#d9d9e8] font-['DM font-medium leading-6 max-md:w-[272px]">
@@ -324,7 +324,7 @@ const AboutSection = () => {
             data-aos="fade-up"
           >
             <div className="w-[541px] h-56 flex-col justify-start items-start gap-4 inline-flex max-md:w-[329px] max-md:h-auto max-md:px-[10px] max-md:py-[10px]">
-              <div className="text-white text-[40px] font-bold font-['Raleway'] leading-[48px]">
+              <div className="[#d9d9e8] text-[40px] font-bold font-['Raleway'] leading-[48px]">
                 Training
               </div>
               <div className="w-[541px] text-zinc-200 text-base font-medium font-['DM Sans'] leading-normal max-md:w-auto">
@@ -342,7 +342,7 @@ const AboutSection = () => {
             data-aos="fade-up"
           >
             <div className="w-[541px] h-[248px] flex-col justify-start items-start gap-4 inline-flex max-md:w-[329px] max-md:h-auto  mr-[20px]">
-              <div className="text-white text-[40px] font-bold font-['Raleway'] leading-[48px]">
+              <div className="[#d9d9e8] text-[40px] font-bold font-['Raleway'] leading-[48px]">
                 Co-working Space
               </div>
               <div className="w-[541px] text-zinc-200 text-base font-medium font-['DM Sans'] leading-normal mr-[30px] max-md:w-auto">

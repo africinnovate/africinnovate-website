@@ -62,25 +62,25 @@ const AppHeader = () => {
               fill="white"
             />
           </svg>
-          <div className="text-white font-sans text-[1.625rem] font-medium leading-[1.4375rem] hover:text-[#FFBE0B]">
+          <div className="[#d9d9e8] font-sans text-[1.625rem] font-medium leading-[1.4375rem] hover:text-[#FFBE0B]">
             <Link href="/"> Africinnovate </Link>
           </div>
         </div>
 
         <div className="inline-flex items-start gap-10  max-md:hidden">
-          <div className=" font-sans text-white font-['DM text-lg font-medium leading-6 hover:text-[#FFBE0B]">
+          <div className=" font-sanstext-[#d9d9e8] font-['DM text-lg font-medium leading-6 hover:text-[#FFBE0B]">
             <Link href="/trainning">Training</Link>
           </div>
-          <div className=" font-sans text-white font-['DM text-lg font-medium leading-6 hover:text-[#FFBE0B]">
+          <div className=" font-sanstext-[#d9d9e8] font-['DM text-lg font-medium leading-6 hover:text-[#FFBE0B]">
             <Link href="/about">About us</Link>
           </div>
-          <div className=" font-sans text-white font-['DM text-lg font-medium leading-6 hover:text-[#FFBE0B]">
+          <div className=" font-sanstext-[#d9d9e8] font-['DM text-lg font-medium leading-6 hover:text-[#FFBE0B]">
             <Link href="/contactus">Contact Us</Link>
           </div>
-          <div className=" font-sans text-white font-['DM text-lg font-medium leading-6 hover:text-[#FFBE0B]">
+          <div className=" font-sanstext-[#d9d9e8] font-['DM text-lg font-medium leading-6 hover:text-[#FFBE0B]">
             <Link href="/blog">Blog</Link>
           </div>
-          <div className=" font-sans text-white font-['DM text-lg font-medium leading-6 hover:text-[#FFBE0B]">
+          <div className=" font-sanstext-[#d9d9e8] font-['DM text-lg font-medium leading-6 hover:text-[#FFBE0B]">
             <Link href="/blockchain">Blockchain</Link>
           </div>
         </div>
@@ -98,7 +98,7 @@ const AppHeader = () => {
         <div className="md:hidden flex items-center">
           <button
             onClick={toggleMenu}
-            className="text-white focus:outline-none"
+            className="[#d9d9e8] focus:outline-none"
           >
             {menuOpen ? (
               <svg
@@ -134,26 +134,26 @@ const AppHeader = () => {
       {/* Mobile menu */}
       {menuOpen && (
         <div
-          className={` bg-[#000024] md:hidden max-md:absolute max-md:h-[100%] max-md:w-[100%] max-md:z-[30] max-md:justify-center max-md:gap-[50px]  text-white flex flex-col items-center transition-all duration-500 ${
+          className={` bg-[#000024] md:hidden max-md:absolute max-md:h-[100%] max-md:w-[100%] max-md:z-[30] max-md:justify-center max-md:gap-[50px] text-[#d9d9e8] flex flex-col items-center transition-all duration-500 ${
             menuOpen
               ? 'clip-path-[polygon(0 0, 100% 0, 100% 100%, 0 80%)]'
               : 'clip-path-[polygon(0 0, 100% 0, 100% 100%, 0 0)]'
           }`}
         >
-          <div className="font-sans text-white text-lg font-medium leading-6 my-4">
+          <div className="font-sanstext-[#d9d9e8] text-lg font-medium leading-6 my-4">
             <Link href="/trainning">Training</Link>
           </div>
-          <div className="font-sans text-white text-lg font-medium leading-6 my-4">
+          <div className="font-sanstext-[#d9d9e8] text-lg font-medium leading-6 my-4">
             {' '}
             <Link href="/about">About us</Link>
           </div>
-          <div className="font-sans text-white text-lg font-medium leading-6 my-4">
+          <div className="font-sanstext-[#d9d9e8] text-lg font-medium leading-6 my-4">
             <Link href="/contactus">Contact Us</Link>
           </div>
-          <div className="font-sans text-white text-lg font-medium leading-6 my-4">
+          <div className="font-sanstext-[#d9d9e8] text-lg font-medium leading-6 my-4">
             <Link href="/blog">Blog</Link>
           </div>
-          <div className="font-sans text-white text-lg font-medium leading-6 my-4">
+          <div className="font-sanstext-[#d9d9e8] text-lg font-medium leading-6 my-4">
             <Link href="/blockchain">Blockchain</Link>
           </div>
           <div className="inline-flex items-start mr-6  ">
