@@ -25,7 +25,7 @@ export default function RootLayout({
       <link rel="icon" href="favico.ico" type="image/x-icon" />
 
       <body className={inter.className}>
-        <main className="overflow-x-hidden">
+        <main className="overflow-x-hidden app-text-color">
           <AppHeader />
           {children}
           <AppFooter />

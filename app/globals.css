@@ -15,9 +15,11 @@
 #grade {
   background: radial-gradient(circle, #0f4ca9 -3%, #0946a1 -10%, #000000 109%);
 }
-/* styles/global.css */
 
-/* In your CSS file or global stylesheet */
+.my-text-color {
+  @apply text-[red];
+  /* @apply text-[#d9d9e8]; */
+}
 
 body {
   font-family: 'DM Sans', sans-serif;

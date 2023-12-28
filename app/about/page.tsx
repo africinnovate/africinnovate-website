@@ -34,9 +34,9 @@ function AboutUs() {
       </div>
 
       <div className="mt-[5%] relative z-20">
-        <div className="text-center font-['Raleway'] text-5xl font-bold  max-md:text-4xl max-md:text-left">
+        <h3 className="text-center font-['Raleway'] text-5xl font-bold  max-md:text-4xl max-md:text-left">
           Our Mission
-        </div>
+        </h3>
         <div className="mt-[50px] w-[744px] text-[#d9d9e8] font-['DM font-medium leading-6 max-md:w-[300px] max-md:text-[13px] max-md:mt-[10px]">
           Africinnovate Technologies is dedicated to empowering individuals and
           organizations across Africa through world-class technology education
@@ -48,9 +48,9 @@ function AboutUs() {
         </div>
       </div>
       <div className="mt-[5%] relative z-20">
-        <div className="text-center font-['Raleway'] text-5xl font-bold  max-md:text-4xl max-md:text-left">
+        <h3 className="text-center text-5xl font-bold  max-md:text-4xl max-md:text-left">
           Our Vision
-        </div>
+        </h3>
         <div className="mt-[50px] w-[744px] text-[#d9d9e8] font-['DM font-medium leading-6 max-md:w-[300px] max-md:text-[13px] max-md:mt-[10px]">
           Our vision is to stand as the premier technology training organization
           in Africa, renowned for our unwavering commitment to excellence,
@@ -60,15 +60,15 @@ function AboutUs() {
           businesses within the global digital economy.
         </div>
       </div>
-      {/* card */}
-      <div className="mt-[5%]   max-md:h-fit max-md:w-[350px] max-md:mt-[10px] max-md:ml-2 ">
-        <div
-          id="cardes"
-          className="  md:grid md:grid-cols-2 lg:grid-cols-2  mt-[2rem]   "
-        >
-          <div className="flex-shrink-0   w-[400px] h-[300px]   rounded-2xl border-[0.5px] border-blue-100 pl-5 pt-2  items-center justify-center transition duration-500 hover:bg-[#00388D] hover:shadow-lg hover:border-2 border-solid  max-md:w-[300px] max-md:h-[350px] max-md:hover:ml-[5px] max-md:p-[9px] group">
-            <div className="flex-shrink-0 w-12 h-12 rounded-full bg-white/[.10] flex items-center justify-center">
-              {' '}
+      <h3 className="mt-[5%] text-5xl font-bold  max-md:text-4xl max-md:text-left">
+          Our Core Values
+        </h3>
+
+      <div className="my-[5%] max-md:h-fit max-md:w-[350px] max-md:mt-[10px] max-md:ml-2 ">
+        <div className="  md:grid md:grid-cols-2 lg:grid-cols-2  mt-[2rem]">
+          <div className="flex-shrink-0 w-[400px] h-[300px] rounded-2xl border-[0.5px] border-blue-100 pl-5 pt-2  items-center justify-center transition duration-500 hover:bg-[#00388D] hover:shadow-lg hover:border-2 border-solid  max-md:w-[300px] max-md:h-[350px] max-md:hover:ml-[5px] max-md:p-[9px] group">
+            <div className="flex-shrink-0 w-12 h-12 rounded-full bg-white/[.10] flex items-center justify-center my-5">
+       
               <svg
                 width={20}
                 height={32}
@@ -91,28 +91,19 @@ function AboutUs() {
                 </defs>
               </svg>
             </div>
-            <div className="[#d9d9e8]  font-bold font-['Raleway'] text-[16px] leading-loose">
+            <div className="font-bold text-[16px] leading-loose mb-3">
               Collaboration
             </div>
 
-            <div
-              className=" text-slate-400  font-medium font-sansleading-normal  mr-5"
-              id="textsize"
-            >
+            <div className=" text-slate-400  font-medium font-sansleading-normal  mr-5" >
               We believe that we can achieve more as a team than we ever could
               individually and are eager to give and receive constructive
               feedback in order to improve.
             </div>
-            <div className="w-[130px]h-[55px] px-6 py-3 bg-slate-300 rounded-3xl justify-start items-center  mt-5 gap-2 inline-flex">
-              <div className="text-blue-950  font-medium font-sans leading-normal ">
-                Enroll now
-              </div>
-            </div>
           </div>
 
           <div className="flex-shrink-0 w-[400px] h-[300px]  rounded-2xl border-[0.5px] border-blue-100 pl-5 pt-2  items-center justify-center transition duration-500 hover:bg-[#00388D] hover:shadow-lg hover:border-2 border-solid  max-md:w-[300px] max-md:h-[350px] max-md:hover:ml-[5px] max-md:p-[9px] group">
-            <div className="flex-shrink-0 w-12 h-12 rounded-full bg-white/[.10] flex items-center justify-center">
-              {' '}
+            <div className="flex-shrink-0 w-12 h-12 rounded-full bg-white/[.10] flex items-center justify-center my-5">
               <svg
                 width={20}
                 height={32}
@@ -135,26 +126,17 @@ function AboutUs() {
                 </defs>
               </svg>
             </div>
-            <div className="[#d9d9e8] text-[16px] font-bold font-['Raleway'] leading-loose">
+            <div className="text-[16px] font-bold leading-loose mb-3">
               Openness
             </div>
 
-            <div
-              className=" text-slate-400  font-medium font-sansleading-normal  mr-5"
-              id="textsize"
-            >
+            <div className=" text-slate-400  font-medium font-sansleading-normal  mr-5">
               Embracing diverse ideas and beliefs without judgment, we foster an
               open environment where candor and respect guide our interactions.
             </div>
-            <div className="w-[130px]h-[55px] px-6 py-3 bg-slate-300 rounded-3xl justify-start items-center  mt-5 gap-2 inline-flex">
-              <div className="text-blue-950  font-medium font-sans leading-normal ">
-                Enroll now
-              </div>
-            </div>
           </div>
           <div className="flex-shrink-0 w-[400px] h-[300px] rounded-2xl border border-blue-100 pl-5 pt-2  items-center justify-center transition duration-500 hover:bg-[#00388D] hover:shadow-lg hover:border-2 border-solid max-md:w-[300px] max-md:h-[350px] max-md:hover:ml-[5px] max-md:p-[9px] group">
-            <div className="flex-shrink-0 w-12 h-12 rounded-full bg-white/[.10] flex items-center justify-center">
-              {' '}
+            <div className="flex-shrink-0 w-12 h-12 rounded-full bg-white/[.10] flex items-center justify-center my-5">
               <svg
                 width={20}
                 height={32}
@@ -177,27 +159,18 @@ function AboutUs() {
                 </defs>
               </svg>
             </div>
-            <div className="[#d9d9e8] text-[16px] font-bold font-['Raleway'] leading-loose">
+            <div className="text-[16px] font-bold leading-loose mb-3">
               Diligence
             </div>
 
-            <div
-              className=" text-slate-400  font-medium font-sansleading-normal  mr-5"
-              id="textsize"
-            >
+            <div className=" text-slate-400  font-medium font-sansleading-normal  mr-5" >
               We hold ourselves and our colleagues accountable to a high
               standard and look for the long-term solution instead of providing
               a short-term fix.
             </div>
-            <div className="w-[130px]h-[55px] px-6 py-3 bg-slate-300 rounded-3xl justify-start items-center  mt-5 gap-2 inline-flex">
-              <div className="text-blue-950  font-medium font-sans leading-normal ">
-                Enroll now
-              </div>
-            </div>
           </div>
           <div className="flex-shrink-0 w-[400px]  h-[300px] rounded-2xl border border-blue-100 pl-5 pt-2  items-center justify-center transition duration-500 hover:bg-[#00388D] hover:shadow-lg hover:border-2 border-solid max-md:w-[300px] max-md:h-[350px] max-md:hover:ml-[5px] max-md:p-[9px] group">
-            <div className="flex-shrink-0 w-12 h-12 rounded-full bg-white/[.10] flex items-center justify-center">
-              {' '}
+            <div className="flex-shrink-0 w-12 h-12 rounded-full bg-white/[.10] flex items-center justify-center my-5">
               <svg
                 width={20}
                 height={32}
@@ -220,22 +193,14 @@ function AboutUs() {
                 </defs>
               </svg>
             </div>
-            <div className="[#d9d9e8] text-[16px] font-bold font-['Raleway'] leading-loose">
+            <div className="text-[16px] font-bold leading-loose mb-3">
               Empathy
             </div>
 
-            <div
-              className=" text-slate-400  font-medium font-sansleading-normal  mr-5"
-              id="textsize"
-            >
+            <div className=" text-slate-400  font-medium font-sansleading-normal  mr-5" >
               We value diverse perspectives, seeking to understand deeply and
               respond with compassion. Our commitment to empathy fosters an
               inclusive environment.
-            </div>
-            <div className="w-[130px]h-[55px] px-6 py-3 bg-slate-300 rounded-3xl justify-start items-center  mt-5 gap-2 inline-flex">
-              <div className="text-blue-950  font-medium font-sans leading-normal ">
-                Enroll now
-              </div>
             </div>
           </div>
         </div>
