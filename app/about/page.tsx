@@ -64,9 +64,11 @@ function AboutUs() {
           Our Core Values
         </h3>
 
-      <div className="my-[5%] max-md:h-fit max-md:w-[350px] max-md:mt-[10px] max-md:ml-2 ">
-        <div className="  md:grid md:grid-cols-2 lg:grid-cols-2  mt-[2rem]">
-          <div className="flex-shrink-0 w-[400px] h-[300px] rounded-2xl border-[0.5px] border-blue-100 pl-5 pt-2  items-center justify-center transition duration-500 hover:bg-[#00388D] hover:shadow-lg hover:border-2 border-solid  max-md:w-[300px] max-md:h-[350px] max-md:hover:ml-[5px] max-md:p-[9px] group">
+      {/* 
+        <div className="md:grid md:grid-cols-2 lg:grid-cols-2  mt-[2rem]"> */}
+        <div className="my-[5%] max-md:h-fit max-md:mt-[10px]">
+  <div className="md:grid md:grid-cols-2 lg:grid-cols-2 mt-8 gap-8">
+          <div className="flex-shrink-0 w-[400px] h-[300px] rounded-2xl border border-blue-100 pl-5 pt-2  items-center justify-center transition duration-500 hover:bg-[#00388D] hover:shadow-lg border-solid  max-md:w-[300px] max-md:h-[350px] max-md:hover:ml-[5px] max-md:p-[9px] group">
             <div className="flex-shrink-0 w-12 h-12 rounded-full bg-white/[.10] flex items-center justify-center my-5">
        
               <svg
@@ -101,8 +103,7 @@ function AboutUs() {
               feedback in order to improve.
             </div>
           </div>
-
-          <div className="flex-shrink-0 w-[400px] h-[300px]  rounded-2xl border-[0.5px] border-blue-100 pl-5 pt-2  items-center justify-center transition duration-500 hover:bg-[#00388D] hover:shadow-lg hover:border-2 border-solid  max-md:w-[300px] max-md:h-[350px] max-md:hover:ml-[5px] max-md:p-[9px] group">
+          <div className="flex-shrink-0 w-[400px] h-[300px] rounded-2xl border border-blue-100 pl-5 pt-2  items-center justify-center transition duration-500 hover:bg-[#00388D] hover:shadow-lg border-solid  max-md:w-[300px] max-md:h-[350px] max-md:hover:ml-[5px] max-md:p-[9px] group">
             <div className="flex-shrink-0 w-12 h-12 rounded-full bg-white/[.10] flex items-center justify-center my-5">
               <svg
                 width={20}
@@ -135,7 +136,7 @@ function AboutUs() {
               open environment where candor and respect guide our interactions.
             </div>
           </div>
-          <div className="flex-shrink-0 w-[400px] h-[300px] rounded-2xl border border-blue-100 pl-5 pt-2  items-center justify-center transition duration-500 hover:bg-[#00388D] hover:shadow-lg hover:border-2 border-solid max-md:w-[300px] max-md:h-[350px] max-md:hover:ml-[5px] max-md:p-[9px] group">
+          <div className="flex-shrink-0 w-[400px] h-[300px] rounded-2xl border border-blue-100 pl-5 pt-2  items-center justify-center transition duration-500 hover:bg-[#00388D] hover:shadow-lg border-solid max-md:w-[300px] max-md:h-[350px] max-md:hover:ml-[5px] max-md:p-[9px] group">
             <div className="flex-shrink-0 w-12 h-12 rounded-full bg-white/[.10] flex items-center justify-center my-5">
               <svg
                 width={20}
@@ -169,7 +170,7 @@ function AboutUs() {
               a short-term fix.
             </div>
           </div>
-          <div className="flex-shrink-0 w-[400px]  h-[300px] rounded-2xl border border-blue-100 pl-5 pt-2  items-center justify-center transition duration-500 hover:bg-[#00388D] hover:shadow-lg hover:border-2 border-solid max-md:w-[300px] max-md:h-[350px] max-md:hover:ml-[5px] max-md:p-[9px] group">
+          <div className="flex-shrink-0 w-[400px] h-[300px] rounded-2xl border border-blue-100 pl-5 pt-2  items-center justify-center transition duration-500 hover:bg-[#00388D] hover:shadow-lg border-solid max-md:w-[300px] max-md:h-[350px] max-md:hover:ml-[5px] max-md:p-[9px] group">
             <div className="flex-shrink-0 w-12 h-12 rounded-full bg-white/[.10] flex items-center justify-center my-5">
               <svg
                 width={20}
