@@ -32,3 +32,19 @@ export type Params = {
     slug: string
   }
 }
+
+export interface IPost {
+  post: {
+    title: string
+    body: string
+    slug: string
+    featureImage: {
+      fields: {
+        file: {
+          url: string
+        }
+      }
+    }
+  }
+  textLimit: number
+}

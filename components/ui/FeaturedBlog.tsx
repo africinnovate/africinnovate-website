@@ -1,22 +1,6 @@
+import { IPost } from '@/interfaces'
 import Image from 'next/image'
-import Button from '@/components/ui/Button'
 import Link from 'next/link'
-
-interface IPost {
-  post: {
-    title: string
-    body: string
-    slug: string
-    featureImage: {
-      fields: {
-        file: {
-          url: string
-        }
-      }
-    }
-  }
-  textLimit: number
-}
 
 const FeaturedBlog = ({ post, textLimit }: IPost) => {
   return (
