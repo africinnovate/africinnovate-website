@@ -9,3 +9,5 @@ export const HERO_TEXTS = [
 ]
 
 export const DISCORD_INVITE = 'https://discord.gg/VwcMMaJc'
+
+export const BLOG_SPACE = '2t9hb4tao4sq'
