@@ -2,36 +2,10 @@
 
 import { getBlogPosts } from '@/lib/utils'
 import BlogLayout from '@/components/BlogLayout'
-
-type BlogPost = {
-  metadata: { tags: string[] }
-  sys: {
-    space: object
-    id: string
-    type: string
-    createdAt: string
-    updatedAt: string
-    environment: object
-    revision: number
-    contentType: object
-    locale: string
-  }
-  fields: {
-    title: string
-    body: string
-    featureImage: {
-      fields: {
-        file: {
-          url: string
-        }
-      }
-    }
-    created: string
-  }
-}
+import { PostType } from '@/interfaces'
 
 interface BlogPageProps {
-  data: BlogPost[]
+  data: PostType[]
 }
 
 export default function BlogComponent({ data }: BlogPageProps) {

@@ -1,11 +1,11 @@
-import { CreateClientParams, createClient } from 'contentful'
+import { createClient } from 'contentful'
 import { BLOG_SPACE } from './'
 
 const client = createClient({
   space: BLOG_SPACE,
   accessToken: 'J7j-hpejnbL8JcXd5KdvcKv6KagvypDiYGGqkCYcl14',
   // accessToken: process.env.NEXT_PUBLIC_CONTENTFUL_KEY!
-} as CreateClientParams)
+})
 
 // Retrieve the list of blog posts from Contentful
 export const getBlogPosts = async () => {
