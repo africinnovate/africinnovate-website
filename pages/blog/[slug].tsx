@@ -10,7 +10,7 @@ type Props = {
 
 const BlogPage = ({ post }: Props) => {
   const router = useRouter()
-  const title = `${post.fields.title} | Impossible is nonsense`
+  // const title = `${post.fields.title} | Impossible is nonsense`
   if (!router.isFallback && !post?.fields.slug) {
     return <ErrorPage statusCode={404} />
   }

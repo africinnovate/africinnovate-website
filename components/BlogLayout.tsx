@@ -51,6 +51,7 @@ const BlogLayout = ({ title, subTitle, data }: BlogPageProps) => {
                     textLimit={130}
                     post={item.fields}
                     slug={item.fields.slug}
+                    key={item.sys.id}
                   />
                 ))}
             </div>
