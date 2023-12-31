@@ -9,19 +9,18 @@ import Button from './Button'
 const AboutSection = () => {
   return (
     <section className="mt-[2rem] max-md:mb-[80%]">
-      <div className="flex items-center justify-center mt-3 "></div>
       <div className="w-full h-[600px] flex  flex-row justify-around items-start mt-[100px] pt-[5rem] max-md:flex-col max-md:justify-center max-md:items-center">
         <div
-          className="  min-w-[401px] text-start flex justify-start flex-col mt-[5rem]  max-md:ml-[68px]  max-md:mt-[20rem]"
-          data-aos="fade-right"
+          className="min-w-[401px] text-start flex justify-start flex-col mt-[5rem] max-md:ml-[68px] max-md:mt-[20rem]"
+          data-aos="zoom-inn"
         >
-          <div className="text-[#d9d9e8] text-[32px] font-bold font-sans leading-10  ">
+          <div className="text-[32px] font-bold font-sans leading-10">
             About us
           </div>
-          <div className="text-[#d9d9e8] text-5xl font-bold font-sans leading-[64px]">
+          <div className="text-5xl font-bold font-sans leading-[64px]">
             Who are we?
           </div>
-          <div className="w-[541px] text-zinc-200 text-base font-medium font-sans leading-normal max-md:w-[350px]  max-md:px-[px] max-md:text-[15.5px]">
+          <div className="w-[541px] text-zinc-200 text-base font-medium font-sans leading-normal max-md:w-[350px] max-md:px-[px] max-md:text-[15.5px]">
             We are Africinnovate Technologies, empowering Africans through
             cutting-edge tech education. Our mission is to equip youth with
             essential skills for success. As a premier training organization, we
@@ -38,13 +37,13 @@ const AboutSection = () => {
             <Image
               className="img1"
               src={LaptopPic}
-              data-aos="fade-down-right"
+              data-aos="zoom-in"
               alt="ImageOne"
             />
             <Image
               className="img2"
               src={LaptopPicTwo}
-              data-aos="fade-right"
+              data-aos="zoom-in"
               alt="imagetwo"
             />
           </div>
@@ -53,7 +52,7 @@ const AboutSection = () => {
             <Image
               className="img3"
               src={LaptopPicThree}
-              data-aos="fade-down"
+              data-aos="zoom-in"
               alt="imagethree"
             />
             <Image
@@ -67,19 +66,16 @@ const AboutSection = () => {
       </div>
       <div className="flex justify-center items-center">
         <div
-          className="w-[1200px] h-[660px]  mt-[80px] rounded-3xl border-2  border-[#b0cdf9]  max-md:h-fit max-md:w-[350px] max-md:mt-[500px] "
+          className="w-[1200px] h-[660px] mt-[80px] rounded-3xl border-2  border-[#b0cdf9]  max-md:h-fit max-md:w-[350px] max-md:mt-[500px] "
           id="grade"
           data-aos="fade-up"
         >
-          <div className="[#d9d9e8] text-center font-['Raleway'] mt-[48px] text-5xl font-bold leading-[64px] max-md:text-[30px]">
+          <div className="text-center mt-[48px] text-5xl font-bold leading-[64px] max-md:text-[30px]">
             Why Choose Us
           </div>
 
-          <div
-            id="card"
-            className=" flex flex-wrap gap-4 md:grid md:grid-cols-3 lg:grid-cols-3 mt-[2rem] mx-7  "
-          >
-            <div className="flex-shrink-0 w-[360px] pl-5 pt-2 h-[13.5rem] rounded-2xl items-center justify-center transition duration-500 hover:bg-[#00388D] hover:shadow-lg hover:border-2 border-solid border-[#b0cdf9]  max-md:hover:w-[300px] max-md:hover:ml-[5px] max-md:p-[9px] group">
+          <div className="flex flex-wrap gap-4 md:grid md:grid-cols-3 lg:grid-cols-3 mt-[2rem] mx-7">
+            <div className="flex-shrink-0 w-[360px] pl-5 pt-2 h-[13.5rem] rounded-2xl items-center justify-center transition duration-500 hover:bg-[#00388D] hover:border border-[#b0cdf9] max-md:p-[9px]">
               <div className="flex-shrink-0 w-12 h-12 rounded-full bg-white/[.10] flex items-center justify-center">
                 {' '}
                 <svg
@@ -108,14 +104,14 @@ const AboutSection = () => {
               <div className="Sans']text-[#d9d9e8] font-['DM text-lg font-medium leading-6 mt-2">
                 Reliable high-speed internet
               </div>
-              <div className="Sans'] w-[20.5rem] max-md:w-[17.5rem] text-[#b0b0d0] font-['DM font-medium leading-6 mt-2">
+              <div className="w-[20.5rem] max-md:w-[17.5rem] text-[#b0b0d0] font-['DM font-medium leading-6 mt-2">
                 Experience seamless connectivity with our lightning-fast,
                 reliable internet, ensuring you stay in the flow of
                 productivity.
               </div>
             </div>
 
-            <div className="flex-shrink-0 w-[350px] pl-5 pt-2 h-[13.5rem] rounded-2xl items-center justify-center transition duration-500 hover:bg-[#00388D] hover:shadow-lg hover:border-2 border-solid border-[#b0cdf9] max-md:hover:w-[300px] max-md:hover:ml-[5px] max-md:p-[9px] group">
+            <div className="flex-shrink-0 w-[360px] pl-5 pt-2 h-[13.5rem] rounded-2xl items-center justify-center transition duration-500 hover:bg-[#00388D] hover:border border-[#b0cdf9] max-md:p-[9px]">
               <div className="flex-shrink-0 w-12 h-12 rounded-full bg-white/[.10] flex items-center justify-center">
                 <svg
                   width={32}
@@ -140,16 +136,16 @@ const AboutSection = () => {
                 </svg>
               </div>
 
-              <div className="Sans']text-[#d9d9e8] font-['DM text-lg font-medium leading-6 mt-2">
+              <div className="text-lg font-medium leading-6 mt-2">
                 Top Notch Designs
               </div>
-              <div className="Sans'] w-[21.5rem] text-[#b0b0d0] font-['DM font-medium leading-6 mt-2 max-md:w-[300px] max-md:mr-5 max-md:hover:m\pr-9">
+              <div className="Sans'] w-[21.5rem] text-[#b0b0d0] font-medium leading-6 mt-2 max-md:w-[300px] max-md:mr-5 max-md:hover:m\pr-9">
                 Immerse yourself in creativity with our top-notch designs,
                 crafted to elevate your experience and leave a lasting
                 impression.
               </div>
             </div>
-            <div className="flex-shrink-0w-[330px] pl-5 pt-2 h-[13.5rem] rounded-2xl items-center justify-center transition duration-500 hover:bg-[#00388D] hover:shadow-lg hover:border-2 border-solid border-[#b0cdf9]  max-md:hover:w-[300px] max-md:hover:ml-[5px]  group">
+            <div className="flex-shrink-0 w-[360px] pl-5 pt-2 h-[13.5rem] rounded-2xl items-center justify-center transition duration-500 hover:bg-[#00388D] hover:border border-[#b0cdf9] max-md:p-[9px]">
               <div className="flex-shrink-0 w-12 h-12 rounded-full bg-white/[.10] flex items-center justify-center">
                 {' '}
                 <svg
@@ -175,15 +171,15 @@ const AboutSection = () => {
                 </svg>
               </div>
 
-              <div className="Sans']text-[#d9d9e8] font-['DM text-lg font-medium leading-6 mt-2">
+              <div className="text-lg font-medium leading-6 mt-2">
                 Conducive Work Space
               </div>
-              <div className="Sans'] w-[280px] text-[#b0b0d0] font-['DM font-medium leading-6 max-md:w-[300px] max-md:mr-6  max-md:hover:pr-9">
+              <div className="w-[280px] text-[#b0b0d0] font-medium leading-6 max-md:w-[300px] max-md:mr-6  max-md:hover:pr-9">
                 Foster innovation in our thoughtfully designed workspaces, where
                 comfort meets functionality for optimal productivity.
               </div>
             </div>
-            <div className="flex-shrink-0 w-[370px] pl-5 pt-2 h-[13.5rem] rounded-2xl items-center justify-center transition duration-500 hover:bg-[#00388D] hover:shadow-lg hover:border-2 border-solid border-[#b0cdf9]  max-md:h-[14.5rem] max-md:hover:w-[300px] max-md:hover:ml-[5px] max-md:p-[9px] group">
+            <div className="flex-shrink-0 w-[360px] pl-5 pt-2 h-[13.5rem] rounded-2xl items-center justify-center transition duration-500 hover:bg-[#00388D] hover:border border-[#b0cdf9] max-md:p-[9px]">
               <div className="flex-shrink-0 w-12 h-12 rounded-full bg-white/[.10] flex items-center justify-center">
                 {' '}
                 <svg
@@ -207,17 +203,17 @@ const AboutSection = () => {
                 </svg>
               </div>
 
-              <div className="Sans']text-[#d9d9e8] font-['DM text-lg font-medium leading-6 mt-2">
+              <div className="text-lg font-medium leading-6 mt-2">
                 Community Friendly
               </div>
-              <div className="Sans'] w-[21.5rem] text-[#b0b0d0] font-['DM font-medium leading-6 mt-2 max-md:w-[290px]   ">
+              <div className="w-[21.5rem] text-[#b0b0d0] font-medium leading-6 mt-2 max-md:w-[290px]">
                 Join a vibrant community that thrives on collaboration,
                 networking, and shared experiences, making work feel like a
                 community endeavor.
               </div>
             </div>
 
-            <div className="flex-shrink-0 w-[330px] pl-5 pt-2 h-[13.5rem] rounded-2xl items-center justify-center transition duration-300 hover:bg-[#00388D] hover:max-md:pb-5 hover:shadow-lg hover:border-2 border-solid border-[#b0cdf9] max-md:w-[300px] max-md:hover:ml-[5px] max-md:p-[9px] max-md:h-[17.5rem] group ">
+            <div className="flex-shrink-0 w-[360px] pl-5 pt-2 h-[13.5rem] rounded-2xl items-center justify-center transition duration-500 hover:bg-[#00388D] hover:border border-[#b0cdf9] max-md:p-[9px]">
               <div className="flex-shrink-0 w-12 h-12 rounded-full bg-white/[.10] flex items-center justify-center">
                 {' '}
                 <svg
@@ -243,16 +239,16 @@ const AboutSection = () => {
                 </svg>
               </div>
 
-              <div className="Sans']text-[#d9d9e8] font-['DM text-lg font-medium leading-6 mt-2">
+              <div className="text-lg font-medium leading-6 mt-2">
                 Fast and Quality Product Delivery
               </div>
-              <div className="Sans'] w-[18.5rem] text-[#b0b0d0] font-['DM font-medium leading-6 mt-2 max-md:w-[300px] max-md:mr-6  max-md:pr-5">
+              <div className="w-[18.5rem] text-[#b0b0d0] font-medium leading-6 mt-2 max-md:w-[300px] max-md:mr-6  max-md:pr-5">
                 Experience the best of both worlds with our swift and efficient
                 delivery services, ensuring your products reach you fast without
                 compromising quality.
               </div>
             </div>
-            <div className="flex-shrink-0 w-[330px]  max-md:w-[310px] hover:max-md:mb-3 pl-5 pt-2 h-[13.5rem] rounded-2xl items-center justify-center transition duration-500 hover:bg-[#00388D] hover:shadow-lg hover:border-2 border-solid border-[#b0cdf9] max-md:h-[18.5rem] group">
+            <div className="flex-shrink-0 w-[360px] pl-5 pt-2 h-[13.5rem] rounded-2xl items-center justify-center transition duration-500 hover:bg-[#00388D] hover:border border-[#b0cdf9] max-md:p-[9px]">
               <div className="flex-shrink-0 w-12 h-12 rounded-full bg-white/[.10] flex items-center justify-center transition duration-500 hover:bg-[#00388D]">
                 <svg
                   width={20}

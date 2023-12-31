@@ -25,12 +25,12 @@ const Hero = () => {
 
   return (
     <div className="mt-[100px] max-md:mt-[70px]">
-      <div className="flex  items-center justify-center flex-col">
+      <div className="flex items-center justify-center flex-col">
         <div
           className="flex w-full items-center justify-center flex-col "
           data-aos="fade-up"
         >
-          <div className="w-[80%] text-centertext-[#d9d9e8] text-[80px] font-semibold font-sans  max-md:text-[2rem] max-md:leading-normal">
+          <div className="w-[80%] text-center text-[80px] font-semibold font-sans  max-md:text-[2rem] max-md:leading-normal">
             Innovation fueled by the community of
             <span className="text-[#ffbe0b]"> {currentText}</span>
           </div>

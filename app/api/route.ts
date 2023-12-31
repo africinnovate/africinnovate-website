@@ -2,7 +2,8 @@ import { NextResponse, type NextRequest } from 'next/server'
 import Mail from 'nodemailer/lib/mailer'
 import nodemailer from 'nodemailer'
 import { env } from 'process'
-export async function POST(request: NextRequest) {
+
+export const POST = async (request: NextRequest) => {
   const { email, phoneNumber, fullName, Other, selectCourse, yourMessage } =
     await request.json()
   //getting the formData and ghanging it to json format

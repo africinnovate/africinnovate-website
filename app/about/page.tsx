@@ -1,43 +1,42 @@
 'use client'
 
-import Image from "next/image"
+import Image from 'next/image'
 import AboutImage from '@/public/Images/about.png'
 
 function AboutUs() {
   return (
-    <div className="aboutusheader flex  flex-col items-center mt-[72px] justify-center">
+    <div className="flex flex-col items-center mt-[72px] justify-center">
       <div
-        className="Ellipse1 w-96 h-96 opacity-80 z-10 bg-blue-600 rounded-full blur-[190px]  absolute left-[70%] bottom-[20%]  max-md:hidden"
+        className="Ellipse1 w-96 h-96 opacity-80 z-10 bg-blue-600 rounded-full blur-[190px] absolute left-[70%] bottom-[20%]  max-md:hidden"
         data-aos="fade-up"
       />
 
-      <div className=" relative z-20 w-[53rem] text-center max-md:w-[287px] ">
-        <span className="[#d9d9e8] text-7xl font-extrabold font-['Raleway'] leading-[82px] max-md:leading-[24px] max-md:font-meduim max-md:text-[29px]">
+      <div className="relative z-20 w-[53rem] text-center max-md:w-[287px]">
+        <span className="text-7xl font-extrabold leading-[82px] max-md:leading-[24px] max-md:font-meduim max-md:text-[29px]">
           We are a community of developers, dreamers and{' '}
         </span>
-        <span className="text-yellow-400 text-7xl font-extrabold font-['Raleway'] leading-10 max-md:text-[32px]">
+        <span className="text-yellow-400 text-7xl font-extrabold leading-10 max-md:text-[32px]">
           doers.
         </span>
       </div>
       <div id="image">
+        <Image
+          className="w-[1000px] h-[440px] mt-[20px] max-md:mr-[54px] max-md:h-[322px] max-md:w-[350px] max-md:mt-[21px] object-cover relative rounded-2xl"
+          data-aos="fade-up"
+          src={AboutImage}
+          alt="blog-page-image"
+          width={1000}
+          height={500}
+        />
 
-          <Image
-            className="w-[1000px] h-[440px] mt-[20px] max-md:mr-[54px] max-md:h-[322px] max-md:w-[350px] max-md:mt-[21px] object-cover relative rounded-2xl"
-            data-aos="fade-up"
-            src={AboutImage}
-            alt="blog-page-image"
-            width={1000}
-            height={500}
-          />
-   
-        <div className="Ellipse2 z-10 w-96 h-96 opacity-80  bg-blue-600 rounded-full blur-[190px] absolute  top-[150%] max-md:hidden" />
+        <div className="z-10 w-96 h-96 opacity-80 bg-blue-600 rounded-full blur-[190px] absolute top-[150%] max-md:hidden" />
       </div>
 
       <div className="mt-[5%] relative z-20">
-        <h3 className="text-center font-['Raleway'] text-5xl font-bold  max-md:text-4xl max-md:text-left">
+        <h3 className="text-center text-5xl font-bold max-md:text-4xl max-md:text-left">
           Our Mission
         </h3>
-        <div className="mt-[50px] w-[744px] text-[#d9d9e8] font-['DM font-medium leading-6 max-md:w-[300px] max-md:text-[13px] max-md:mt-[10px]">
+        <div className="mt-[50px] w-[744px] font-medium leading-6 max-md:w-[300px] max-md:text-[13px] max-md:mt-[10px]">
           Africinnovate Technologies is dedicated to empowering individuals and
           organizations across Africa through world-class technology education
           and training. We are driven by the belief that technology has the
@@ -61,16 +60,15 @@ function AboutUs() {
         </div>
       </div>
       <h3 className="mt-[5%] text-5xl font-bold  max-md:text-4xl max-md:text-left">
-          Our Core Values
-        </h3>
+        Our Core Values
+      </h3>
 
       {/* 
         <div className="md:grid md:grid-cols-2 lg:grid-cols-2  mt-[2rem]"> */}
-        <div className="my-[5%] max-md:h-fit max-md:mt-[10px]">
-  <div className="md:grid md:grid-cols-2 lg:grid-cols-2 mt-8 gap-8">
+      <div className="my-[5%] max-md:h-fit max-md:mt-[10px]">
+        <div className="md:grid md:grid-cols-2 lg:grid-cols-2 mt-8 gap-8">
           <div className="flex-shrink-0 w-[400px] h-[300px] rounded-2xl border border-blue-100 pl-5 pt-2  items-center justify-center transition duration-500 hover:bg-[#00388D] hover:shadow-lg border-solid  max-md:w-[300px] max-md:h-[350px] max-md:hover:ml-[5px] max-md:p-[9px] group">
             <div className="flex-shrink-0 w-12 h-12 rounded-full bg-white/[.10] flex items-center justify-center my-5">
-       
               <svg
                 width={20}
                 height={32}
@@ -97,7 +95,7 @@ function AboutUs() {
               Collaboration
             </div>
 
-            <div className=" text-slate-400  font-medium font-sansleading-normal  mr-5" >
+            <div className=" text-slate-400  font-medium font-sansleading-normal  mr-5">
               We believe that we can achieve more as a team than we ever could
               individually and are eager to give and receive constructive
               feedback in order to improve.
@@ -164,7 +162,7 @@ function AboutUs() {
               Diligence
             </div>
 
-            <div className=" text-slate-400  font-medium font-sansleading-normal  mr-5" >
+            <div className=" text-slate-400  font-medium font-sansleading-normal  mr-5">
               We hold ourselves and our colleagues accountable to a high
               standard and look for the long-term solution instead of providing
               a short-term fix.
@@ -198,7 +196,7 @@ function AboutUs() {
               Empathy
             </div>
 
-            <div className=" text-slate-400  font-medium font-sansleading-normal  mr-5" >
+            <div className=" text-slate-400  font-medium font-sansleading-normal  mr-5">
               We value diverse perspectives, seeking to understand deeply and
               respond with compassion. Our commitment to empathy fosters an
               inclusive environment.

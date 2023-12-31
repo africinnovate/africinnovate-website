@@ -11,9 +11,8 @@ const BlogPage = ({ post }: Props) => {
   // const router = useRouter()
   // const title = `${post.fields.title} | Impossible is nonsense`
 
-
   return (
-    <div className='prose max-w-[80%] mx-auto'>
+    <div className="prose max-w-[80%] mx-auto">
       <div className="flex items-center justify-center flex-col">
         <div className="h-[500px] object-contain mt-8 max-md:w-auto ">
           <Image
@@ -28,7 +27,10 @@ const BlogPage = ({ post }: Props) => {
         <h1 className="text-[#d9d9e8]  mt-9 font-['Raleway'] text-5xl font-bold leading-[64px] max-md:w-auto max-md:ml-3">
           {post.fields.title}
         </h1>
-        <article dangerouslySetInnerHTML={{ __html: post.fields.body }} className="prose-h1:text-[#d9d9e8] prose-h2:text-[#d9d9e8] prose-h3:text-[#d9d9e8] text-[#d9d9e8] font-['DM font-medium leading-8" />
+        <article
+          dangerouslySetInnerHTML={{ __html: post.fields.body }}
+          className="prose-h1:text-[#d9d9e8] prose-h2:text-[#d9d9e8] prose-h3:text-[#d9d9e8] text-[#d9d9e8] font-['DM font-medium leading-8"
+        />
       </div>
       <div className="flex mt-[1%]">
         <svg
@@ -71,17 +73,17 @@ export async function getStaticPaths() {
 }
 
 export async function getStaticProps({ params }: Params) {
-  const data = await getBlogPost(params.slug);
+  const data = await getBlogPost(params.slug)
 
   // Check if data is not null before accessing its properties
   if (!data) {
     return {
       notFound: true,
-    };
+    }
   }
 
   // Return the data as props
-  const content = await markdownToHtml(data.fields.body || '');
+  const content = await markdownToHtml(data.fields.body || '')
 
   return {
     props: {
@@ -93,5 +95,5 @@ export async function getStaticProps({ params }: Params) {
         },
       },
     },
-  };
+  }
 }

@@ -25,18 +25,18 @@ export const getBlogPost = async (slug: string) => {
       content_type: 'blogPost',
       'fields.slug': slug,
       limit: 1, // Limit the response to 1 entry
-    });
+    })
 
     // Check if entries were found
     if (response.items.length > 0) {
       const entry = response.items[0]
-      return entry;
+      return entry
     } else {
-      console.warn('No entry found for slug:', slug);
-      return null;
+      console.warn('No entry found for slug:', slug)
+      return null
     }
   } catch (error) {
-    console.error('Error fetching entry:', error);
-    throw error;
+    console.error('Error fetching entry:', error)
+    throw error
   }
 }
