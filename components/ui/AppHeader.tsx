@@ -69,7 +69,7 @@ const AppHeader = () => {
 
         <div className="inline-flex items-start gap-10  max-md:hidden">
           <div className=" font-sanstext-[#d9d9e8] font-['DM text-lg font-medium leading-6 hover:text-[#FFBE0B]">
-            <Link href="/trainning">Training</Link>
+            <Link href="/training">Training</Link>
           </div>
           <div className=" font-sanstext-[#d9d9e8] font-['DM text-lg font-medium leading-6 hover:text-[#FFBE0B]">
             <Link href="/about">About us</Link>
@@ -138,7 +138,7 @@ const AppHeader = () => {
           }`}
         >
           <div className="font-sanstext-[#d9d9e8] text-lg font-medium leading-6 my-4">
-            <Link href="/trainning">Training</Link>
+            <Link href="/training">Training</Link>
           </div>
           <div className="font-sanstext-[#d9d9e8] text-lg font-medium leading-6 my-4">
             {' '}
