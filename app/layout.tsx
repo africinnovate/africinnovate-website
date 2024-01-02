@@ -29,7 +29,7 @@ export default function RootLayout({
           <AppHeader />
           {children}
           <AppFooter />
-          {/* <MyApp /> */}
+          <MyApp />
         </main>
       </body>
     </html>
