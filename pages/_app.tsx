@@ -26,7 +26,7 @@ const PageApp = ({ Component, pageProps }: AppProps) => {
   }, []) // The empty dependency array ensures the effect runs only once
 
   return (
-    <main className="overflow-x-hidden">
+    <main className="overflow-x-hidden text-app-text-color">
       <AppHeader />
       <Component {...pageProps} />
       <AppFooter />

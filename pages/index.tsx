@@ -11,13 +11,13 @@ interface BlogPageProps {
 
 const Home = ({ data }: BlogPageProps) => {
   return (
-    <div className="text-app-text-color">
+    <>
       <Hero />
       <AboutSection />
       <div className="mt-20">
         <BlogLayout title="Our Blog" data={data} />
       </div>
-    </div>
+    </>
   )
 }
 

@@ -30,7 +30,7 @@ const AppHeader = () => {
 
     return (
       <div
-        className="fixed  flex items-center justify-center top-0 left-0 w-full  bg-black bg-opacity-50 z-10 h-[100vh]"
+        className="fixed flex items-center justify-center top-0 left-0 w-full bg-black bg-opacity-50 z-10 h-[100vh]"
         onClick={handleOverlayClick}
       >
         {children}
@@ -39,7 +39,7 @@ const AppHeader = () => {
   }
 
   return (
-    <nav className="bg-[#000024] flex justify-around  md:shrink-0  max-md:contents">
+    <nav className=" bg-[#000024] flex justify-around  md:shrink-0  max-md:contents">
       <div className="w-[100vw] h-20 border-b-[0.5px] border-b-[#9a8888] bg-[#000024] flex items-center justify-around">
         <div className="flex ">
           <svg
@@ -62,25 +62,25 @@ const AppHeader = () => {
               fill="white"
             />
           </svg>
-          <div className="[#d9d9e8] font-sans text-[1.625rem] font-medium leading-[1.4375rem] hover:text-[#FFBE0B]">
+          <div className="font-sans text-[1.625rem] font-medium leading-[1.4375rem] hover:text-[#FFBE0B]">
             <Link href="/"> Africinnovate </Link>
           </div>
         </div>
 
         <div className="inline-flex items-start gap-10  max-md:hidden">
-          <div className=" font-sanstext-[#d9d9e8] font-['DM text-lg font-medium leading-6 hover:text-[#FFBE0B]">
+          <div className="text-lg font-medium leading-6 hover:text-[#FFBE0B]">
             <Link href="/training">Training</Link>
           </div>
-          <div className=" font-sanstext-[#d9d9e8] font-['DM text-lg font-medium leading-6 hover:text-[#FFBE0B]">
+          <div className="text-lg font-medium leading-6 hover:text-[#FFBE0B]">
             <Link href="/about">About us</Link>
           </div>
-          <div className=" font-sanstext-[#d9d9e8] font-['DM text-lg font-medium leading-6 hover:text-[#FFBE0B]">
+          <div className="text-lg font-medium leading-6 hover:text-[#FFBE0B]">
             <Link href="/contactus">Contact Us</Link>
           </div>
-          <div className=" font-sanstext-[#d9d9e8] font-['DM text-lg font-medium leading-6 hover:text-[#FFBE0B]">
+          <div className="text-lg font-medium leading-6 hover:text-[#FFBE0B]">
             <Link href="/blog">Blog</Link>
           </div>
-          <div className=" font-sanstext-[#d9d9e8] font-['DM text-lg font-medium leading-6 hover:text-[#FFBE0B]">
+          <div className="text-lg font-medium leading-6 hover:text-[#FFBE0B]">
             <Link href="/blockchain">Blockchain</Link>
           </div>
         </div>
@@ -137,20 +137,20 @@ const AppHeader = () => {
               : 'clip-path-[polygon(0 0, 100% 0, 100% 100%, 0 0)]'
           }`}
         >
-          <div className="font-sanstext-[#d9d9e8] text-lg font-medium leading-6 my-4">
+          <div className="text-lg font-medium leading-6 my-4">
             <Link href="/training">Training</Link>
           </div>
-          <div className="font-sanstext-[#d9d9e8] text-lg font-medium leading-6 my-4">
+          <div className="text-lg font-medium leading-6 my-4">
             {' '}
             <Link href="/about">About us</Link>
           </div>
-          <div className="font-sanstext-[#d9d9e8] text-lg font-medium leading-6 my-4">
+          <div className="text-lg font-medium leading-6 my-4">
             <Link href="/contactus">Contact Us</Link>
           </div>
-          <div className="font-sanstext-[#d9d9e8] text-lg font-medium leading-6 my-4">
+          <div className="text-lg font-medium leading-6 my-4">
             <Link href="/blog">Blog</Link>
           </div>
-          <div className="font-sanstext-[#d9d9e8] text-lg font-medium leading-6 my-4">
+          <div className="text-lg font-medium leading-6 my-4">
             <Link href="/blockchain">Blockchain</Link>
           </div>
           <div className="inline-flex items-start mr-6  ">
