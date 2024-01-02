@@ -5,10 +5,7 @@ import FormComponent from '@/components/FormComponent'
 const ContactUs = () => {
   return (
     <div className=" flex flex-col items-center justify-center">
-      <div
-        className="flex w-full items-center justify-center flex-col  mt-[72px]"
-        data-aos="fade-up"
-      >
+      <div className="flex w-full items-center justify-center text-center flex-col mt-[72px]" data-aos="zoom-in" >
         <div className="w-full text-centertext-[#d9d9e8] text-7xl font-semibold font-sans  max-md:text-[2rem] max-md:leading-normal">
           Get in touch with
         </div>
