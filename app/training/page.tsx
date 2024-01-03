@@ -12,7 +12,7 @@ const Training = () => {
 
       <div className="flex flex-wrap max-w-[90%] justify-center mx-auto max-md:h-fit max-md:mt-[10px]">
         <div
-          className="flex-shrink-0 w-full md:w-[calc(33.3333%)] md:max-w-[400px] m-2 p-6 h-[300px] rounded-2xl border border-blue-100 pt-2 duration-500 hover:bg-[#00388D] hover:shadow-lg max-md:h-[300px] max-md:p-[9px]"
+          className="flex-shrink-0 w-full md:w-[calc(50%)] lg:w-[calc(31%)] md:max-w-[400px] mb-10 mx-2 p-6 sm:pb-10 rounded-2xl border border-blue-100 pt-2 transition duration-500 hover:bg-[#00388D] hover:shadow-lg max-md:p-[9px]"
           data-aos="zoom-in"
           data-aos-duration="800"
           delay-aos-delay="500"
@@ -27,7 +27,7 @@ const Training = () => {
           <Button>Enroll now</Button>
         </div>
         <div
-          className="flex-shrink-0 w-full md:w-[calc(33.3333%)] md:max-w-[400px] m-2 p-6 h-[300px] rounded-2xl border border-blue-100 pt-2 duration-500 hover:bg-[#00388D] hover:shadow-lg max-md:h-[300px] max-md:p-[9px]"
+          className="flex-shrink-0 w-full md:w-[calc(50%)] lg:w-[calc(31%)] md:max-w-[400px] mb-10 mx-2 p-6 sm:pb-10 rounded-2xl border border-blue-100 pt-2 transition duration-500 hover:bg-[#00388D] hover:shadow-lg max-md:p-[9px]"
           data-aos="zoom-in"
           data-aos-duration="800"
           delay-aos-delay="500"
@@ -42,7 +42,7 @@ const Training = () => {
           <Button>Enroll now</Button>
         </div>
         <div
-          className="flex-shrink-0 w-full md:w-[calc(33.3333%)] md:max-w-[400px] m-2 p-6 h-[300px] rounded-2xl border border-blue-100 pt-2 duration-500 hover:bg-[#00388D] hover:shadow-lg max-md:h-[300px] max-md:p-[9px]"
+          className="flex-shrink-0 w-full md:w-[calc(50%)] lg:w-[calc(31%)] md:max-w-[400px] mb-10 mx-2 p-6 sm:pb-10 rounded-2xl border border-blue-100 pt-2 transition duration-500 hover:bg-[#00388D] hover:shadow-lg max-md:p-[9px]"
           data-aos="zoom-in"
           data-aos-duration="800"
           delay-aos-delay="500"
@@ -57,7 +57,7 @@ const Training = () => {
           <Button>Enroll now</Button>
         </div>
         <div
-          className="flex-shrink-0 w-full md:w-[calc(33.3333%)] md:max-w-[400px] m-2 p-6 h-[300px] rounded-2xl border border-blue-100 pt-2 duration-500 hover:bg-[#00388D] hover:shadow-lg max-md:h-[300px] max-md:p-[9px]"
+          className="flex-shrink-0 w-full md:w-[calc(50%)] lg:w-[calc(31%)] md:max-w-[400px] mb-10 mx-2 p-6 sm:pb-10 rounded-2xl border border-blue-100 pt-2 transition duration-500 hover:bg-[#00388D] hover:shadow-lg max-md:p-[9px]"
           data-aos="zoom-in"
           data-aos-duration="800"
           delay-aos-delay="500"
@@ -72,7 +72,7 @@ const Training = () => {
           <Button>Enroll now</Button>
         </div>
         <div
-          className="flex-shrink-0 w-full md:w-[calc(33.3333%)] md:max-w-[400px] m-2 p-6 h-[300px] rounded-2xl border border-blue-100 pt-2 duration-500 hover:bg-[#00388D] hover:shadow-lg max-md:h-[300px] max-md:p-[9px]"
+          className="flex-shrink-0 w-full md:w-[calc(50%)] lg:w-[calc(31%)] md:max-w-[400px] mb-10 mx-2 p-6 sm:pb-10 rounded-2xl border border-blue-100 pt-2 transition duration-500 hover:bg-[#00388D] hover:shadow-lg max-md:p-[9px]"
           data-aos="zoom-in"
           data-aos-duration="800"
           delay-aos-delay="500"
@@ -87,7 +87,7 @@ const Training = () => {
           <Button>Enroll now</Button>
         </div>
        <div
-          className="flex-shrink-0 w-full md:w-[calc(33.3333%)] md:max-w-[400px] m-2 p-6 h-[300px] rounded-2xl border border-blue-100 pt-2 duration-500 hover:bg-[#00388D] hover:shadow-lg max-md:h-[300px] max-md:p-[9px]"
+          className="flex-shrink-0 w-full md:w-[calc(50%)] lg:w-[calc(31%)] md:max-w-[400px] mb-10 mx-2 p-6 sm:pb-10 rounded-2xl border border-blue-100 pt-2 transition duration-500 hover:bg-[#00388D] hover:shadow-lg max-md:p-[9px]"
           data-aos="zoom-in"
           data-aos-duration="800"
           delay-aos-delay="500"
@@ -101,8 +101,53 @@ const Training = () => {
           </div>
           <Button>Enroll now</Button>
         </div>
+        <div
+          className="flex-shrink-0 w-full md:w-[calc(50%)] lg:w-[calc(31%)] md:max-w-[400px] mb-10 mx-2 p-6 sm:pb-10 rounded-2xl border border-blue-100 pt-2 transition duration-500 hover:bg-[#00388D] hover:shadow-lg max-md:p-[9px]"
+          data-aos="zoom-in"
+          data-aos-duration="800"
+          delay-aos-delay="500"
+        >
+          <div className="text-2xl font-bold leading-loose">
+            Digital Marketing
+          </div>
+
+          <div className="text-slate-400  font-medium leading-normal mr-5 mb-6">
+            Navigate the dynamic landscape of Digital Marketing with our courses. Acquire expertise in SEO, social media, content creation, and analytics to develop winning digital strategies and elevate your brand's online presence
+          </div>
+          <Button>Enroll now</Button>
+        </div>
        <div
-          className="flex-shrink-0 w-full md:w-[calc(33.3333%)] md:max-w-[400px] m-2 p-6 h-[300px] rounded-2xl border border-blue-100 pt-2 duration-500 hover:bg-[#00388D] hover:shadow-lg max-md:h-[300px] max-md:p-[9px]"
+          className="flex-shrink-0 w-full md:w-[calc(50%)] lg:w-[calc(31%)] md:max-w-[400px] mb-10 mx-2 p-6 sm:pb-10 rounded-2xl border border-blue-100 pt-2 transition duration-500 hover:bg-[#00388D] hover:shadow-lg max-md:p-[9px]"
+          data-aos="zoom-in"
+          data-aos-duration="800"
+          delay-aos-delay="500"
+        >
+          <div className="text-2xl font-bold leading-loose">
+            Product Management
+          </div>
+
+          <div className="text-slate-400  font-medium leading-normal mr-5 mb-6">
+            Elevate your career with Product Management courses. Master the skills needed to drive product success, from ideation to launch, focusing on strategic planning, market analysis, and effective collaboration.
+          </div>
+          <Button>Enroll now</Button>
+        </div>
+        <div
+          className="flex-shrink-0 w-full md:w-[calc(50%)] lg:w-[calc(31%)] md:max-w-[400px] mb-10 mx-2 p-6 sm:pb-10 rounded-2xl border border-blue-100 pt-2 transition duration-500 hover:bg-[#00388D] hover:shadow-lg max-md:p-[9px]"
+          data-aos="zoom-in"
+          data-aos-duration="800"
+          delay-aos-delay="500"
+        >
+          <div className="text-2xl font-bold leading-loose">
+            Cyber Security
+          </div>
+
+          <div className="text-slate-400  font-medium leading-normal mr-5 mb-6">
+            Unlock the skills to defend against evolving cyber threats with our Cyber Security Training course. Dive into comprehensive modules covering network security, ethical hacking, threat intelligence, Identity and Access Management, and more.
+          </div>
+          <Button>Enroll now</Button>
+        </div>
+       <div
+          className="flex-shrink-0 w-full md:w-[calc(50%)] lg:w-[calc(31%)] md:max-w-[400px] mb-10 mx-2 p-6 sm:pb-10 rounded-2xl border border-blue-100 pt-2 transition duration-500 hover:bg-[#00388D] hover:shadow-lg max-md:p-[9px]"
           data-aos="zoom-in"
           data-aos-duration="800"
           delay-aos-delay="500"
@@ -117,7 +162,7 @@ const Training = () => {
           <Button>Enroll now</Button>
         </div>
        <div
-          className="flex-shrink-0 w-full md:w-[calc(33.3333%)] md:max-w-[400px] m-2 p-6 h-[300px] rounded-2xl border border-blue-100 pt-2 duration-500 hover:bg-[#00388D] hover:shadow-lg max-md:h-[300px] max-md:p-[9px]"
+          className="flex-shrink-0 w-full md:w-[calc(50%)] lg:w-[calc(31%)] md:max-w-[400px] mb-10 mx-2 p-6 sm:pb-10 rounded-2xl border border-blue-100 pt-2 transition duration-500 hover:bg-[#00388D] hover:shadow-lg max-md:p-[9px]"
           data-aos="zoom-in"
           data-aos-duration="800"
           delay-aos-delay="500"
@@ -132,7 +177,7 @@ const Training = () => {
           <Button>Enroll now</Button>
         </div>
         <div
-          className="flex-shrink-0 w-full md:w-[calc(33.3333%)] md:max-w-[400px] m-2 p-6 h-[300px] rounded-2xl border border-blue-100 pt-2 duration-500 hover:bg-[#00388D] hover:shadow-lg max-md:h-[300px] max-md:p-[9px]"
+          className="flex-shrink-0 w-full md:w-[calc(50%)] lg:w-[calc(31%)] md:max-w-[400px] mb-10 mx-2 p-6 sm:pb-10 rounded-2xl border border-blue-100 pt-2 transition duration-500 hover:bg-[#00388D] hover:shadow-lg max-md:p-[9px]"
           data-aos="zoom-in"
           data-aos-duration="800"
           delay-aos-delay="500"

@@ -59,23 +59,20 @@ const Hero = () => {
         </div>
       </div>
 
-      <div
-        className="flex  gap-[20px] flex-row max-md:flex-col  items-center justify-center mt-[70px] "
-        data-aos="fade-up"
-      >
-        <div className="flex   ">
-          <div className=" flex items-start gap-10 ">
-            <div className="[#d9d9e8] font-sans text-[2rem]  font-bold ">
+      <div className="flex gap-[20px] flex-row max-md:flex-col items-center justify-center mt-[70px]" data-aos="fade-up" >
+        <div className="flex">
+          <div className="flex items-start gap-10">
+            <div className="font-sans text-[2rem] font-bold">
               <CountUpAnimation count={400} />
-              <div className="font-sans text-[#b0b0d0] font-__Raleway_bdd8fd font-bold   text-[1.3rem]">
+              <div className="font-sans text-[#b0b0d0] font-bold text-[1.3rem]">
                 Students <br /> Trained
               </div>
             </div>
 
             <div className="flex-col items-start ">
-              <div className="[#d9d9e8] font-__Raleway_bdd8fd text-[2rem]  font-bold ">
+              <div className="font-sans text-[2rem] font-bold">
                 <CountUpAnimation count={65} />
-                <div className="font-sans text-[#b0b0d0] font-__Raleway_bdd8fd font-meduim text-[1.3rem]">
+                <div className="font-sans text-[#b0b0d0] font-bold text-[1.3rem]">
                   Events <br /> Hosted
                 </div>
               </div>
@@ -83,18 +80,18 @@ const Hero = () => {
           </div>
         </div>
         <div className="flex gap-10 max-md:gap-4 max-md:ml-[23px]">
-          <div className=" flex-col items-start  ">
-            <div className="[#d9d9e8] font-__Raleway_bdd8fd text-[2rem]   font-bold ">
+          <div className="flex-col items-start">
+            <div className="font-sans text-[2rem] font-bold">
               <CountUpAnimation count={12} />
-              <div className="font-__Raleway_bdd8fd text-[#b0b0d0] font-['DM font-bold max-md:w-[120px] text-[1.3rem]">
+              <div className="font-sans text-[#b0b0d0] font-bold text-[1.3rem]">
                 Hackathon <br /> Won
               </div>
             </div>
           </div>
-          <div className="  flex flex-col items-start ">
-            <div className="[#d9d9e8] font-__Raleway_bdd8fd font-bold  text-[2rem]  ">
+          <div className="flex flex-col items-start">
+            <div className="font-sans text-[2rem] font-bold">
               <CountUpAnimation count={120} />
-              <div className="font-__Raleway_bdd8fd text-[#b0b0d0] font-bold  text-[1.3rem]">
+              <div className="font-sans text-[#b0b0d0] font-bold text-[1.3rem]">
                 Hub <br /> Users
               </div>
             </div>

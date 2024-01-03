@@ -33,18 +33,12 @@ const BlogLayout = ({ title, subTitle, data }: BlogPageProps) => {
 
       <div className="mt-[2%]">
         <FeaturedBlog textLimit={400} post={data[0].fields} />
-        <div
-          id="wrapper"
-          className="max-md:mt-[20rem]  flex items-center   max-md:flex-col    flex-col max-md:justify-center mt-[15%]"
-        >
-          <div
-            className="[#d9d9e8] max-md:text-[26px]  text-[40px] font-bold font-['Raleway'] leading-[48px]"
-            data-aos="fade-up"
-          >
+        <div className="max-md:mt-[20rem] flex items-center max-md:flex-col flex-col max-md:justify-center mt-[15%]" >
+          <div className="max-md:text-[26px] text-[40px] font-bold font-['Raleway'] leading-[48px] mb-10" data-aos="zoom-in" >
             Recent Blogs
           </div>
-          <div className="flex  mt-7 " data-aos="fade-up">
-            <div className="flex flex-col sm:flex-row gap-[15%] max-md:items-center max-md:justify-center ">
+          <div className="mt-7" data-aos="zoom-in">
+            <div className="flex max-w-[90%] justify-center mx-auto">
               {data &&
                 data.map((item) => (
                   <PostCard

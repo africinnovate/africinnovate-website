@@ -69,24 +69,21 @@ const AppHeader = () => {
 
         <div className="inline-flex items-start gap-10  max-md:hidden">
           <div className="text-lg font-medium leading-6 hover:text-[#FFBE0B]">
-            <Link href="/training">Training</Link>
-          </div>
-          <div className="text-lg font-medium leading-6 hover:text-[#FFBE0B]">
             <Link href="/about">About us</Link>
           </div>
           <div className="text-lg font-medium leading-6 hover:text-[#FFBE0B]">
-            <Link href="/contactus">Contact Us</Link>
-          </div>
-          <div className="text-lg font-medium leading-6 hover:text-[#FFBE0B]">
-            <Link href="/blog">Blog</Link>
+            <Link href="/training">Training</Link>
           </div>
           <div className="text-lg font-medium leading-6 hover:text-[#FFBE0B]">
             <Link href="/blockchain">Blockchain</Link>
           </div>
+          <div className="text-lg font-medium leading-6 hover:text-[#FFBE0B]">
+            <Link href="/blog">Blog</Link>
+          </div>
         </div>
         <div className="inline-flex items-start mr-6  max-md:hidden">
           <Button className="w-[200px]" onClick={() => setIsModalOpen(true)}>
-            Call Us
+            Contact Us
           </Button>
           {isModalOpen && (
             <Modal>
@@ -138,24 +135,20 @@ const AppHeader = () => {
           }`}
         >
           <div className="text-lg font-medium leading-6 my-4">
-            <Link href="/training">Training</Link>
-          </div>
-          <div className="text-lg font-medium leading-6 my-4">
-            {' '}
             <Link href="/about">About us</Link>
           </div>
           <div className="text-lg font-medium leading-6 my-4">
-            <Link href="/contactus">Contact Us</Link>
-          </div>
-          <div className="text-lg font-medium leading-6 my-4">
-            <Link href="/blog">Blog</Link>
+            <Link href="/training">Training</Link>
           </div>
           <div className="text-lg font-medium leading-6 my-4">
             <Link href="/blockchain">Blockchain</Link>
           </div>
+          <div className="text-lg font-medium leading-6 my-4">
+            <Link href="/blog">Blog</Link>
+          </div>
           <div className="inline-flex items-start mr-6  ">
             <Button className="w-[200px]" onClick={() => setIsModalOpen(true)}>
-              Call Us
+              Contact Us
             </Button>
             {isModalOpen && (
               <Modal>
