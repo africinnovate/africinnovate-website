@@ -13,7 +13,7 @@ interface IPost {
 
 const PostCard = ({ post, textLimit, slug }: IPost) => {
   return (
-    <div className="md:w-[calc(50%)] lg:w-[calc(31%)] h-fit flex-col inline-flex gap-10">
+    <div className="sm:w-[calc(100%)] md:w-[calc(50%)] lg:w-[calc(31%)] h-fit flex-col inline-flex gap-10">
       <Image
         className="w-[350px] h-[220px] rounded-2xl"
         src={RecentBlogPageImage}

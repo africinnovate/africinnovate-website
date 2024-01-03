@@ -53,8 +53,7 @@ const Hero = () => {
           id="animationbutton"
         >
           <Button onClick={joinCommunity} className="w-[200px]">
-            {' '}
-            Join our community{' '}
+            Join our community
           </Button>
         </div>
       </div>
@@ -79,7 +78,7 @@ const Hero = () => {
             </div>
           </div>
         </div>
-        <div className="flex gap-10 max-md:gap-4 max-md:ml-[23px]">
+        <div className="flex gap-10 max-md:gap-4">
           <div className="flex-col items-start">
             <div className="font-sans text-[2rem] font-bold">
               <CountUpAnimation count={12} />
@@ -88,7 +87,7 @@ const Hero = () => {
               </div>
             </div>
           </div>
-          <div className="flex flex-col items-start">
+          <div className="flex-col items-start">
             <div className="font-sans text-[2rem] font-bold">
               <CountUpAnimation count={120} />
               <div className="font-sans text-[#b0b0d0] font-bold text-[1.3rem]">
