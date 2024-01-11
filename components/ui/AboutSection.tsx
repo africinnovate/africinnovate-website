@@ -75,7 +75,7 @@ const AboutSection = () => {
           </div>
 
           <div className="flex flex-wrap gap-4 md:grid md:grid-cols-3 lg:grid-cols-3 mt-[2rem] mx-7">
-            <div className="flex-shrink-0 w-[360px] pl-5 pt-2 h-[13.5rem] rounded-2xl items-center justify-center transition duration-500 hover:bg-[#00388D] hover:border border-[#b0cdf9] max-md:p-[9px]">
+            <div className="flex-shrink-0 w-[360px]  max-md:w-[313px] pl-5 pt-2 h-[13.5rem] rounded-2xl items-center justify-center transition duration-500 hover:bg-[#00388D] hover:border border-[#b0cdf9] max-md:p-[9px]">
               <div className="flex-shrink-0 w-12 h-12 rounded-full bg-white/[.10] flex items-center justify-center">
                 {' '}
                 <svg
@@ -111,7 +111,7 @@ const AboutSection = () => {
               </div>
             </div>
 
-            <div className="flex-shrink-0 w-[360px] pl-5 pt-2 h-[13.5rem] rounded-2xl items-center justify-center transition duration-500 hover:bg-[#00388D] hover:border border-[#b0cdf9] max-md:p-[9px]">
+            <div className="flex-shrink-0 w-[360px]  max-md:w-[313px] pl-5 pt-2 h-[13.5rem] rounded-2xl items-center justify-center transition duration-500 hover:bg-[#00388D] hover:border border-[#b0cdf9] max-md:p-[9px]">
               <div className="flex-shrink-0 w-12 h-12 rounded-full bg-white/[.10] flex items-center justify-center">
                 <svg
                   width={32}
@@ -145,7 +145,7 @@ const AboutSection = () => {
                 impression.
               </div>
             </div>
-            <div className="flex-shrink-0 w-[360px] pl-5 pt-2 h-[13.5rem] rounded-2xl items-center justify-center transition duration-500 hover:bg-[#00388D] hover:border border-[#b0cdf9] max-md:p-[9px]">
+            <div className="flex-shrink-0 w-[360px]  max-md:w-[313px] pl-5 pt-2 h-[13.5rem] rounded-2xl items-center justify-center transition duration-500 hover:bg-[#00388D] hover:border border-[#b0cdf9] max-md:p-[9px]">
               <div className="flex-shrink-0 w-12 h-12 rounded-full bg-white/[.10] flex items-center justify-center">
                 {' '}
                 <svg
@@ -179,7 +179,7 @@ const AboutSection = () => {
                 comfort meets functionality for optimal productivity.
               </div>
             </div>
-            <div className="flex-shrink-0 w-[360px] pl-5 pt-2 h-[13.5rem] rounded-2xl items-center justify-center transition duration-500 hover:bg-[#00388D] hover:border border-[#b0cdf9] max-md:p-[9px]">
+            <div className="flex-shrink-0 w-[360px]  max-md:w-[313px] pl-5 pt-2 h-[13.5rem] rounded-2xl items-center justify-center transition duration-500 hover:bg-[#00388D] hover:border border-[#b0cdf9] max-md:p-[9px]">
               <div className="flex-shrink-0 w-12 h-12 rounded-full bg-white/[.10] flex items-center justify-center">
                 {' '}
                 <svg
@@ -213,7 +213,7 @@ const AboutSection = () => {
               </div>
             </div>
 
-            <div className="flex-shrink-0 w-[360px] pl-5 pt-2 h-[13.5rem] rounded-2xl items-center justify-center transition duration-500 hover:bg-[#00388D] hover:border border-[#b0cdf9] max-md:p-[9px]">
+            <div className="flex-shrink-0 w-[360px]  max-md:w-[313px] pl-5 pt-2 h-[13.5rem] rounded-2xl items-center justify-center transition duration-500 hover:bg-[#00388D] hover:border border-[#b0cdf9] max-md:p-[9px]">
               <div className="flex-shrink-0 w-12 h-12 rounded-full bg-white/[.10] flex items-center justify-center">
                 {' '}
                 <svg
@@ -248,8 +248,8 @@ const AboutSection = () => {
                 compromising quality.
               </div>
             </div>
-            <div className="flex-shrink-0 w-[360px] pl-5 pt-2 h-[13.5rem] rounded-2xl items-center justify-center transition duration-500 hover:bg-[#00388D] hover:border border-[#b0cdf9] max-md:p-[9px]">
-              <div className="flex-shrink-0 w-12 h-12 rounded-full bg-white/[.10] flex items-center justify-center transition duration-500 hover:bg-[#00388D]">
+            <div className="flex-shrink-0 w-[360px]  max-md:w-[313px]  max-md:h-[14.0rem] max-md:mb-5 pl-5 pt-2 h-[13.5rem] rounded-2xl items-center justify-center transition duration-500 hover:bg-[#00388D] hover:border border-[#b0cdf9] max-md:p-[9px]">
+              <div className="flex-shrink-0 w-12 h-12  rounded-full bg-white/[.10] flex items-center justify-center transition duration-500 hover:bg-[#00388D]">
                 <svg
                   width={20}
                   height={20}
@@ -274,7 +274,7 @@ const AboutSection = () => {
               <div className="Sans']text-[#d9d9e8] font-['DM text-lg font-medium leading-6 mt-2">
                 Home to Startups
               </div>
-              <div className="Sans'] w-[19.5rem] text-[#b0b0d0] font-['DM font-medium mt-2 max-md:w-[17rem] ">
+              <div className="Sans'] w-[19.5rem] max-md:w-full text-[#b0b0d0] font-['DM font-medium mt-2 max-md:w-[17rem] ">
                 Nurture your startup journey in our thriving ecosystem. Join a
                 community that fosters collaboration and shared experiences,
                 providing a supportive home for your entrepreneurial endeavors.
