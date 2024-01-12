@@ -4,7 +4,9 @@ import favicon from './favicon.ico'
 import MyApp from '@/app/_app'
 import AppHeader from '@/components/ui/AppHeader'
 import AppFooter from '@/components/ui/AppFooter'
+import FormModal from '@/components/FormModal'
 import './globals.css'
+import { ModalProvider } from '@/contexts/ModalProvider'
 
 const inter = Raleway({ subsets: ['latin'] })
 
@@ -26,9 +28,12 @@ export default function RootLayout({
 
       <body className={inter.className}>
         <main className="overflow-x-hidden text-app-text-color">
-          <AppHeader />
-          {children}
-          <AppFooter />
+          <ModalProvider>
+            <AppHeader />
+            {children}
+            <AppFooter />
+            <FormModal />
+          </ModalProvider> 
           <MyApp />
         </main>
       </body>

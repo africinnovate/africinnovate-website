@@ -3,9 +3,12 @@
 import Link from 'next/link'
 import { useState } from 'react'
 import Button from './Button'
-import FormComponent from '../FormComponent'
+import { useModalContext } from '@/contexts/ModalProvider'
 
 const AppHeader = () => {
+
+  const { showModal, toggleModal } = useModalContext()
+
   const [menuOpen, setMenuOpen] = useState(false)
   const [isModalOpen, setIsModalOpen] = useState(false)
 
@@ -82,14 +85,9 @@ const AppHeader = () => {
           </div>
         </div>
         <div className="inline-flex items-start mr-6  max-md:hidden">
-          <Button className="w-[200px]" onClick={() => setIsModalOpen(true)}>
+          <Button className="w-[200px]" onClick={toggleModal}>
             Contact Us
           </Button>
-          {isModalOpen && (
-            <Modal>
-              <FormComponent onClose={handleClose} />
-            </Modal>
-          )}
         </div>
         {/* Mobile Menu Toggle */}
         <div className="md:hidden flex items-center">
@@ -147,14 +145,9 @@ const AppHeader = () => {
             <Link href="/blog">Blog</Link>
           </div>
           <div className="inline-flex items-start mr-6  ">
-            <Button className="w-[200px]" onClick={() => setIsModalOpen(true)}>
+            <Button className="w-[200px]" onClick={toggleModal}>
               Contact Us
             </Button>
-            {isModalOpen && (
-              <Modal>
-                <FormComponent onClose={handleClose} />
-              </Modal>
-            )}
           </div>
         </div>
       )}

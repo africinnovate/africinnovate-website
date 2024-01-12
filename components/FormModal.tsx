@@ -1,10 +1,16 @@
 'use client'
-import React, { useState } from 'react'
+import { FC, useState } from 'react'
 import { validateForm } from '@/lib/utils/helper'
-interface FormComponentProps {
-  onClose: () => void
-}
-const FormComponent: React.FC<FormComponentProps> = ({ onClose }) => {
+import { useModalContext } from '@/contexts/ModalProvider'
+
+// interface FormModalProps {
+//   onClose: () => void
+// }
+
+const FormModal: FC = () => {
+
+  const { showModal, toggleModal } = useModalContext()
+
   const [fullName, setFullName] = useState<string>('')
   const [email, setEmail] = useState<string>('')
   const [phoneNumber, setPhoneNumber] = useState<string>('')
@@ -47,12 +53,12 @@ const FormComponent: React.FC<FormComponentProps> = ({ onClose }) => {
       selectCourse,
       yourMessage,
     })
-    onClose()
+    toggleModal()
   }
 
   return (
-    <div className="flex items-center justify-center flex-col">
-      {/* contact-us card  */}
+    <div className={`fixed ${showModal ? '' : 'hidden'} inset-0 bg-gray-600 bg-opacity-50 overflow-y-auto h-full w-full" id="my-modal`}>
+   
       <form
         className="Frame25624 flex  gap-[26px] items-start pl-[40px] max-md:pl-[25px] justify-center flex-col mt-9 w-[39rem] h-[38rem]  bg-blue-800 rounded-2xl shadow max-md:w-[20rem]"
         data-aos="fade-up"
@@ -170,9 +176,9 @@ const FormComponent: React.FC<FormComponentProps> = ({ onClose }) => {
           </button>
         </div>
       </form>
-      <div className="Ellipse1 w-96 h-96 opacity-80 z-10 bg-blue-600 rounded-full blur-[190px] absolute left-[60%] bottom-[5%]  max-md:hidden" />
+    
     </div>
   )
 }
 
-export default FormComponent
+export default FormModal
