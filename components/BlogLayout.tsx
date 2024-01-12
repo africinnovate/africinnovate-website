@@ -31,14 +31,14 @@ const BlogLayout = ({ title, subTitle, data }: BlogPageProps) => {
         </div>
       )}
 
-      <div className="mt-[2%]">
+      <div className="mt-[2%] flex justify-center items-center flex-col">
         <FeaturedBlog textLimit={400} post={data[0].fields} />
         <div className="max-md:mt-[20rem] flex items-center max-md:flex-col flex-col max-md:justify-center mt-[15%]" >
           <div className="max-md:text-[26px] text-[40px] font-bold font-['Raleway'] leading-[48px] mb-10" data-aos="zoom-in" >
             Recent Blogs
           </div>
           <div className="mt-7" data-aos="zoom-in">
-            <div className="flex w-full justify-center gap-[100px]">
+            <div className="flex w-full justify-center max-md:grid gap-[100px] ">
               {data &&
                 data.map((item) => (
                   <PostCard
