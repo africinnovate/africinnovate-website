@@ -26,7 +26,7 @@ const FormModal: FC = () => {
     setLoading(true)
 
     try {
-      await fetch('http://localhost:3000/api/sendMail/', {
+      await fetch('/api/sendMail/', {
         method: 'POST',
         body: JSON.stringify({
           subject: `${subject}: from ${email}`,

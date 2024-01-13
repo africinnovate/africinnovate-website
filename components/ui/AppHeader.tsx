@@ -13,10 +13,6 @@ const AppHeader = () => {
   const toggleMenu = () => {
     setMenuOpen(!menuOpen)
   }
-  interface ModalProps {
-    children: React.ReactNode
-  }
-
 
   return (
     <nav className=" bg-[#000024] flex justify-around  md:shrink-0  max-md:contents">
