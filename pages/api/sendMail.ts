@@ -17,7 +17,6 @@ export default async function handler(
     const transporter = nodemailer.createTransport({
       host: 'smtp.gmail.com',
       port: 587,
-      // secure: true,
       auth: {
         user: process.env.NODEMAILER_EMAIL,
         pass: process.env.NODEMAILER_PASSWORD,
@@ -38,7 +37,7 @@ export default async function handler(
       res.status(200).json({ message: 'Email sent successfully!' })
     } catch (error) {
       console.error('Error sending email:', error)
-      res.status(500).json({ message: 'Error sending email', error })
+      res.status(500).json({ message: 'Error sending email' })
     }
   } else {
     res.status(405).json({ message: 'Method Not Allowed' })
