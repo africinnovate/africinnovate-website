@@ -13,13 +13,13 @@ interface IPost {
 
 const PostCard = ({ post, textLimit, slug }: IPost) => {
   return (
-    <div className="sm:w-[calc(100%)] md:w-[calc(50%)] lg:w-[calc(31%)] h-fit flex-col inline-flex gap-10">
+    <div className="sm:w-[calc(100%)] md:w-[calc(50%)] lg:w-[calc(31%)] h-fit flex-col gap-10">
       <Image
-        className="w-[350px] h-[220px] rounded-2xl"
+        className="w-full h-full object-cover rounded-2xl"
         src={RecentBlogPageImage}
         alt="Image-for-recents-blogs"
       />
-      <div className="text-yellow-400 text-lg font-medium font-['DM Sans']  leading-normal">
+      <div className="text-yellow-400  mt-6  text-lg font-medium font-['DM Sans']  leading-normal">
         Technology
       </div>
       <div className="text-2xl font-bold font-['Raleway'] leading-loose max-md:w-[350px]">
@@ -28,7 +28,7 @@ const PostCard = ({ post, textLimit, slug }: IPost) => {
           : post.title}
       </div>
       <div
-        className="h-[74px] text-base font-medium font-['DM Sans'] leading-normal  "
+        className=" text-base  mt-6 font-medium font-['DM Sans'] leading-normal  "
         id="text"
       >
         {post.body.substring(0, textLimit)}...
