@@ -1,35 +1,38 @@
 'use client'
 
 import { FC, useState } from 'react'
-import toast from 'react-hot-toast'
+import toast, { Toaster } from 'react-hot-toast'
 import { validateForm } from '@/lib/utils/helper'
 import { useModalContext } from '@/contexts/ModalProvider'
 
+
 const FormModal: FC = () => {
-  const { showModal, toggleModal } = useModalContext()
+
+  const { showModal, toggleModal, course } = useModalContext()
 
   const [fullName, setFullName] = useState<string>('')
   const [email, setEmail] = useState<string>('')
   const [phoneNumber, setPhoneNumber] = useState<string>('')
-  const [subject, setSubject] = useState<string>('')
+  const [subject, setSubject] = useState<string>('Training')
   const [message, setMessage] = useState<string>('')
   const [loading, setLoading] = useState<boolean>(false)
 
-  const handleSubmit = async (e: { preventDefault: () => void }) => {
-    e.preventDefault()
+  const handleSubmit = async () => {
+
     const isValid = validateForm(phoneNumber, message)
 
     if (!isValid) {
       toast.error('Enter the required fields')
       return
     }
+
     setLoading(true)
 
     try {
       await fetch('/api/sendMail/', {
         method: 'POST',
         body: JSON.stringify({
-          subject: `${subject}: from ${email}`,
+          subject: `${subject}: from <${phoneNumber}> ${email}`,
           html: `
             <p>Name: ${fullName} </p>
             <p>Phone: ${phoneNumber} </p>
@@ -60,6 +63,7 @@ const FormModal: FC = () => {
         data-aos-duration="1200"
         data-aos-delay="700"
       >
+        {course && <h3 className="font-bold mt-11">You are enrroling for {course}</h3>}
         <label
           htmlFor="fullName"
           className="left-[77px] top-[48px]  text-slate-400 text-base font-medium font-['DM Sans'] leading-normal"
@@ -103,7 +107,7 @@ const FormModal: FC = () => {
         />
 
         <label
-          htmlFor="selectCourse"
+          htmlFor="subject"
           className="left-[77px] top-[255px]  text-slate-400 text-base font-medium font-['DM Sans'] leading-normal"
         ></label>
 
@@ -111,8 +115,9 @@ const FormModal: FC = () => {
           id="subject"
           name="subject"
           placeholder="Enter subject"
-          value={subject}
+          value={course ? 'Training' : subject}
           onChange={(e) => setSubject(e.target.value)}
+          disabled={course !== undefined}
           className="flex-shrink-0 w-[527px]  max-md:w-[250px]  focus:bg-transparent focus:text-[#b0b0d0]  focus:outline-none border-b-[#b0b0d0] bg-transparent border-solid border border-t-transparent  border-l-transparent border-r-transparent text-[#b0b0d0]"
         >
           <option value="Training">Training</option>
@@ -150,6 +155,7 @@ const FormModal: FC = () => {
           </button>
         </div>
       </form>
+      <Toaster />
     </div>
   )
 }

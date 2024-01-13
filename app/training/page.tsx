@@ -1,8 +1,22 @@
 'use client'
 
+import { useState } from 'react'
 import Button from '@/components/ui/Button'
+import { useModalContext } from '@/contexts/ModalProvider'
 
 const Training = () => {
+
+  const { toggleModal, setCourseHandler } = useModalContext()
+
+
+
+  const enrollHandler = async (course: string) => {
+    setCourseHandler(course)
+    toggleModal()
+  }
+
+
+
   return (
     <div className="justify-center items-center mt-4 max-md:mt-1">
       <div
@@ -27,7 +41,7 @@ const Training = () => {
             blockchain and Smart contract technology, setting the stage for a
             career in this transformative field.
           </div>
-          <Button>Enroll now</Button>
+          <Button onClick={() => enrollHandler('Blockchain')}>Enroll now</Button>
         </div>
         <div
           className="flex-shrink-0 w-full md:w-[calc(50%)] lg:w-[calc(31%)] md:max-w-[400px] mb-10 mx-2 p-6 sm:pb-10 rounded-2xl border border-blue-100 pt-2 transition duration-500 hover:bg-[#00388D] hover:shadow-lg max-md:p-[9px]"
@@ -45,7 +59,7 @@ const Training = () => {
             websites, mastering the latest tools and technologies essential for
             a successful career.
           </div>
-          <Button>Enroll now</Button>
+          <Button onClick={() => enrollHandler('Web Development')}>Enroll now</Button>
         </div>
         <div
           className="flex-shrink-0 w-full md:w-[calc(50%)] lg:w-[calc(31%)] md:max-w-[400px] mb-10 mx-2 p-6 sm:pb-10 rounded-2xl border border-blue-100 pt-2 transition duration-500 hover:bg-[#00388D] hover:shadow-lg max-md:p-[9px]"
@@ -63,7 +77,7 @@ const Training = () => {
             user-friendly mobile applications. Learn the latest frameworks and
             technologies to thrive in this dynamic industry.
           </div>
-          <Button>Enroll now</Button>
+          <Button onClick={() => enrollHandler('Mobile Development')}>Enroll now</Button>
         </div>
         <div
           className="flex-shrink-0 w-full md:w-[calc(50%)] lg:w-[calc(31%)] md:max-w-[400px] mb-10 mx-2 p-6 sm:pb-10 rounded-2xl border border-blue-100 pt-2 transition duration-500 hover:bg-[#00388D] hover:shadow-lg max-md:p-[9px]"
@@ -79,7 +93,7 @@ const Training = () => {
             and user experience. Transform your creativity into designs that
             leave a lasting impression.
           </div>
-          <Button>Enroll now</Button>
+          <Button onClick={() => enrollHandler('UI/UX')}>Enroll now</Button>
         </div>
         <div
           className="flex-shrink-0 w-full md:w-[calc(50%)] lg:w-[calc(31%)] md:max-w-[400px] mb-10 mx-2 p-6 sm:pb-10 rounded-2xl border border-blue-100 pt-2 transition duration-500 hover:bg-[#00388D] hover:shadow-lg max-md:p-[9px]"
@@ -95,7 +109,7 @@ const Training = () => {
             Acquire the skills needed to enhance collaboration and efficiency in
             any development environment.
           </div>
-          <Button>Enroll now</Button>
+          <Button onClick={() => enrollHandler('DevOps')}>Enroll now</Button>
         </div>
         <div
           className="flex-shrink-0 w-full md:w-[calc(50%)] lg:w-[calc(31%)] md:max-w-[400px] mb-10 mx-2 p-6 sm:pb-10 rounded-2xl border border-blue-100 pt-2 transition duration-500 hover:bg-[#00388D] hover:shadow-lg max-md:p-[9px]"
@@ -111,7 +125,7 @@ const Training = () => {
             the tools and techniques that drive informed decision-making in
             today's data-driven world.
           </div>
-          <Button>Enroll now</Button>
+          <Button onClick={() => enrollHandler('Data Analytics')}>Enroll now</Button>
         </div>
         <div
           className="flex-shrink-0 w-full md:w-[calc(50%)] lg:w-[calc(31%)] md:max-w-[400px] mb-10 mx-2 p-6 sm:pb-10 rounded-2xl border border-blue-100 pt-2 transition duration-500 hover:bg-[#00388D] hover:shadow-lg max-md:p-[9px]"
@@ -129,7 +143,7 @@ const Training = () => {
             and analytics to develop winning digital strategies and elevate your
             brand's online presence
           </div>
-          <Button>Enroll now</Button>
+          <Button onClick={() => enrollHandler('Digital Marketing')}>Enroll now</Button>
         </div>
         <div
           className="flex-shrink-0 w-full md:w-[calc(50%)] lg:w-[calc(31%)] md:max-w-[400px] mb-10 mx-2 p-6 sm:pb-10 rounded-2xl border border-blue-100 pt-2 transition duration-500 hover:bg-[#00388D] hover:shadow-lg max-md:p-[9px]"
@@ -147,7 +161,7 @@ const Training = () => {
             focusing on strategic planning, market analysis, and effective
             collaboration.
           </div>
-          <Button>Enroll now</Button>
+          <Button onClick={() => enrollHandler('Product Management')}>Enroll now</Button>
         </div>
         <div
           className="flex-shrink-0 w-full md:w-[calc(50%)] lg:w-[calc(31%)] md:max-w-[400px] mb-10 mx-2 p-6 sm:pb-10 rounded-2xl border border-blue-100 pt-2 transition duration-500 hover:bg-[#00388D] hover:shadow-lg max-md:p-[9px]"
@@ -163,7 +177,7 @@ const Training = () => {
             covering network security, ethical hacking, threat intelligence,
             Identity and Access Management, and more.
           </div>
-          <Button>Enroll now</Button>
+          <Button onClick={() => enrollHandler('Cyber Security')}>Enroll now</Button>
         </div>
         <div
           className="flex-shrink-0 w-full md:w-[calc(50%)] lg:w-[calc(31%)] md:max-w-[400px] mb-10 mx-2 p-6 sm:pb-10 rounded-2xl border border-blue-100 pt-2 transition duration-500 hover:bg-[#00388D] hover:shadow-lg max-md:p-[9px]"
@@ -179,7 +193,7 @@ const Training = () => {
             their imagination. From coding to creative problem-solving, this
             program sets the stage for future success.
           </div>
-          <Button>Enroll now</Button>
+          <Button onClick={() => enrollHandler('Teens Bootcamp')}>Enroll now</Button>
         </div>
         <div
           className="flex-shrink-0 w-full md:w-[calc(50%)] lg:w-[calc(31%)] md:max-w-[400px] mb-10 mx-2 p-6 sm:pb-10 rounded-2xl border border-blue-100 pt-2 transition duration-500 hover:bg-[#00388D] hover:shadow-lg max-md:p-[9px]"
@@ -197,7 +211,7 @@ const Training = () => {
             strategies, ensuring executives are well-equipped to navigate the
             digital landscape and drive organizational success.
           </div>
-          <Button>Enroll now</Button>
+          <Button onClick={() => enrollHandler('Executive Training')}>Enroll now</Button>
         </div>
         <div
           className="flex-shrink-0 w-full md:w-[calc(50%)] lg:w-[calc(31%)] md:max-w-[400px] mb-10 mx-2 p-6 sm:pb-10 rounded-2xl border border-blue-100 pt-2 transition duration-500 hover:bg-[#00388D] hover:shadow-lg max-md:p-[9px]"
@@ -215,7 +229,7 @@ const Training = () => {
             diverse range of courses to keep you ahead in the ever-evolving
             technology landscape.
           </div>
-          <Button>Enroll now</Button>
+          <Button onClick={() => enrollHandler('Skilled Up Program')}>Enroll now</Button>
         </div>
       </div>
     </div>
