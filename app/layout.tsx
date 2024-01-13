@@ -33,8 +33,8 @@ export default function RootLayout({
             {children}
             <AppFooter />
             <FormModal />
-          </ModalProvider> 
-          <MyApp />
+            <MyApp />
+          </ModalProvider>
         </main>
       </body>
     </html>

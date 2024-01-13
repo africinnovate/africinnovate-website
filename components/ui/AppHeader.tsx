@@ -6,8 +6,7 @@ import Button from './Button'
 import { useModalContext } from '@/contexts/ModalProvider'
 
 const AppHeader = () => {
-
-  const { showModal, toggleModal } = useModalContext()
+  const { toggleModal } = useModalContext()
 
   const [menuOpen, setMenuOpen] = useState(false)
   const [isModalOpen, setIsModalOpen] = useState(false)

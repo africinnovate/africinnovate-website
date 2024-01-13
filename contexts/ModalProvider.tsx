@@ -3,7 +3,7 @@
 import { useState, createContext, useContext } from 'react'
 
 export interface IThemeProviderProps {
-  children: React.ReactNode;
+  children: React.ReactNode
 }
 
 interface ModalContextData {
@@ -13,23 +13,21 @@ interface ModalContextData {
 
 const ModalContext = createContext<ModalContextData>({
   showModal: false,
-  toggleModal: () => {}
+  toggleModal: () => {},
 })
 
 export const useModalContext = () => useContext(ModalContext)
 
-export const ModalProvider: React.FC<IThemeProviderProps> = ({ children } ) => {
-  const [showModal, setShowModal] = useState(true)
-
+export const ModalProvider: React.FC<IThemeProviderProps> = ({ children }) => {
+  const [showModal, setShowModal] = useState(false)
 
   const toggleModal = () => {
-    setShowModal((prevState) => (prevState === true ? false : true));
-  };
+    setShowModal((prevState) => (prevState === true ? false : true))
+  }
 
   return (
     <ModalContext.Provider value={{ showModal, toggleModal }}>
       <div>{children}</div>
     </ModalContext.Provider>
-    
-  );
-};
+  )
+}

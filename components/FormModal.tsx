@@ -1,66 +1,61 @@
 'use client'
+
 import { FC, useState } from 'react'
+import toast from 'react-hot-toast'
 import { validateForm } from '@/lib/utils/helper'
 import { useModalContext } from '@/contexts/ModalProvider'
 
-// interface FormModalProps {
-//   onClose: () => void
-// }
-
 const FormModal: FC = () => {
-
   const { showModal, toggleModal } = useModalContext()
 
   const [fullName, setFullName] = useState<string>('')
   const [email, setEmail] = useState<string>('')
   const [phoneNumber, setPhoneNumber] = useState<string>('')
-  const [selectCourse, setSelectCourse] = useState<string>('')
-  const [Other, setOther] = useState<string>('')
-  const [yourMessage, setYourMessage] = useState<string>('')
+  const [subject, setSubject] = useState<string>('')
+  const [message, setMessage] = useState<string>('')
+  const [loading, setLoading] = useState<boolean>(false)
 
   const handleSubmit = async (e: { preventDefault: () => void }) => {
     e.preventDefault()
-    const isValid = validateForm(
-      fullName,
-      email,
-      phoneNumber,
-      selectCourse,
-      yourMessage,
-    )
+    const isValid = validateForm(phoneNumber, message)
 
     if (!isValid) {
-      alert('Please fill in all fields correctly.')
+      toast.error('Enter the required fields')
       return
     }
+    setLoading(true)
 
-    // handling sending messages
-    await fetch('/api', {
-      method: 'POST',
-      body: JSON.stringify({
-        email,
-        phoneNumber,
-        fullName,
-        selectCourse,
-        Other,
-        yourMessage,
-      }),
-    })
-    // Handle form submission logic here
-    console.log('Form submitted:', {
-      fullName,
-      email,
-      phoneNumber,
-      selectCourse,
-      yourMessage,
-    })
-    toggleModal()
+    try {
+      await fetch('http://localhost:3000/api/sendMail/', {
+        method: 'POST',
+        body: JSON.stringify({
+          subject: `${subject}: from ${email}`,
+          html: `
+            <p>Name: ${fullName} </p>
+            <p>Phone: ${phoneNumber} </p>
+            <p>${message}</p>`,
+        }),
+        headers: {
+          'Content-Type': 'application/json',
+        },
+      })
+      toast.success('Successfully sent!')
+      setLoading(false)
+      toggleModal()
+    } catch (error) {
+      toast.error('Could not send')
+      setLoading(false)
+    }
   }
 
   return (
-    <div className={`fixed ${showModal ? '' : 'hidden'} inset-0 bg-gray-600 bg-opacity-50 overflow-y-auto h-full w-full" id="my-modal`}>
-   
+    <div
+      className={`fixed ${
+        showModal ? '' : 'hidden'
+      } inset-0 bg-gray-600 bg-opacity-50 overflow-y-auto h-full w-full" id="my-modal`}
+    >
       <form
-        className="Frame25624 flex  gap-[26px] items-start pl-[40px] max-md:pl-[25px] justify-center flex-col mt-9 w-[39rem] h-[38rem]  bg-blue-800 rounded-2xl shadow max-md:w-[20rem]"
+        className="mx-auto flex  gap-[26px] items-start pl-[40px] max-md:pl-[25px] justify-center flex-col mt-9 w-[39rem] h-[38rem]  bg-blue-800 rounded-2xl shadow max-md:w-[20rem]"
         data-aos="fade-up"
         data-aos-duration="1200"
         data-aos-delay="700"
@@ -113,70 +108,48 @@ const FormModal: FC = () => {
         ></label>
 
         <select
-          id="selectCourse"
-          name="selectCourse"
-          placeholder="selectCourse"
-          value={selectCourse}
-          onChange={(e) => setSelectCourse(e.target.value)}
+          id="subject"
+          name="subject"
+          placeholder="Enter subject"
+          value={subject}
+          onChange={(e) => setSubject(e.target.value)}
           className="flex-shrink-0 w-[527px]  max-md:w-[250px]  focus:bg-transparent focus:text-[#b0b0d0]  focus:outline-none border-b-[#b0b0d0] bg-transparent border-solid border border-t-transparent  border-l-transparent border-r-transparent text-[#b0b0d0]"
         >
-          <option className="hover:bg-blue-600 text-red" value="course1">
-            Course 1
-          </option>
-          <option value="course2">Course 2</option>
+          <option value="Training">Training</option>
+          <option value="Project">Project</option>
+          <option value="Event">Event</option>
+          <option value="Partnership">Partnership</option>
         </select>
-        {/* select others */}
-        <label
-          htmlFor="selectOther"
-          className="left-[77px] top-[255px]  text-slate-400 text-base font-medium font-['DM Sans'] leading-normal"
-        ></label>
 
-        <select
-          id="Other"
-          name="Other"
-          placeholder="Others"
-          value={Other}
-          onChange={(e) => setOther(e.target.value)}
-          className="flex-shrink-0 w-[527px]  max-md:w-[250px]  focus:bg-transparent focus:text-[#b0b0d0]  focus:outline-none border-b-[#b0b0d0] bg-transparent border-solid border border-t-transparent  border-l-transparent border-r-transparent text-[#b0b0d0]"
-        >
-          <option className="hover:bg-blue-600 text-red" value="course1">
-            Internship
-          </option>
-          <option className="hover:bg-blue-600 text-red" value="course2">
-            Enquiries
-          </option>
-          <option value="course3">Project Creation</option>
-        </select>
         <label
-          htmlFor="yourMessage"
+          htmlFor="message"
           className="left-[77px] top-[324px]  text-slate-400 text-base font-medium font-['DM Sans'] leading-normal"
         >
           Your message
         </label>
         <textarea
-          id="yourMessage"
-          name="yourMessage"
-          placeholder="yourMessage"
-          value={yourMessage}
-          onChange={(e) => setYourMessage(e.target.value)}
+          id="message"
+          name="message"
+          placeholder="message"
+          value={message}
+          onChange={(e) => setMessage(e.target.value)}
           className="flex-shrink-0 text-slate-400  w-[527px] max-md:w-[250px] h-24 rounded-lg border border-[#b0b0d0] bg-transparent"
         ></textarea>
 
         <div className="FilledButtonsDarkMode left-[76px] top-[472px]   mb-5 justify-start items-start inline-flex">
           <button
-            type="submit"
+            type="button"
             className="Frame11947 px-6 py-3 bg-slate-300 rounded-3xl justify-start items-center gap-2 flex"
           >
             <span
               onClick={handleSubmit}
               className="Button text-blue-950 text-base font-medium font-['DM Sans'] leading-normal"
             >
-              Send Message
+              {loading ? 'Sending ...' : 'Send Message'}
             </span>
           </button>
         </div>
       </form>
-    
     </div>
   )
 }

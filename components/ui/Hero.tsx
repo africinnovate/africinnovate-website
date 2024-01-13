@@ -58,7 +58,10 @@ const Hero = () => {
         </div>
       </div>
 
-      <div className="flex gap-[20px] flex-row max-md:flex-col items-center justify-center mt-[70px]" data-aos="fade-up" >
+      <div
+        className="flex gap-[20px] flex-row max-md:flex-col items-center justify-center mt-[70px]"
+        data-aos="fade-up"
+      >
         <div className="flex">
           <div className="flex items-start gap-10">
             <div className="font-sans text-[2rem] font-bold">

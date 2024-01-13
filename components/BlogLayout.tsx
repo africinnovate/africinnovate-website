@@ -33,8 +33,11 @@ const BlogLayout = ({ title, subTitle, data }: BlogPageProps) => {
 
       <div className="mt-[2%]">
         <FeaturedBlog textLimit={400} post={data[0].fields} />
-        <div className="max-md:mt-[20rem] flex items-center max-md:flex-col flex-col max-md:justify-center mt-[15%]" >
-          <div className="max-md:text-[26px] text-[40px] font-bold font-['Raleway'] leading-[48px] mb-10" data-aos="zoom-in" >
+        <div className="max-md:mt-[20rem] flex items-center max-md:flex-col flex-col max-md:justify-center mt-[15%]">
+          <div
+            className="max-md:text-[26px] text-[40px] font-bold font-['Raleway'] leading-[48px] mb-10"
+            data-aos="zoom-in"
+          >
             Recent Blogs
           </div>
           <div className="mt-7" data-aos="zoom-in">
