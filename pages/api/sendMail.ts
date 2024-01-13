@@ -1,7 +1,7 @@
 import nodemailer from 'nodemailer'
 
 export default async function handler(req, res) {
-  debugger
+  
   if (req.method === 'POST') {
     const { subject, html } = req.body
 
@@ -21,8 +21,7 @@ export default async function handler(req, res) {
       from: '',
       to: 'info@africinnovate.com',
       subject,
-      html,
-      text: 'fsfdfdf',
+      html
     }
 
     try {
