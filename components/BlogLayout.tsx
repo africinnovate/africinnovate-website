@@ -46,8 +46,7 @@ const BlogLayout = ({ title, subTitle, data }: BlogPageProps) => {
                 data.map((item) => (
                   <PostCard
                     textLimit={130}
-                    post={item.fields}
-                    slug={item.fields.slug}
+                    post={item}
                     key={item.sys.id}
                   />
                 ))}
