@@ -15,7 +15,7 @@ export default function BlogComponent({ data }: BlogPageProps) {
   const pageTitle = `${'Blog'} | Africinnovate`; // Customize this with your site name
   const description = `${'Latest tech trend for your perusal'}`;
   // const ogImage = `${africImage}`; // Assuming your featureImage is an object with a file field
-  const ogImage = `https:${data[0].fields.featureImage.fields.file.url}`; // Assuming your featureImage is an object with a file field
+  // const ogImage = `https:${data[0].fields.featureImage.fields.file.url}`; // Assuming your featureImage is an object with a file field
 
 
   <Head>
@@ -23,7 +23,7 @@ export default function BlogComponent({ data }: BlogPageProps) {
     <meta name="description" content={description} />
     <meta property="og:title" content={pageTitle} />
     <meta property="og:description" content={description} />
-    <meta property="og:image" content={ogImage} />
+    {/* <meta property="og:image" content={ogImage} /> */}
   </Head>
 
   return <BlogLayout title="Our Blog" subTitle={true} data={data} />
