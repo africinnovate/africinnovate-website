@@ -1,4 +1,4 @@
-// 'use client'
+'use client'
 
 import { getBlogPosts } from '@/lib/utils'
 import BlogLayout from '@/components/BlogLayout'
