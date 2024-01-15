@@ -1,10 +1,10 @@
-'use client'
+// 'use client'
 
 import { getBlogPosts } from '@/lib/utils'
 import BlogLayout from '@/components/BlogLayout'
 import { PostType } from '@/interfaces'
 import Head from 'next/head'
-import africImage from '@/public/Images/africinnovate.jpeg'
+// import africImage from '@/public/Images/africinnovate.jpeg'
 
 interface BlogPageProps {
   data: PostType[]
@@ -14,8 +14,8 @@ export default function BlogComponent({ data }: BlogPageProps) {
 
   const pageTitle = `${'Blog'} | Africinnovate`; // Customize this with your site name
   const description = `${'Latest tech trend for your perusal'}`;
-  const ogImage = `${africImage}`; // Assuming your featureImage is an object with a file field
-  // const ogImage = `https:${data[0].fields.featureImage.fields.file.url}`; // Assuming your featureImage is an object with a file field
+  // const ogImage = `${africImage}`; // Assuming your featureImage is an object with a file field
+  const ogImage = `https:${data[0].fields.featureImage.fields.file.url}`; // Assuming your featureImage is an object with a file field
 
 
   <Head>
