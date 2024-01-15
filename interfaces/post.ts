@@ -15,6 +15,7 @@ export type PostType = {
     title: string
     body: string
     slug: string
+    featuredText: string
     featureImage: {
       fields: {
         file: {
