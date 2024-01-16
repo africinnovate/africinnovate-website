@@ -8,7 +8,7 @@ function AboutUs() {
     <div className="flex flex-col items-center mt-[72px] justify-center">
       <div
         className="Ellipse1 w-96 h-96 opacity-80 z-10 bg-blue-600 rounded-full blur-[190px] absolute left-[70%] bottom-[20%]  max-md:hidden"
-        data-aos="fade-up"
+        data-aos="zoom-in"
       />
 
       <div className="relative z-20 w-[53rem] text-center max-md:w-[287px]">
@@ -22,7 +22,7 @@ function AboutUs() {
       <div id="image">
         <Image
           className="w-[1000px] h-[440px] mt-[20px] max-md:mr-[54px] max-md:h-[322px] max-md:w-[350px] max-md:mt-[21px] object-cover relative rounded-2xl"
-          data-aos="fade-up"
+          data-aos="zoom-in"
           src={AboutImage}
           alt="blog-page-image"
           width={1000}

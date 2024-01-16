@@ -28,7 +28,7 @@ const Hero = () => {
       <div className="flex items-center justify-center flex-col">
         <div
           className="flex w-full items-center justify-center flex-col "
-          data-aos="fade-up"
+          data-aos="zoom-in"
         >
           <div className="w-[80%] text-center text-[80px] font-semibold font-sans  max-md:text-[2rem] max-md:leading-normal">
             Innovation fueled by the community of
@@ -37,7 +37,7 @@ const Hero = () => {
         </div>
         <div
           className="font-sans w-[645px]  font-revert text-[#b0b0d0] text-center mb-3  mt-5  text-lg font-medium max-md:w-[344px]"
-          data-aos="fade-up"
+          data-aos="zoom-in"
           data-aos-duration="1000"
           data-aos-delay="500"
         >
@@ -47,7 +47,7 @@ const Hero = () => {
         </div>
         <div
           className="inline-flex items-start my-6"
-          data-aos="fade-up"
+          data-aos="zoom-in"
           data-aos-duration="1200"
           data-aos-delay="700"
           id="animationbutton"
@@ -60,7 +60,7 @@ const Hero = () => {
 
       <div
         className="flex gap-[20px] flex-row max-md:flex-col items-center justify-center mt-[70px]"
-        data-aos="fade-up"
+        data-aos="zoom-in"
       >
         <div className="flex">
           <div className="flex items-start gap-10">

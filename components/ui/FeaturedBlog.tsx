@@ -7,7 +7,7 @@ const FeaturedBlog = ({ post, textLimit }: IPost) => {
     <div className="w-[1200px] max-md:w-[400px] h-[427px] flex flex-row    items-center justify-center mt-[20px] ml-[83px]  max-md:ml-[50px] max-md:flex-col max-md:justify-center max-md:items-center gap-[30px]  max-md:mt-[10rem]">
       <Image
         className="w-[500px] h-[440px] mt-[20px] max-md:mr-[54px] max-md:h-[322px] max-md:w-[350px] max-md:mt-[21px] object-cover relative rounded-2xl"
-        data-aos="fade-up"
+        data-aos="zoom-in"
         src={`https:${post.featureImage.fields.file.url}`}
         alt="blog-page-image"
         width={100}
@@ -16,7 +16,7 @@ const FeaturedBlog = ({ post, textLimit }: IPost) => {
       <div className="max-md:w-[400px]">
         <div
           className="w-[578px] h-[400px] flex-col justify-start items-start gap-4 inline-flex mt-[5px]"
-          data-aos="fade-up"
+          data-aos="zoom-in"
         >
           <div className="text-yellow-400 text-lg font-medium font-['DM Sans'] leading-normal">
             Training

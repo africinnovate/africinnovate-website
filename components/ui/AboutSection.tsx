@@ -58,7 +58,7 @@ const AboutSection = () => {
             <Image
               className="img4"
               src={LaptopPicFour}
-              data-aos="fade-up"
+              data-aos="zoom-in"
               alt="imagefour"
             />
           </div>
@@ -68,7 +68,7 @@ const AboutSection = () => {
         <div
           className="w-[1200px] h-[660px] mt-[80px] rounded-3xl border-2  border-[#b0cdf9]  max-md:h-fit max-md:w-[350px] max-md:mt-[500px] "
           id="grade"
-          data-aos="fade-up"
+          data-aos="zoom-in"
         >
           <div className="text-center mt-[48px] text-5xl font-bold leading-[64px] max-md:text-[30px]">
             Why Choose Us
@@ -286,7 +286,7 @@ const AboutSection = () => {
       <div
         id="what-we-do"
         className="mt-[60px] flex items-center justify-center flex-col"
-        data-aos="fade-up"
+        data-aos="zoom-in"
       >
         <div className="[#d9d9e8] text-center font-['Raleway'] text-5xl font-bold leading-[64px] ">
           What we do
@@ -317,7 +317,7 @@ const AboutSection = () => {
           <div
             className="w-[627px] h-[472px] ]   bg-sky-500 bg-opacity-20 rounded-2xl shadow-inner backdrop-blur-[10px] justify-end items-center inline-flex  "
             id="card1"
-            data-aos="fade-up"
+            data-aos="zoom-in"
           >
             <div className="w-[541px] h-56 flex-col justify-start items-start gap-4 inline-flex max-md:w-[329px] max-md:h-auto max-md:px-[10px] max-md:py-[10px]">
               <div className="[#d9d9e8] text-[40px] font-bold font-['Raleway'] leading-[48px]">
@@ -335,7 +335,7 @@ const AboutSection = () => {
           <div
             className="w-[627px] h-[472px]  bg-sky-500 bg-opacity-20 rounded-2xl shadow-inner backdrop-blur-[10px] justify-end items-center inline-flex "
             id="card2"
-            data-aos="fade-up"
+            data-aos="zoom-in"
           >
             <div className="w-[541px] h-[248px] flex-col justify-start items-start gap-4 inline-flex max-md:w-[329px] max-md:h-auto  mr-[20px]">
               <div className="[#d9d9e8] text-[40px] font-bold font-['Raleway'] leading-[48px]">

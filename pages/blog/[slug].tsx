@@ -17,7 +17,7 @@ const BlogPage = ({ post }: Props) => {
         <div className="h-[500px] object-contain mt-8 max-md:w-auto ">
           <Image
             className="w-[500px] h-[440px]   mt-[20px] max-md:mr-[54px] max-md:h-[322px] max-md:w-[350px] max-md:mt-[21px] object-cover relative rounded-2xl"
-            data-aos="fade-up"
+            data-aos="zoom-in"
             src={`https:${post.fields.featureImage.fields.file.url}`}
             alt="blog-page-image"
             width={100}

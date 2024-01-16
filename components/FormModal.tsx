@@ -59,7 +59,7 @@ const FormModal: FC = () => {
     >
       <form
         className="mx-auto flex  gap-[26px] items-start pl-[40px] max-md:pl-[25px] justify-center flex-col mt-9 w-[39rem] h-[38rem]  bg-blue-800 rounded-2xl shadow max-md:w-[20rem]"
-        data-aos="fade-up"
+        data-aos="zoom-in"
         data-aos-duration="1200"
         data-aos-delay="700"
       >
