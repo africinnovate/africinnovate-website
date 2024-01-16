@@ -1,18 +1,28 @@
-// import { useRouter } from 'next/router'
+
 import Image from 'next/image'
 import { Params, PostType } from '@/interfaces'
 import { getBlogPost, getBlogPosts, markdownToHtml } from '@/lib/utils'
+import Head from 'next/head'
 
 type Props = {
   post: PostType
 }
 
 const BlogPage = ({ post }: Props) => {
-  // const router = useRouter()
-  // const title = `${post.fields.title} | Impossible is nonsense`
+
+  const pageTitle = `${post.fields.title} | Africinnovate`; // Customize this with your site name
+  const description = `${post.fields.featuredText}`;
+  const ogImage = `https:${post.fields.featureImage.fields.file.url}`; // Assuming your featureImage is an object with a file field
 
   return (
     <div className="prose max-w-[80%] mx-auto">
+      <Head>
+        <title>{pageTitle}</title>
+        <meta name="description" content={description} />
+        <meta property="og:title" content={pageTitle} />
+        <meta property="og:description" content={description} />
+        <meta property="og:image" content={ogImage} />
+      </Head>
       <div className="flex items-center justify-center flex-col">
         <div className="h-[500px] object-contain mt-8 max-md:w-auto ">
           <Image
