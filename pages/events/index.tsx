@@ -1,16 +1,16 @@
 'use client'
 
-import { getBlogPosts } from '@/lib/utils'
-import BlogLayout from '@/components/BlogLayout'
+import { getEventPosts } from '@/lib/utils'
 import { PostType } from '@/interfaces'
+import EventLayout from '@/components/EventLayout'
 // import Head from 'next/head'
 // import africImage from '@/public/Images/africinnovate.jpeg'
 
-interface BlogPageProps {
+interface EventPageProps {
   data: PostType[]
 }
 
-export default function Blog({ data }: BlogPageProps) {
+export default function Event({ data }: EventPageProps) {
 
   // const pageTitle = `${'Blog'} | Africinnovate`; // Customize this with your site name
   // const description = `${'Latest tech trend for your perusal'}`;
@@ -26,11 +26,11 @@ export default function Blog({ data }: BlogPageProps) {
     {/* <meta property="og:image" content={ogImage} /> */}
   // </Head>
 
-  return <BlogLayout title="Our Blog" subTitle={true} data={data} />
+  return <EventLayout data={data} />
 }
 
 export async function getServerSideProps() {
-  const data = await getBlogPosts()
+  const data = await getEventPosts()
 
   // Return the data as props
   return { props: { data } }

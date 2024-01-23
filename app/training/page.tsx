@@ -1,14 +1,11 @@
 'use client'
 
-import { useState } from 'react'
 import Button from '@/components/ui/Button'
 import { useModalContext } from '@/contexts/ModalProvider'
 
 const Training = () => {
 
   const { toggleModal, setCourseHandler } = useModalContext()
-
-
 
   const enrollHandler = async (course: string) => {
     setCourseHandler(course)
@@ -71,7 +68,7 @@ const Training = () => {
             Mobile Development
           </div>
 
-          <div className="text-slate-400  font-medium leading-normal mr-5 mb-6">
+          <div className="text-slate-400 font-medium leading-normal mr-5 mb-6">
             Shape the future of mobile experiences. Our Mobile Development
             program equips you with the skills to create innovative and
             user-friendly mobile applications. Learn the latest frameworks and
@@ -103,7 +100,7 @@ const Training = () => {
         >
           <div className="text-2xl font-bold leading-loose">DevOps</div>
 
-          <div className="text-slate-400  font-medium leading-normal mr-5 mb-6">
+          <div className="text-slate-400 font-medium leading-normal mr-5 mb-6">
             Bridge the gap between development and operations. Join our DevOps
             program to streamline software development and deployment processes.
             Acquire the skills needed to enhance collaboration and efficiency in
@@ -137,7 +134,7 @@ const Training = () => {
             Digital Marketing
           </div>
 
-          <div className="text-slate-400  font-medium leading-normal mr-5 mb-6">
+          <div className="text-slate-400 font-medium leading-normal mr-5 mb-6">
             Navigate the dynamic landscape of Digital Marketing with our
             courses. Acquire expertise in SEO, social media, content creation,
             and analytics to develop winning digital strategies and elevate your
