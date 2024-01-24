@@ -26,7 +26,7 @@ const EventPage = ({ post }: Props) => {
       <div className="flex items-center justify-center flex-col">
         <div className="h-[500px] object-contain mt-8 max-md:w-auto ">
           <Image
-            className="w-[500px] h-[440px]   mt-[20px] max-md:mr-[54px] max-md:h-[322px] max-md:w-[350px] max-md:mt-[21px] object-cover relative rounded-2xl"
+            className="w-[500px] mt-[20px] max-md:mr-[54px] max-md:w-[350px] max-md:mt-[21px] object-cover relative rounded-2xl"
             data-aos="zoom-in"
             src={`https:${post.fields.featureImage.fields.file.url}`}
             alt="blog-page-image"
@@ -39,7 +39,7 @@ const EventPage = ({ post }: Props) => {
         </h1>
         <article
           dangerouslySetInnerHTML={{ __html: post.fields.body }}
-          className="prose-h1:text-[#d9d9e8] prose-h2:text-[#d9d9e8] prose-h3:text-[#d9d9e8] text-[#d9d9e8] font-['DM font-medium leading-8"
+          className="prose-h1:text-[#d9d9e8] prose-h2:text-[#d9d9e8] prose-h3:text-[#d9d9e8] prose-h4:text-[#d9d9e8] prose-a:text-[#d9d9e8] text-[#d9d9e8] font-medium leading-8"
         />
       </div>
     </div>
