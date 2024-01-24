@@ -8,21 +8,21 @@ type Props = {
 
 const EventCard = ({ post }: Props) => {
   return (
-    <div className="">
-      <Link
-        as={`/events/${post.fields.slug}`}
-        href="/events/[slug]"
-        className=""
-      >
-        <Image
-          className="w-full h-full object-cover rounded-2xl"
-          src={`https:${post.fields.featureImage.fields.file.url}`}
-          alt="Image-for-recents-blogs"
-          width={100}
-          height={100}
-        />
-      </Link>
-    </div>
+
+    <Link
+      as={`/events/${post.fields.slug}`}
+      href="/events/[slug]"
+      className=""
+    >
+      <Image
+        className="rounded-2xl"
+        src={`https:${post.fields.featureImage.fields.file.url}`}
+        alt="Image-for-recents-blogs"
+        width={500}
+        height={500}
+      />
+    </Link>
+
   )
 }
 

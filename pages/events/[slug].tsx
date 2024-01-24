@@ -3,6 +3,7 @@ import Image from 'next/image'
 import { Params, PostType } from '@/interfaces'
 import { getEventPost, getEventPosts, markdownToHtml } from '@/lib/utils'
 import Head from 'next/head'
+import Link from 'next/link'
 
 type Props = {
   post: PostType
@@ -24,17 +25,16 @@ const EventPage = ({ post }: Props) => {
         <meta property="og:image" content={ogImage} />
       </Head>
       <div className="flex items-center justify-center flex-col">
-        <div className="h-[500px] object-contain mt-8 max-md:w-auto ">
-          <Image
-            className="w-[500px] mt-[20px] max-md:mr-[54px] max-md:w-[350px] max-md:mt-[21px] object-cover relative rounded-2xl"
-            data-aos="zoom-in"
-            src={`https:${post.fields.featureImage.fields.file.url}`}
-            alt="blog-page-image"
-            width={100}
-            height={100}
-          />
-        </div>
-        <h1 className="text-[#d9d9e8]  mt-9 font-['Raleway'] text-5xl font-bold leading-[64px] max-md:w-auto max-md:ml-3">
+
+      <Image
+        className="rounded-2xl"
+        src={`https:${post.fields.featureImage.fields.file.url}`}
+        alt="Image-for-recents-blogs"
+        width={500}
+        height={500}
+      />
+
+        <h1 className="text-[#d9d9e8] mt-9 font-['Raleway'] text-5xl font-bold leading-[64px] max-md:w-auto max-md:ml-3">
           {post.fields.title}
         </h1>
         <article
