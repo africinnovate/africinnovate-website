@@ -33,5 +33,5 @@ export async function getServerSideProps() {
   const data = await getBlogPosts()
 
   // Return the data as props
-  return { props: { data } }
+  return {  props: { data } }
 }

@@ -22,6 +22,8 @@ const BlogPage = ({ post }: Props) => {
         <meta property="og:title" content={pageTitle} />
         <meta property="og:description" content={description} />
         <meta property="og:image" content={ogImage} />
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9738664936744628"
+      crossOrigin="anonymous"></script>
       </Head>
       <div className="flex items-center justify-center flex-col">
         <div className="h-[500px] object-contain mt-8 max-md:w-auto ">
