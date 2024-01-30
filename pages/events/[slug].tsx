@@ -3,7 +3,6 @@ import Image from 'next/image'
 import { Params, PostType } from '@/interfaces'
 import { getEventPost, getEventPosts, markdownToHtml } from '@/lib/utils'
 import Head from 'next/head'
-import Link from 'next/link'
 import Script from 'next/script'
 
 type Props = {

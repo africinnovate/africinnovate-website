@@ -2,7 +2,6 @@
 
 import Image from 'next/image'
 import AboutImage from '@/public/Images/about.png'
-import Head from 'next/head'
 import Script from 'next/script'
 
 function AboutUs() {

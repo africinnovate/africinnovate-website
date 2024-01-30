@@ -2,7 +2,6 @@
 
 import Button from '@/components/ui/Button'
 import { useModalContext } from '@/contexts/ModalProvider'
-import Head from 'next/head'
 import Script from 'next/script'
 
 const Training = () => {

@@ -3,7 +3,6 @@
 import { getEventPosts } from '@/lib/utils'
 import { PostType } from '@/interfaces'
 import EventCard from './ui/EventCard'
-import Head from 'next/head'
 import Script from 'next/script'
 
 interface EventProps {

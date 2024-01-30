@@ -4,7 +4,6 @@ import { getBlogPosts } from '@/lib/utils'
 import FeaturedBlog from '@/components/ui/FeaturedBlog'
 import PostCard from '@/components/ui/PostCard'
 import { PostType } from '@/interfaces'
-import Head from 'next/head'
 import Script from 'next/script'
 interface BlogPageProps {
   data: PostType[]

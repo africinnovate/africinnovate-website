@@ -7,7 +7,7 @@ import AppFooter from '@/components/ui/AppFooter'
 import FormModal from '@/components/FormModal'
 import './globals.css'
 import { ModalProvider } from '@/contexts/ModalProvider'
-import Head from 'next/head'
+import Script from 'next/script'
 
 const inter = Raleway({ subsets: ['latin'] })
 
@@ -26,10 +26,8 @@ export default function RootLayout({
   return (
     <html lang="en">
       <link rel="icon" href="favico.ico" type="image/x-icon" />
-      <Head>
-        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9738664936744628"
-      crossOrigin="anonymous"></script>
-      </Head>
+      <Script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9738664936744628"
+      crossOrigin="anonymous"></Script> 
       <body className={inter.className}>
         <main className="overflow-x-hidden text-app-text-color">
           <ModalProvider>
