@@ -8,6 +8,7 @@ import FormModal from '@/components/FormModal'
 import './globals.css'
 import { ModalProvider } from '@/contexts/ModalProvider'
 import Script from 'next/script'
+import Head from 'next/head'
 
 const inter = Raleway({ subsets: ['latin'] })
 
@@ -26,6 +27,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <link rel="icon" href="favico.ico" type="image/x-icon" />
+      <Head>
+        <meta name="google-adsense-account" content="ca-pub-9738664936744628"/>
+      </Head>
       <Script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9738664936744628"
       crossOrigin="anonymous"></Script> 
       <body className={inter.className}>
