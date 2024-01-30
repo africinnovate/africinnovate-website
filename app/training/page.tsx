@@ -2,7 +2,7 @@
 
 import Button from '@/components/ui/Button'
 import { useModalContext } from '@/contexts/ModalProvider'
-import Script from 'next/script'
+import Head from 'next/head'
 
 const Training = () => {
 
@@ -17,8 +17,9 @@ const Training = () => {
 
   return (
     <div className="justify-center items-center mt-4 max-md:mt-1">
-       <Script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9738664936744628"
-      crossOrigin="anonymous"></Script> 
+       <Head>
+          <meta name="google-adsense-account" content="ca-pub-9738664936744628"/>
+        </Head>
       <div
         className="text-center my-10 max-md:text-[25px] text-[80px] font-extrabold leading-[96px] max-md:leading-3"
         data-aos="zoom-in"

@@ -2,13 +2,14 @@
 
 import Image from 'next/image'
 import AboutImage from '@/public/Images/about.png'
-import Script from 'next/script'
+import Head from 'next/head'
 
 function AboutUs() {
   return (
     <div className="flex flex-col items-center mt-[72px] justify-center">
-      <Script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9738664936744628"
-      crossOrigin="anonymous"></Script> 
+        <Head>
+          <meta name="google-adsense-account" content="ca-pub-9738664936744628"/>
+        </Head>
       <div
         className="Ellipse1 w-96 h-96 opacity-80 z-10 bg-blue-600 rounded-full blur-[190px] absolute left-[70%] bottom-[20%]  max-md:hidden"
         data-aos="zoom-in"

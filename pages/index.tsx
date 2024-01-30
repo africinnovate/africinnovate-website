@@ -4,7 +4,7 @@ import BlogLayout from '@/components/BlogLayout'
 import { getBlogPosts, getEventPosts } from '@/lib/utils'
 import { PostType } from '@/interfaces'
 import EventLayout from '@/components/EventLayout'
-
+import Head from 'next/head'
 interface BlogPageProps {
   data: PostType[]
   eventData: PostType[]
@@ -14,6 +14,9 @@ interface BlogPageProps {
 const Home = ({ data, eventData }: BlogPageProps) => {
   return (
     <>
+     <Head>
+        <meta name="google-adsense-account" content="ca-pub-9738664936744628"/>
+      </Head>
       <Hero />
       <AboutSection />
       <div className="mt-20">

@@ -4,7 +4,7 @@ import { getBlogPosts } from '@/lib/utils'
 import FeaturedBlog from '@/components/ui/FeaturedBlog'
 import PostCard from '@/components/ui/PostCard'
 import { PostType } from '@/interfaces'
-import Script from 'next/script'
+import Head from 'next/head'
 interface BlogPageProps {
   data: PostType[]
   title: string
@@ -14,8 +14,9 @@ interface BlogPageProps {
 const BlogLayout = ({ title, subTitle, data }: BlogPageProps) => {
   return (
     <div className="flex flex-col items-center justify-center mt-[50px]">
-      <Script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9738664936744628"
-      crossOrigin="anonymous"></Script>  
+        <Head>
+          <meta name="google-adsense-account" content="ca-pub-9738664936744628"/>
+        </Head> 
       <div
         className="text-center max-md:text-start max-md:text-[25px]text-[#d9d9e8] text-5xl font-extrabold font-['Raleway'] leading-[96px] max-md:leading-3"
         data-aos="zoom-in"

@@ -7,7 +7,6 @@ import AppFooter from '@/components/ui/AppFooter'
 import FormModal from '@/components/FormModal'
 import './globals.css'
 import { ModalProvider } from '@/contexts/ModalProvider'
-import Script from 'next/script'
 import Head from 'next/head'
 
 const inter = Raleway({ subsets: ['latin'] })
@@ -30,8 +29,6 @@ export default function RootLayout({
       <Head>
         <meta name="google-adsense-account" content="ca-pub-9738664936744628"/>
       </Head>
-      <Script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9738664936744628"
-      crossOrigin="anonymous"></Script> 
       <body className={inter.className}>
         <main className="overflow-x-hidden text-app-text-color">
           <ModalProvider>

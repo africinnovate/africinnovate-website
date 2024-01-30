@@ -23,6 +23,7 @@ const EventPage = ({ post }: Props) => {
         <meta property="og:title" content={pageTitle} />
         <meta property="og:description" content={description} />
         <meta property="og:image" content={ogImage} />
+        <meta name="google-adsense-account" content="ca-pub-9738664936744628"/>
       </Head>
       <Script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9738664936744628"
       crossOrigin="anonymous"></Script>

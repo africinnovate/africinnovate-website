@@ -3,8 +3,7 @@
 import { getEventPosts } from '@/lib/utils'
 import { PostType } from '@/interfaces'
 import EventCard from './ui/EventCard'
-import Script from 'next/script'
-
+import Head from 'next/head'
 interface EventProps {
   data: PostType[]
   // title: string
@@ -14,8 +13,9 @@ interface EventProps {
 const EventLayout = ({ data }: EventProps) => {
   return (
     <div className="flex flex-col items-center justify-center mt-[50px]">
-      <Script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9738664936744628"
-        crossOrigin="anonymous"></Script>
+      <Head>
+        <meta name="google-adsense-account" content="ca-pub-9738664936744628"/>
+      </Head>
     <div
       className="max-md:text-[26px] text-[40px] font-bold font-['Raleway'] leading-[48px] mb-10"
       data-aos="zoom-in"
