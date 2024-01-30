@@ -5,7 +5,7 @@ import FeaturedBlog from '@/components/ui/FeaturedBlog'
 import PostCard from '@/components/ui/PostCard'
 import { PostType } from '@/interfaces'
 import Head from 'next/head'
-
+import Script from 'next/script'
 interface BlogPageProps {
   data: PostType[]
   title: string
@@ -15,10 +15,8 @@ interface BlogPageProps {
 const BlogLayout = ({ title, subTitle, data }: BlogPageProps) => {
   return (
     <div className="flex flex-col items-center justify-center mt-[50px]">
-      <Head> 
-        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9738664936744628"
-      crossOrigin="anonymous"></script>
-      </Head>
+      <Script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9738664936744628"
+      crossOrigin="anonymous"></Script>  
       <div
         className="text-center max-md:text-start max-md:text-[25px]text-[#d9d9e8] text-5xl font-extrabold font-['Raleway'] leading-[96px] max-md:leading-3"
         data-aos="zoom-in"

@@ -4,6 +4,7 @@ import { getEventPosts } from '@/lib/utils'
 import { PostType } from '@/interfaces'
 import EventCard from './ui/EventCard'
 import Head from 'next/head'
+import Script from 'next/script'
 
 interface EventProps {
   data: PostType[]
@@ -14,10 +15,8 @@ interface EventProps {
 const EventLayout = ({ data }: EventProps) => {
   return (
     <div className="flex flex-col items-center justify-center mt-[50px]">
-      <Head>
-        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9738664936744628"
-        crossOrigin="anonymous"></script>
-      </Head>
+      <Script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9738664936744628"
+        crossOrigin="anonymous"></Script>
     <div
       className="max-md:text-[26px] text-[40px] font-bold font-['Raleway'] leading-[48px] mb-10"
       data-aos="zoom-in"

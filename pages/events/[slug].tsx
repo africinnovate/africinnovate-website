@@ -4,6 +4,7 @@ import { Params, PostType } from '@/interfaces'
 import { getEventPost, getEventPosts, markdownToHtml } from '@/lib/utils'
 import Head from 'next/head'
 import Link from 'next/link'
+import Script from 'next/script'
 
 type Props = {
   post: PostType
@@ -23,9 +24,10 @@ const EventPage = ({ post }: Props) => {
         <meta property="og:title" content={pageTitle} />
         <meta property="og:description" content={description} />
         <meta property="og:image" content={ogImage} />
-        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9738664936744628"
-      crossOrigin="anonymous"></script>
       </Head>
+      <Script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9738664936744628"
+      crossOrigin="anonymous"></Script>
+
       <div className="flex items-center justify-center flex-col">
 
       <Image
