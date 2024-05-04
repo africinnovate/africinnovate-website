@@ -43,8 +43,8 @@ const BlogLayout = ({ title, subTitle, data }: BlogPageProps) => {
           >
             Recent Blogs
           </div>
-          <div className="mt-7" data-aos="zoom-in">
-            <div className="flex w-full justify-center max-md:grid gap-[100px] ">
+          <div className="mt-7 px-6" data-aos="zoom-in">
+            <div className="flex w-full justify-center max-md:grid gap-[100px] px-6">
               {data &&
                 data.map((item) => (
                   <PostCard
