@@ -14,6 +14,7 @@ export type PostType = {
   fields: {
     title: string
     body: string
+    endDate: string
     slug: string
     featuredText: string
     featureImage: {

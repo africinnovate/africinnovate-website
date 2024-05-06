@@ -22,7 +22,7 @@ const EventLayout = ({ data }: EventProps) => {
 
     setUpcoming(fEvent);
   } ,[data])
-  
+
   
 
   return (
