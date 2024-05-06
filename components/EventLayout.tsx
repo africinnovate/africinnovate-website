@@ -15,14 +15,14 @@ const EventLayout = ({ data }: EventProps) => {
 
   const [upcoming , setUpcoming] = useState<PostType[]>([]);
 
-
   useEffect(() => {
 
     const currentDate = new  Date();
-    const fEvent= data.filter((event) => new Date(event.sys.updatedAt) > currentDate);
+    const fEvent= data.filter((event) => new Date(event.fields.endDate) > currentDate);
 
     setUpcoming(fEvent);
   } ,[data])
+  
   
 
   return (
