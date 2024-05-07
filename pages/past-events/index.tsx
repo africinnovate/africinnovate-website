@@ -1,12 +1,11 @@
 'use client'
 
+import { useState , useEffect} from 'react'
 import { getEventPosts } from '@/lib/utils'
 import { PostType } from '@/interfaces'
-// import EventLayout from '@/components/EventLayout'
 import EventCard from '@/components/ui/EventCard'
 import Head from 'next/head'
 // import africImage from '@/public/Images/africinnovate.jpeg'
-import { useState , useEffect} from 'react'
 
 interface EventPageProps {
   data: PostType[]
@@ -19,7 +18,6 @@ export default function Event({ data }: EventPageProps) {
   // const ogImage = ${africImage}; // Assuming your featureImage is an object with a file field
   // const ogImage = https:${data[0].fields.featureImage.fields.file.url}; // Assuming your featureImage is an object with a file field
 
-
   // <Head>
   //   <title>{pageTitle}</title>
   //   <meta name="description" content={description} />
@@ -27,6 +25,7 @@ export default function Event({ data }: EventPageProps) {
   //   <meta property="og:description" content={description} />
     {/* <meta property="og:image" content={ogImage} /> */}
   // </Head>
+
   const [past , setpast] = useState<PostType[]>([]);
 
   useEffect(() => {
@@ -60,8 +59,6 @@ export default function Event({ data }: EventPageProps) {
   </div>
   )
 }
-
-
 
 export async function getServerSideProps() {
   const data = await getEventPosts()
