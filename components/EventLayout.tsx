@@ -5,6 +5,9 @@ import { PostType } from '@/interfaces'
 import EventCard from './ui/EventCard'
 import Head from 'next/head'
 import { useState , useEffect} from 'react'
+import Link from 'next/link';
+// import PastEventsPage from './ui/PastEventsPage'
+
 interface EventProps {
   data: PostType[]
   // title: string
@@ -23,7 +26,6 @@ const EventLayout = ({ data }: EventProps) => {
     setUpcoming(fEvent);
   } ,[data])
 
-  
 
   return (
     <div className="flex flex-col items-center justify-center mt-[50px]">
@@ -45,7 +47,11 @@ const EventLayout = ({ data }: EventProps) => {
           />
         )): 
         <div>
-          <h1 className='text-white text-3xl line-through text-center font-semibold'>No Events</h1>
+            
+            <Link href="/past-events">
+              <button className=" text-lg font-semibold rounded-3xl  p-4 hover:bg-[#FFBE0B] bg-[#cccce0] font-sans text-[#006] ">View Past Events</button>
+            </Link>
+
         </div> 
         }
     </div>
