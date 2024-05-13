@@ -8,6 +8,9 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      padding: {
+        'custom': '20px'
+      },
       colors: {
         'app-text-color': '#d9d9e8',
       },
