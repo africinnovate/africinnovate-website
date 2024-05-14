@@ -20,7 +20,7 @@ const EventLayout = ({ data }: EventProps) => {
       className="max-md:text-[26px] text-[40px] font-bold font-['Raleway'] leading-[48px] mb-10"
       data-aos="zoom-in"
     >
-      Upcoming Events
+      Upcoming Eventss
     </div>
     <div className="flex w-full justify-center max-md:grid gap-[100px] ">
       {data &&
