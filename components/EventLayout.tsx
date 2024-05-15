@@ -13,16 +13,16 @@ interface EventProps {
 
 const EventLayout = ({ data }: EventProps) => {
 
-  const [upcoming , setUpcoming] = useState<PostType[]>([]);
+  // const [upcoming , setUpcoming] = useState<PostType[]>([]);
 
 
-  useEffect(() => {
+  // useEffect(() => {
 
-    const currentDate = new  Date();
-    const fEvent= data.filter((event) => new Date(event.sys.updatedAt) > currentDate);
+  //   const currentDate = new  Date();
+  //   const fEvent= data.filter((event) => new Date(event.sys.updatedAt) > currentDate);
 
-    setUpcoming(fEvent);
-  } ,[data])
+  //   setUpcoming(fEvent);
+  // } ,[data])
   
 
   return (
@@ -34,9 +34,9 @@ const EventLayout = ({ data }: EventProps) => {
       className="max-md:text-[26px] text-[40px] font-bold font-['Raleway'] leading-[48px] mb-10"
       data-aos="zoom-in"
     >
-      Upcoming Eventss
+      Upcoming Events
     </div>
-    <div className="flex w-full  justify-center max-md:grid gap-[100px] ">
+    {/* <div className="flex w-full  justify-center max-md:grid gap-[100px] ">
       {upcoming.length > 0 ?
         upcoming.map((item) => (
           <EventCard
@@ -48,7 +48,7 @@ const EventLayout = ({ data }: EventProps) => {
           <h1 className='text-white text-3xl line-through text-center font-semibold'>No Events</h1>
         </div> 
         }
-    </div>
+    </div> */}
   </div>
   )
 }
