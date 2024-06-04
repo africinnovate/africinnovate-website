@@ -66,7 +66,7 @@ const AboutSection = () => {
       </div>
       <div className="flex justify-center items-center">
         <div
-          className="w-[1200px] h-[660px] mt-[80px] rounded-3xl border-2  border-[#b0cdf9]  max-md:h-fit max-md:w-[350px] max-md:mt-[500px] "
+          className="w-[1200px] h-[660px] mt-[80px] rounded-3xl border-2 border-[#b0cdf9]  max-md:h-fit max-md:w-[350px] max-md:mt-[500px] "
           id="grade"
           data-aos="zoom-in"
         >
@@ -101,7 +101,7 @@ const AboutSection = () => {
                 </svg>
               </div>
 
-              <div className="Sans']text-[#d9d9e8] font-['DM text-lg font-medium leading-6 mt-2">
+              <div className="font-['DM text-lg font-medium leading-6 mt-2">
                 Reliable high-speed internet
               </div>
               <div className="w-[20.5rem] max-md:w-[17.5rem] text-[#b0b0d0] font-['DM font-medium leading-6 mt-2">
@@ -111,7 +111,7 @@ const AboutSection = () => {
               </div>
             </div>
 
-            <div className="flex-shrink-0 w-[360px]  max-md:w-[313px] pl-5 pt-2 h-[13.5rem] rounded-2xl items-center justify-center transition duration-500 hover:bg-[#00388D] hover:border border-[#b0cdf9] max-md:p-[9px]">
+            <div className="flex-shrink-0 w-[360px] max-md:w-[313px] pl-5 pt-2 h-[13.5rem] rounded-2xl items-center justify-center transition duration-500 hover:bg-[#00388D] hover:border border-[#b0cdf9] max-md:p-[9px]">
               <div className="flex-shrink-0 w-12 h-12 rounded-full bg-white/[.10] flex items-center justify-center">
                 <svg
                   width={32}
@@ -213,7 +213,7 @@ const AboutSection = () => {
               </div>
             </div>
 
-            <div className="flex-shrink-0 w-[360px]  max-md:w-[313px] pl-5 pt-2 h-[13.5rem] rounded-2xl items-center justify-center transition duration-500 hover:bg-[#00388D] hover:border border-[#b0cdf9] max-md:p-[9px]">
+            <div className="flex-shrink-0 w-[360px] max-md:w-[313px] pl-5 pt-2 h-[13.5rem] rounded-2xl items-center justify-center transition duration-500 hover:bg-[#00388D] hover:border border-[#b0cdf9] max-md:p-[9px]">
               <div className="flex-shrink-0 w-12 h-12 rounded-full bg-white/[.10] flex items-center justify-center">
                 {' '}
                 <svg
@@ -248,7 +248,7 @@ const AboutSection = () => {
                 compromising quality.
               </div>
             </div>
-            <div className="flex-shrink-0 w-[360px]  max-md:w-[313px]  max-md:h-[14.0rem] max-md:mb-5 pl-5 pt-2 h-[13.5rem] rounded-2xl items-center justify-center transition duration-500 hover:bg-[#00388D] hover:border border-[#b0cdf9] max-md:p-[9px]">
+            <div className="flex-shrink-0 w-[360px] max-md:w-[313px] max-md:h-[14.0rem] max-md:mb-5 pl-5 pt-2 h-[13.5rem] rounded-2xl items-center justify-center transition duration-500 hover:bg-[#00388D] hover:border border-[#b0cdf9] max-md:p-[9px]">
               <div className="flex-shrink-0 w-12 h-12  rounded-full bg-white/[.10] flex items-center justify-center transition duration-500 hover:bg-[#00388D]">
                 <svg
                   width={20}
@@ -271,7 +271,7 @@ const AboutSection = () => {
                 </svg>
               </div>
 
-              <div className="Sans']text-[#d9d9e8] font-['DM text-lg font-medium leading-6 mt-2">
+              <div className="font-medium leading-6 mt-2">
                 Home to Startups
               </div>
               <div className="Sans'] w-[19.5rem] max-md:w-full text-[#b0b0d0] font-['DM font-medium mt-2 max-md:w-[17rem] ">
@@ -288,19 +288,19 @@ const AboutSection = () => {
         className="mt-[60px] flex items-center justify-center flex-col"
         data-aos="zoom-in"
       >
-        <div className="[#d9d9e8] text-center font-['Raleway'] text-5xl font-bold leading-[64px] ">
+        <div className="text-center font-['Raleway'] text-5xl font-bold leading-[64px] ">
           What we do
         </div>
         {/* what-we-do */}
         <div
-          className="w-[1200px] h-[450px] flex flex-row justify-around    bg-sky-500 bg-opacity-20 rounded-2xl  pb-9  backdrop-blur-[10px]    shadow-inner sm:shadow-md md:shadow-lg lg:shadow-xl xl:shadow-2xl border-[CCCCE0] items-start mt-[50px] pt-[5rem] max-md:flex-col max-md:justify-center max-md:items-center max-md:w-[352px] "
+          className="w-[1200px] h-[450px] flex flex-row justify-around bg-sky-500 bg-opacity-20 rounded-2xl  pb-9  backdrop-blur-[10px]    shadow-inner sm:shadow-md md:shadow-lg lg:shadow-xl xl:shadow-2xl border-[CCCCE0] items-start mt-[50px] pt-[5rem] max-md:flex-col max-md:justify-center max-md:items-center max-md:w-[352px] "
           id="border"
         >
-          <div className="  min-w-[401px] text-start flex justify-start flex-col mt-[5rem] ml-[50px] max-md:ml-[20px] max-md:items-center max-md:justify-center max-md:mt-[2rem]">
+          <div className="min-w-[401px] text-start flex justify-start flex-col mt-[5rem] ml-[50px] max-md:ml-[20px] max-md:items-center max-md:justify-center max-md:mt-[2rem]">
             <div className="[#d9d9e8] text-[40px] font-bold font-['Raleway'] leading-[48px] max-md:text-[30px]">
               Software Solutions
             </div>
-            <div className="Sans'] w-[451px] text-[#d9d9e8] font-['DM font-medium leading-6 max-md:w-[272px]">
+            <div className="w-[451px] text-[#d9d9e8] font-['DM font-medium leading-6 max-md:w-[272px]">
               Unlock the power of cutting-edge technology with our bespoke
               software and blockchain solutions tailored to meet the unique
               demands of your business, ensuring efficiency and innovation.
@@ -313,14 +313,14 @@ const AboutSection = () => {
             className="w-full h-full object-cover"
           />
         </div>
-        <div className="w-[1200px] h-[427px] flex flex-row    items-start mt-[50px]  max-md:flex-col max-md:justify-center max-md:items-center gap-[30px]  max-md:mt-[15rem]">
+        <div className="w-[1200px] h-[427px] flex flex-row items-start mt-[50px] max-md:flex-col max-md:justify-center max-md:items-center gap-[30px]  max-md:mt-[15rem]">
           <div
-            className="w-[627px] h-[472px] ]   bg-sky-500 bg-opacity-20 rounded-2xl shadow-inner backdrop-blur-[10px] justify-end items-center inline-flex  "
+            className="w-[627px] h-[472px] bg-sky-500 bg-opacity-20 rounded-2xl shadow-inner backdrop-blur-[10px] justify-end items-center inline-flex  "
             id="card1"
             data-aos="zoom-in"
           >
             <div className="w-[541px] h-56 flex-col justify-start items-start gap-4 inline-flex max-md:w-[329px] max-md:h-auto max-md:px-[10px] max-md:py-[10px]">
-              <div className="[#d9d9e8] text-[40px] font-bold font-['Raleway'] leading-[48px]">
+              <div className=" text-[40px] font-bold font-['Raleway'] leading-[48px]">
                 Training
               </div>
               <div className="w-[541px] text-zinc-200 text-base font-medium font-['DM Sans'] leading-normal max-md:w-auto">
@@ -333,12 +333,12 @@ const AboutSection = () => {
             </div>
           </div>
           <div
-            className="w-[627px] h-[472px]  bg-sky-500 bg-opacity-20 rounded-2xl shadow-inner backdrop-blur-[10px] justify-end items-center inline-flex "
+            className="w-[627px] h-[472px] bg-sky-500 bg-opacity-20 rounded-2xl shadow-inner backdrop-blur-[10px] justify-end items-center inline-flex "
             id="card2"
             data-aos="zoom-in"
           >
             <div className="w-[541px] h-[248px] flex-col justify-start items-start gap-4 inline-flex max-md:w-[329px] max-md:h-auto  mr-[20px]">
-              <div className="[#d9d9e8] text-[40px] font-bold font-['Raleway'] leading-[48px]">
+              <div className="text-[40px] font-bold font-['Raleway'] leading-[48px]">
                 Co-working Space
               </div>
               <div className="w-[541px] text-zinc-200 text-base font-medium font-['DM Sans'] leading-normal mr-[30px] max-md:w-auto">
