@@ -51,7 +51,7 @@ const FormModal: FC = () => {
 
   return (
     <div
-      className={`fixed ${showModal ? '' : 'hidden'} inset-0 bg-gray-600 bg-opacity-50 flex justify-center items-center`}
+      className={`fixed ${showModal ? '' : 'hidden'} z-50 inset-0 bg-gray-600 bg-opacity-50 flex justify-center items-center`}
       id="my-modal"
     >
       <div className="relative bg-blue-800 rounded-2xl shadow w-[39rem] max-md:w-[20rem] p-8">
