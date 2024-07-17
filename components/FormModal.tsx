@@ -4,10 +4,9 @@ import { FC, useState } from 'react'
 import toast, { Toaster } from 'react-hot-toast'
 import { validateForm } from '@/lib/utils/helper'
 import { useModalContext } from '@/contexts/ModalProvider'
-
+import { IoClose } from 'react-icons/io5'
 
 const FormModal: FC = () => {
-
   const { showModal, toggleModal, course } = useModalContext()
 
   const [fullName, setFullName] = useState<string>('')
@@ -18,7 +17,6 @@ const FormModal: FC = () => {
   const [loading, setLoading] = useState<boolean>(false)
 
   const handleSubmit = async () => {
-
     const isValid = validateForm(phoneNumber, message)
 
     if (!isValid) {
@@ -53,108 +51,105 @@ const FormModal: FC = () => {
 
   return (
     <div
-      className={`fixed ${
-        showModal ? '' : 'hidden'
-      } inset-0 bg-gray-600 bg-opacity-50 overflow-y-auto h-full w-full" id="my-modal`}
+      className={`fixed ${showModal ? '' : 'hidden'} inset-0 bg-gray-600 bg-opacity-50 flex justify-center items-center`}
+      id="my-modal"
     >
-      <form
-        className="mx-auto flex  gap-[26px] items-start pl-[40px] max-md:pl-[25px] justify-center flex-col mt-9 w-[39rem] h-[38rem]  bg-blue-800 rounded-2xl shadow max-md:w-[20rem]"
-        data-aos="zoom-in"
-        data-aos-duration="1200"
-        data-aos-delay="700"
-      >
-        {course && <h3 className="font-bold mt-11">You are enrroling for {course}</h3>}
-        <label
-          htmlFor="fullName"
-          className="left-[77px] top-[48px]  text-slate-400 text-base font-medium font-['DM Sans'] leading-normal"
-        ></label>
-        <input
-          type="text"
-          id="fullName"
-          name="fullName"
-          placeholder="fullName"
-          value={fullName}
-          onChange={(e) => setFullName(e.target.value)}
-          className="flex-shrink-0 w-[527px] max-md:w-[250px] focus:bg-transparent focus:text-[#b0b0d0]  focus:outline-none border-b-[#b0b0d0] bg-transparent border-solid border border-t-transparent  border-l-transparent border-r-transparent text-[#b0b0d0]"
-        />
-
-        <label
-          htmlFor="email"
-          className="left-[77px] top-[117px]  text-slate-400 text-base font-medium font-['DM Sans'] leading-normal"
-        ></label>
-        <input
-          type="email"
-          id="email"
-          name="email"
-          placeholder="email"
-          value={email}
-          onChange={(e) => setEmail(e.target.value)}
-          className="flex-shrink-0 w-[527px] max-md:w-[250px] bg-transparent focus:text-[#b0b0d0]  focus:outline-none border-b-[#b0b0d0] border-solid border border-t-transparent  border-l-transparent border-r-transparent text-[#b0b0d0]"
-        />
-
-        <label
-          htmlFor="phoneNumber"
-          className="left-[77px] top-[186px]  text-slate-400 text-base font-medium font-['DM Sans'] leading-normal"
-        ></label>
-        <input
-          type="tel"
-          id="phoneNumber"
-          placeholder="phoneNumber"
-          name="phoneNumber"
-          value={phoneNumber}
-          onChange={(e) => setPhoneNumber(e.target.value)}
-          className="flex-shrink-0 w-[527px] max-md:w-[250px] focus:bg-transparent focus:text-[#b0b0d0]  focus:outline-none border-b-[#b0b0d0] bg-transparent border-solid border border-t-transparent  border-l-transparent border-r-transparent text-[#b0b0d0]"
-        />
-
-        <label
-          htmlFor="subject"
-          className="left-[77px] top-[255px]  text-slate-400 text-base font-medium font-['DM Sans'] leading-normal"
-        ></label>
-
-        <select
-          id="subject"
-          name="subject"
-          placeholder="Enter subject"
-          value={course ? 'Training' : subject}
-          onChange={(e) => setSubject(e.target.value)}
-          disabled={course !== undefined}
-          className="flex-shrink-0 w-[527px]  max-md:w-[250px]  focus:bg-transparent focus:text-[#b0b0d0]  focus:outline-none border-b-[#b0b0d0] bg-transparent border-solid border border-t-transparent  border-l-transparent border-r-transparent text-[#b0b0d0]"
+      <div className="relative bg-blue-800 rounded-2xl shadow w-[39rem] max-md:w-[20rem] p-8">
+        <button
+          className="absolute top-4 right-4 text-gray-400 hover:text-white"
+          onClick={toggleModal}
         >
-          <option value="Training">Training</option>
-          <option value="Project">Project</option>
-          <option value="Event">Event</option>
-          <option value="Partnership">Partnership</option>
-        </select>
-
-        <label
-          htmlFor="message"
-          className="left-[77px] top-[324px]  text-slate-400 text-base font-medium font-['DM Sans'] leading-normal"
+          <IoClose size={24} />
+        </button>
+        <form
+          className="flex flex-col gap-6"
+          data-aos="zoom-in"
+          data-aos-duration="1200"
+          data-aos-delay="700"
         >
-          Your message
-        </label>
-        <textarea
-          id="message"
-          name="message"
-          placeholder="message"
-          value={message}
-          onChange={(e) => setMessage(e.target.value)}
-          className="flex-shrink-0 text-slate-400  w-[527px] max-md:w-[250px] h-24 rounded-lg border border-[#b0b0d0] bg-transparent"
-        ></textarea>
+          {course && <h3 className="font-bold text-white">You are enrolling for {course}</h3>}
+          <label htmlFor="fullName" className="text-slate-400 text-base font-medium">
+            Full Name
+          </label>
+          <input
+            type="text"
+            id="fullName"
+            name="fullName"
+            placeholder="Full Name"
+            value={fullName}
+            onChange={(e) => setFullName(e.target.value)}
+            className="w-full p-2 bg-transparent border-b border-gray-500 text-white focus:outline-none"
+          />
 
-        <div className="FilledButtonsDarkMode left-[76px] top-[472px]   mb-5 justify-start items-start inline-flex">
-          <button
-            type="button"
-            className="Frame11947 px-6 py-3 bg-slate-300 rounded-3xl justify-start items-center gap-2 flex"
+          <label htmlFor="email" className="text-slate-400 text-base font-medium">
+            Email
+          </label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Email"
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
+            className="w-full p-2 bg-transparent border-b border-gray-500 text-white focus:outline-none"
+          />
+
+          <label htmlFor="phoneNumber" className="text-slate-400 text-base font-medium">
+            Phone Number
+          </label>
+          <input
+            type="tel"
+            id="phoneNumber"
+            name="phoneNumber"
+            placeholder="Phone Number"
+            value={phoneNumber}
+            onChange={(e) => setPhoneNumber(e.target.value)}
+            className="w-full p-2 bg-transparent border-b border-gray-500 text-white focus:outline-none"
+          />
+
+          <label htmlFor="subject" className="text-slate-400 text-base font-medium">
+            Subject
+          </label>
+          <select
+            id="subject"
+            name="subject"
+            placeholder="Enter subject"
+            value={course ? 'Training' : subject}
+            onChange={(e) => setSubject(e.target.value)}
+            disabled={course !== undefined}
+            className="w-full p-2 bg-transparent border-b border-gray-500 text-white focus:outline-none"
           >
-            <span
+            <option value="Training">Training</option>
+            <option value="Project">Project</option>
+            <option value="Event">Event</option>
+            <option value="Partnership">Partnership</option>
+          </select>
+
+          <label htmlFor="message" className="text-slate-400 text-base font-medium">
+            Your message
+          </label>
+          <textarea
+            id="message"
+            name="message"
+            placeholder="Message"
+            value={message}
+            onChange={(e) => setMessage(e.target.value)}
+            className="w-full p-2 h-24 bg-transparent border border-gray-500 text-white focus:outline-none rounded-lg"
+          ></textarea>
+
+          <div className="flex justify-start items-center">
+            <button
+              type="button"
+              className="px-6 py-3 bg-slate-300 rounded-3xl flex items-center gap-2"
               onClick={handleSubmit}
-              className="Button text-blue-950 text-base font-medium font-['DM Sans'] leading-normal"
             >
-              {loading ? 'Sending ...' : 'Send Message'}
-            </span>
-          </button>
-        </div>
-      </form>
+              <span className="text-blue-950 text-base font-medium">
+                {loading ? 'Sending ...' : 'Send Message'}
+              </span>
+            </button>
+          </div>
+        </form>
+      </div>
       <Toaster />
     </div>
   )
