@@ -1,3 +1,4 @@
+import { GoogleTagManager } from '@next/third-parties/google'
 import Hero from '@/components/ui/Hero'
 import AboutSection from '@/components/ui/AboutSection'
 import BlogLayout from '@/components/BlogLayout'
@@ -14,8 +15,9 @@ interface BlogPageProps {
 const Home = ({ data, eventData }: BlogPageProps) => {
   return (
     <>
-     <Head>
-        <meta name="google-adsense-account" content="ca-pub-9738664936744628"/>
+      <Head>
+        <GoogleTagManager gtmId="GTM-NV536PKC" />
+        <meta name="google-adsense-account" content="ca-pub-9738664936744628" />
       </Head>
       <Hero />
       <AboutSection />

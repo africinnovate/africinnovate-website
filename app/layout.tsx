@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import { Raleway } from 'next/font/google'
+import { GoogleTagManager } from '@next/third-parties/google'
 import favicon from './favicon.ico'
 import MyApp from '@/app/_app'
 import AppHeader from '@/components/ui/AppHeader'
@@ -27,7 +28,8 @@ export default function RootLayout({
     <html lang="en">
       <link rel="icon" href="favico.ico" type="image/x-icon" />
       <Head>
-        <meta name="google-adsense-account" content="ca-pub-9738664936744628"/>
+        <GoogleTagManager gtmId="GTM-NV536PKC" />
+        <meta name="google-adsense-account" content="ca-pub-9738664936744628" />
       </Head>
       <body className={inter.className}>
         <main className="overflow-x-hidden text-app-text-color">
