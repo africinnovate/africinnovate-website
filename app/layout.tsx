@@ -31,16 +31,17 @@ export default function RootLayout({
         <GoogleTagManager gtmId="GTM-NV536PKC" />
         <meta name="google-adsense-account" content="ca-pub-9738664936744628" />
       </Head>
-      {/* <!-- Google tag (gtag.js) --> */}
-      <script async src="https://www.googletagmanager.com/gtag/js?id=G-HM0953Q9DC"></script>
-      <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
 
-        gtag('config', 'G-HM0953Q9DC');
-      </script>
       <body className={inter.className}>
+        {/* <!-- Google tag (gtag.js) --> */}
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-HM0953Q9DC"></script>
+        <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+
+          gtag('config', 'G-HM0953Q9DC');
+        </script>
         <main className="overflow-x-hidden text-app-text-color">
           <ModalProvider>
             <AppHeader />
