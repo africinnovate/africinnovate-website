@@ -5,7 +5,7 @@ import LaptopPicThree from '@/public/Images/Masonary-ImageThree.png'
 import LaptopPicFour from '@/public/Images/Masonary-ImageFour.png'
 import LaptopPicMain from '@/public/Images/LaptopImage.webp'
 import dynamic from 'next/dynamic'
-
+//added dynamic import
 const Button = dynamic(() => import('./Button'), { ssr: false })
 
 const AboutSection = () => {
@@ -321,6 +321,9 @@ const AboutSection = () => {
           <Image
             src={LaptopPicMain}
             alt="Description of the image"
+            loading="lazy"
+            placeholder="blur"
+            blurDataURL="data:image/svg+xml;base64,..."
             className="w-full h-full object-cover"
           />
         </div>
