@@ -29,16 +29,6 @@ export default function RootLayout({
       <link rel="icon" href="favico.ico" type="image/x-icon" />
       <Head>
         <meta name="google-adsense-account" content="ca-pub-9738664936744628" />
-        
-        {/* <!-- Google tag (gtag.js) --> */}
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-HM0953Q9DC"></script>
-        <script>
-          window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments);}
-          gtag('js', new Date());
-
-          gtag('config', 'G-HM0953Q9DC');
-        </script>
       </Head>
 
       <body className={inter.className}>    
